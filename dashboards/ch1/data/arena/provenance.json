@@ -1,0 +1,266 @@
+{
+  "generator": "scripts/build_weight_flow_data.py",
+  "categories": 29,
+  "monthlyModelObservations": 31878,
+  "aggregation": "Each category: final observed snapshot per month; rank <= N including ties; actual selected population denominator",
+  "inputs": [
+    {
+      "path": "storyline_data/00_shared/raw_big/leaderboard_text_full/full-00000-of-00001.parquet",
+      "sha256": "489eac870356358430507f0b133de4bc771d9c10d8af77fccf3cf4502b996381"
+    },
+    {
+      "path": "scripts/license_taxonomy.py",
+      "sha256": "330de0bc94214245937858605a3e87998b74ba83b81d2d49bd1602800b023935"
+    },
+    {
+      "path": "config/ch1_license_rules.json",
+      "sha256": "fc80222c463bc4f976db1b2c5dea50ae5870a22711a2e4bfefcb7213287abf7e"
+    },
+    {
+      "path": "evidence/ch1/reviewed_model_evidence.json",
+      "sha256": "6ffea16199f5d7189af9912421b17e3a3c4e3b59de8a2863ea2f5b62e689e4cc"
+    },
+    {
+      "path": "sites/ch1-arena-fieldnotes/public/data/arena/index.json",
+      "sha256": "330eb649243652f5dd65714643d4fc169837e779744e79cfe263e16ed62c1286"
+    },
+    {
+      "path": "sites/ch1-arena-fieldnotes/public/data/arena/overall.json",
+      "sha256": "699a86c5971f2b16a05bf6cc67fc927392792ca76e85df9bd9fd22d30bec0d39"
+    },
+    {
+      "path": "sites/ch1-arena-fieldnotes/public/data/arena/coding.json",
+      "sha256": "a96de91b9c7939b689c6d37e64add5ba11aef1ae366ef0369190ccc3012cdc7b"
+    },
+    {
+      "path": "sites/ch1-arena-fieldnotes/public/data/arena/math.json",
+      "sha256": "bda7e929cfd98db45033e2361d2395c12eb072276b31d6dc5db5264f48c66fe2"
+    },
+    {
+      "path": "sites/ch1-arena-fieldnotes/public/data/arena/instruction_following.json",
+      "sha256": "1fdaa6b219116f37be5db0e657647e7e8bbf937fbf150f913baca9a1eeb073be"
+    },
+    {
+      "path": "sites/ch1-arena-fieldnotes/public/data/arena/creative_writing.json",
+      "sha256": "e081eda713c9307658d04140b46d3e106e43b52b27014abbf4a5307eb93ad98c"
+    },
+    {
+      "path": "sites/ch1-arena-fieldnotes/public/data/arena/expert.json",
+      "sha256": "34d5409e295fe12bff68d01e843b2a451d0f5949cb925da8c6f6900b97b7eee7"
+    },
+    {
+      "path": "sites/ch1-arena-fieldnotes/public/data/arena/hard_prompts.json",
+      "sha256": "0d019368b8b32e860d3fea87f3447e1deb1128ea781bbbd122587263f50e14e7"
+    },
+    {
+      "path": "sites/ch1-arena-fieldnotes/public/data/arena/hard_prompts_english.json",
+      "sha256": "8ade837ebd4a7acba07b90bc8b2be28e92542089ee774d12e50535b4beb0b957"
+    },
+    {
+      "path": "sites/ch1-arena-fieldnotes/public/data/arena/longer_query.json",
+      "sha256": "e0f806c4ddeeddcbbac3a7548595d1836e00f4ea645e2d5e7745b4f85c6787ea"
+    },
+    {
+      "path": "sites/ch1-arena-fieldnotes/public/data/arena/multi_turn.json",
+      "sha256": "ffaa2db24407c43a933c78e8c8bbb2c11c732b6d7f675833c463c04237bc31e9"
+    },
+    {
+      "path": "sites/ch1-arena-fieldnotes/public/data/arena/chinese.json",
+      "sha256": "537fd9cf0a5b89db1d6996db50c79a2d9f6cc793912c85e08edb2bab4ddae9a1"
+    },
+    {
+      "path": "sites/ch1-arena-fieldnotes/public/data/arena/english.json",
+      "sha256": "09b473f83f3ad70be9e71b6edc4db1921e84889fc742ea4001899c44658e12ce"
+    },
+    {
+      "path": "sites/ch1-arena-fieldnotes/public/data/arena/non_english.json",
+      "sha256": "e583da4092b34005feecab841a860743f5a8c6d5e77e510ca72ba1b3cd1b7df1"
+    },
+    {
+      "path": "sites/ch1-arena-fieldnotes/public/data/arena/french.json",
+      "sha256": "af988fb7257b69f9146604b2c6fc0c7540e93f2ed879753aa0d7d125d70b2c55"
+    },
+    {
+      "path": "sites/ch1-arena-fieldnotes/public/data/arena/german.json",
+      "sha256": "1f6d25e18aef2b0d29f6da87cb5ac0877dcae78fdf53d19e99530207e9d8c1d9"
+    },
+    {
+      "path": "sites/ch1-arena-fieldnotes/public/data/arena/japanese.json",
+      "sha256": "35421cb3fb7294fee08a4b417f75ed5d5e97cc7b5248c44448b342a95e12dd5b"
+    },
+    {
+      "path": "sites/ch1-arena-fieldnotes/public/data/arena/korean.json",
+      "sha256": "1ba8d86447dcab4bfa4c403f3bbbf5bb4cc1818536ef9406be47e1b15afd2dd6"
+    },
+    {
+      "path": "sites/ch1-arena-fieldnotes/public/data/arena/spanish.json",
+      "sha256": "15d5aa396433824310e00ee897a97c9388b3e829152953acb9c4ae958b34c4d0"
+    },
+    {
+      "path": "sites/ch1-arena-fieldnotes/public/data/arena/russian.json",
+      "sha256": "efde6d26a87ca9a3dc4da1c8075cb60a00929e5d9594cd3973cf53f93feb3336"
+    },
+    {
+      "path": "sites/ch1-arena-fieldnotes/public/data/arena/polish.json",
+      "sha256": "188373757f8842c22adfa17c988d5b1537d7eaa159ef6c327419f68f1a18af5a"
+    },
+    {
+      "path": "sites/ch1-arena-fieldnotes/public/data/arena/industry_software_and_it_services.json",
+      "sha256": "855a2760fcfe074e7241c97336836dae3bc1522f3c25454becf81802903f569c"
+    },
+    {
+      "path": "sites/ch1-arena-fieldnotes/public/data/arena/industry_mathematical.json",
+      "sha256": "7376039696bf92866697a2207bf766041a09ba12ed03b5b741e343fb88fefc2e"
+    },
+    {
+      "path": "sites/ch1-arena-fieldnotes/public/data/arena/industry_business_and_management_and_financial_operations.json",
+      "sha256": "7d3d6b3fe85bcf4b56ee22f124c6d2558a8b3801a5cdd10132f32c66700e6d1c"
+    },
+    {
+      "path": "sites/ch1-arena-fieldnotes/public/data/arena/industry_legal_and_government.json",
+      "sha256": "227d208c2e4b3a5d92032d596b979fde6623234db20c151a15406f764c2519fd"
+    },
+    {
+      "path": "sites/ch1-arena-fieldnotes/public/data/arena/industry_medicine_and_healthcare.json",
+      "sha256": "a116eccf0dfa7c98ed7c5a4b92d516271b7ee1c27af1cc9bea22504a11971acb"
+    },
+    {
+      "path": "sites/ch1-arena-fieldnotes/public/data/arena/industry_life_and_physical_and_social_science.json",
+      "sha256": "ffd61e0ea56c654ae547a54e443784894f345460329664057b8c3ba3f759a732"
+    },
+    {
+      "path": "sites/ch1-arena-fieldnotes/public/data/arena/industry_entertainment_and_sports_and_media.json",
+      "sha256": "b23dd1e1c99f9c40570fd4f35f2e71ce8e8fcb87257f4799de5521852aece472"
+    },
+    {
+      "path": "sites/ch1-arena-fieldnotes/public/data/arena/industry_writing_and_literature_and_language.json",
+      "sha256": "182e95c81ad92d5a5f206da704cae19d700075d59af8aada6f48664fa3207f5b"
+    },
+    {
+      "path": "sites/ch1-arena-fieldnotes/public/data/arena/exclude_ties.json",
+      "sha256": "fb98db700346388ad2c434d50d9a278ba0aa06daaa635a3af9fc7b0e2014113c"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "chinese.json",
+      "sha256": "3b2000f5fa0b84aa337e1a0dfb5342469842bfe57bfc281ab1695cbf3fd5e12d"
+    },
+    {
+      "path": "coding.json",
+      "sha256": "8728158a8f3815916a845a6baa99bab3e8d95abf48e3f3fd546443727b60625d"
+    },
+    {
+      "path": "creative_writing.json",
+      "sha256": "3786b9de6541b385d6733ab66a32afc627ec665e44e5d5e4d2d3e7ea08db7e9e"
+    },
+    {
+      "path": "english.json",
+      "sha256": "1ada8f5bb21ce809162014c50a6172a2eb7172445dd7ad2296a3a36ee75c3c10"
+    },
+    {
+      "path": "exclude_ties.json",
+      "sha256": "f44ca7a3765ac9468e9a70e22a8416a2cfd6c85f9e38e26a4220750530ab3eff"
+    },
+    {
+      "path": "expert.json",
+      "sha256": "0310346119a8d206c601f62997ac5c0866b6e3d46ccf1500682704b9c8398d6a"
+    },
+    {
+      "path": "french.json",
+      "sha256": "5eb33f04e7ac86be80397af13253917b244c7c9dd922284447d285548d6d219f"
+    },
+    {
+      "path": "german.json",
+      "sha256": "510db3069018610b8556106d7e42224daac629a2b2ce548ed690b05aa3da02e6"
+    },
+    {
+      "path": "hard_prompts.json",
+      "sha256": "70adaf5889a30f36092ea6aa5df963157e290cf0afae59f6efeaa7567b15a125"
+    },
+    {
+      "path": "hard_prompts_english.json",
+      "sha256": "139c75cfc7006f1de8e5e85334e8b606da89a608a14038702f051120f1150920"
+    },
+    {
+      "path": "index.json",
+      "sha256": "330eb649243652f5dd65714643d4fc169837e779744e79cfe263e16ed62c1286"
+    },
+    {
+      "path": "industry_business_and_management_and_financial_operations.json",
+      "sha256": "e59c11df7d470c252e887574cbb3ea3574c82144ff5cc671162acd1f6c94d366"
+    },
+    {
+      "path": "industry_entertainment_and_sports_and_media.json",
+      "sha256": "f376d4fb08e819775b2b4776c8c919efd07f1a0effca3bfa0980387d594b50ae"
+    },
+    {
+      "path": "industry_legal_and_government.json",
+      "sha256": "3c89a46d5fc2758c8761b7c5faf82f0e2accc9194c16dfeaca01c838d63066b8"
+    },
+    {
+      "path": "industry_life_and_physical_and_social_science.json",
+      "sha256": "a177f63b4b1a345b0fef54aa9c4eb86749f4e0f40510731e8495c6405946ac84"
+    },
+    {
+      "path": "industry_mathematical.json",
+      "sha256": "6ff0e77235d57e4fb322e810262b3d2b5feb9dbe78a89b05756a2d5371d54e3c"
+    },
+    {
+      "path": "industry_medicine_and_healthcare.json",
+      "sha256": "9e55818415e0fea8a87853e214d00642c18fd4ef5f63382ca0fcd819e7950f2c"
+    },
+    {
+      "path": "industry_software_and_it_services.json",
+      "sha256": "a577dfdb1fe4c1bf983b9e7db74ee9d8bf84b5711db3b87ba471cbcbd2dadf31"
+    },
+    {
+      "path": "industry_writing_and_literature_and_language.json",
+      "sha256": "2ef42a3b0ebee1d3067662d0adf1ec317621109ffdcdaf65932e886417bcd559"
+    },
+    {
+      "path": "instruction_following.json",
+      "sha256": "1d909da60ea7dd4473dd59d20177795d17e66c98db6ab6ca3a9cb1ed325746d2"
+    },
+    {
+      "path": "japanese.json",
+      "sha256": "fbaabef001c649182fc2948a5c8e3af49f751cf0aa625f85815ef2159736f36e"
+    },
+    {
+      "path": "korean.json",
+      "sha256": "d67d71b597c3a47b5564c20259101e321d4878fe9773d1fd5a596f5f55ba2b9d"
+    },
+    {
+      "path": "longer_query.json",
+      "sha256": "41fed9d87c55e803cdeae38bcea86030d5a40ec9861c2417e3a278a6683b88b1"
+    },
+    {
+      "path": "math.json",
+      "sha256": "89e6a6f34dd0ae979b997f48968b1213a70a4a8307193567de29566616cac7d3"
+    },
+    {
+      "path": "multi_turn.json",
+      "sha256": "2542e47b61066e030cf4434cafdf7db2d1d686415f16abd3d5d47817f5e3a1fb"
+    },
+    {
+      "path": "non_english.json",
+      "sha256": "a2e788086a875d0579b094df218e1b307cd98d8e31a97f6b9a23b88d01b790f4"
+    },
+    {
+      "path": "overall.json",
+      "sha256": "080cc236a46fcc6e70c12b201afa708f38d085e538a39d52aa68816650e61397"
+    },
+    {
+      "path": "polish.json",
+      "sha256": "d40ff4fa5274bb43989285a578cbc55b379cf82407c760ec625e29793f647c42"
+    },
+    {
+      "path": "russian.json",
+      "sha256": "4c5a750bfad436efb85b5122a5145bafa2b207411b91cd72bce072cd67389e6a"
+    },
+    {
+      "path": "spanish.json",
+      "sha256": "7ed14bb187ad867c9016e1c4396053a53e06881192af875fa6f1afc580dbe072"
+    }
+  ]
+}

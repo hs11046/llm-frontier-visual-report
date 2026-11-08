@@ -1,0 +1,5767 @@
+{
+  "quarters": [
+    {
+      "quarter": "2024Q1",
+      "snapshot_date": "2024-03-27",
+      "n_models": 66,
+      "proprietary_share_pct": 50.28,
+      "fixed_set_share_pct": 50.74,
+      "created_models": 118252.0,
+      "created_datasets": 33955.0,
+      "date": "2024-03-27"
+    },
+    {
+      "quarter": "2024Q2",
+      "snapshot_date": "2024-06-29",
+      "n_models": 97,
+      "proprietary_share_pct": 48.51,
+      "fixed_set_share_pct": 61.17,
+      "created_models": 156127.0,
+      "created_datasets": 42021.0,
+      "date": "2024-06-29"
+    },
+    {
+      "quarter": "2024Q3",
+      "snapshot_date": "2024-09-27",
+      "n_models": 121,
+      "proprietary_share_pct": 48.89,
+      "fixed_set_share_pct": 63.22,
+      "created_models": 260486.0,
+      "created_datasets": 46652.0,
+      "date": "2024-09-27"
+    },
+    {
+      "quarter": "2024Q4",
+      "snapshot_date": "2024-12-30",
+      "n_models": 152,
+      "proprietary_share_pct": 51.0,
+      "fixed_set_share_pct": 64.35,
+      "created_models": 216837.0,
+      "created_datasets": 53443.0,
+      "date": "2024-12-30"
+    },
+    {
+      "quarter": "2025Q1",
+      "snapshot_date": "2025-03-30",
+      "n_models": 181,
+      "proprietary_share_pct": 52.1,
+      "fixed_set_share_pct": 64.41,
+      "created_models": 296945.0,
+      "created_datasets": 72643.0,
+      "date": "2025-03-30"
+    },
+    {
+      "quarter": "2025Q2",
+      "snapshot_date": "2025-06-24",
+      "n_models": 206,
+      "proprietary_share_pct": 53.44,
+      "fixed_set_share_pct": 64.41,
+      "created_models": 295261.0,
+      "created_datasets": 89013.0,
+      "date": "2025-06-24"
+    },
+    {
+      "quarter": "2025Q3",
+      "snapshot_date": "2025-09-30",
+      "n_models": 248,
+      "proprietary_share_pct": 54.03,
+      "fixed_set_share_pct": 64.23,
+      "created_models": 256560.0,
+      "created_datasets": 81816.0,
+      "date": "2025-09-30"
+    },
+    {
+      "quarter": "2025Q4",
+      "snapshot_date": "2025-12-30",
+      "n_models": 291,
+      "proprietary_share_pct": 56.17,
+      "fixed_set_share_pct": 64.23,
+      "created_models": 332098.0,
+      "created_datasets": 152907.0,
+      "date": "2025-12-30"
+    },
+    {
+      "quarter": "2026Q1",
+      "snapshot_date": "2026-03-31",
+      "n_models": 336,
+      "proprietary_share_pct": 57.56,
+      "fixed_set_share_pct": null,
+      "created_models": null,
+      "created_datasets": null,
+      "date": "2026-03-31"
+    },
+    {
+      "quarter": "2026Q2",
+      "snapshot_date": "2026-06-25",
+      "n_models": 368,
+      "proprietary_share_pct": 59.49,
+      "fixed_set_share_pct": null,
+      "created_models": null,
+      "created_datasets": null,
+      "date": "2026-06-25"
+    },
+    {
+      "quarter": "2026Q3",
+      "snapshot_date": "2026-09-11",
+      "n_models": 401,
+      "proprietary_share_pct": 60.37,
+      "fixed_set_share_pct": null,
+      "created_models": null,
+      "created_datasets": null,
+      "date": "2026-09-11"
+    }
+  ],
+  "talent": [
+    {
+      "date": "2024-01-01",
+      "country": "Australia",
+      "country_code": "AU",
+      "netflow": 2.33333
+    },
+    {
+      "date": "2024-02-01",
+      "country": "Australia",
+      "country_code": "AU",
+      "netflow": -0.25
+    },
+    {
+      "date": "2024-03-01",
+      "country": "Australia",
+      "country_code": "AU",
+      "netflow": 1.0
+    },
+    {
+      "date": "2024-04-01",
+      "country": "Australia",
+      "country_code": "AU",
+      "netflow": 1.5
+    },
+    {
+      "date": "2024-05-01",
+      "country": "Australia",
+      "country_code": "AU",
+      "netflow": 0.75
+    },
+    {
+      "date": "2024-06-01",
+      "country": "Australia",
+      "country_code": "AU",
+      "netflow": 0.33333
+    },
+    {
+      "date": "2024-07-01",
+      "country": "Australia",
+      "country_code": "AU",
+      "netflow": 1.66667
+    },
+    {
+      "date": "2024-08-01",
+      "country": "Australia",
+      "country_code": "AU",
+      "netflow": 1.5
+    },
+    {
+      "date": "2024-09-01",
+      "country": "Australia",
+      "country_code": "AU",
+      "netflow": 1.33333
+    },
+    {
+      "date": "2024-10-01",
+      "country": "Australia",
+      "country_code": "AU",
+      "netflow": 0.41666
+    },
+    {
+      "date": "2024-11-01",
+      "country": "Australia",
+      "country_code": "AU",
+      "netflow": 0.58333
+    },
+    {
+      "date": "2024-12-01",
+      "country": "Australia",
+      "country_code": "AU",
+      "netflow": 0.75
+    },
+    {
+      "date": "2025-01-01",
+      "country": "Australia",
+      "country_code": "AU",
+      "netflow": 0.75
+    },
+    {
+      "date": "2025-02-01",
+      "country": "Australia",
+      "country_code": "AU",
+      "netflow": 0.25
+    },
+    {
+      "date": "2025-03-01",
+      "country": "Australia",
+      "country_code": "AU",
+      "netflow": -1.25
+    },
+    {
+      "date": "2025-04-01",
+      "country": "Australia",
+      "country_code": "AU",
+      "netflow": -2.25
+    },
+    {
+      "date": "2025-05-01",
+      "country": "Australia",
+      "country_code": "AU",
+      "netflow": -2.5
+    },
+    {
+      "date": "2025-06-01",
+      "country": "Australia",
+      "country_code": "AU",
+      "netflow": -1.91667
+    },
+    {
+      "date": "2025-07-01",
+      "country": "Australia",
+      "country_code": "AU",
+      "netflow": -1.75
+    },
+    {
+      "date": "2023-12-01",
+      "country": "Australia",
+      "country_code": "AU",
+      "netflow": 2.25
+    },
+    {
+      "date": "2023-11-01",
+      "country": "Australia",
+      "country_code": "AU",
+      "netflow": 1.75
+    },
+    {
+      "date": "2023-10-01",
+      "country": "Australia",
+      "country_code": "AU",
+      "netflow": 1.41666
+    },
+    {
+      "date": "2023-09-01",
+      "country": "Australia",
+      "country_code": "AU",
+      "netflow": 0.0
+    },
+    {
+      "date": "2023-01-01",
+      "country": "Australia",
+      "country_code": "AU",
+      "netflow": 2.25
+    },
+    {
+      "date": "2023-02-01",
+      "country": "Australia",
+      "country_code": "AU",
+      "netflow": 4.16667
+    },
+    {
+      "date": "2023-03-01",
+      "country": "Australia",
+      "country_code": "AU",
+      "netflow": 3.16667
+    },
+    {
+      "date": "2023-04-01",
+      "country": "Australia",
+      "country_code": "AU",
+      "netflow": 3.83333
+    },
+    {
+      "date": "2023-05-01",
+      "country": "Australia",
+      "country_code": "AU",
+      "netflow": 4.33333
+    },
+    {
+      "date": "2023-06-01",
+      "country": "Australia",
+      "country_code": "AU",
+      "netflow": 3.25
+    },
+    {
+      "date": "2023-07-01",
+      "country": "Australia",
+      "country_code": "AU",
+      "netflow": 0.33334
+    },
+    {
+      "date": "2023-08-01",
+      "country": "Australia",
+      "country_code": "AU",
+      "netflow": -0.25
+    },
+    {
+      "date": "2023-09-01",
+      "country": "Brazil",
+      "country_code": "BR",
+      "netflow": -20.41667
+    },
+    {
+      "date": "2024-02-01",
+      "country": "Brazil",
+      "country_code": "BR",
+      "netflow": -15.5
+    },
+    {
+      "date": "2024-03-01",
+      "country": "Brazil",
+      "country_code": "BR",
+      "netflow": -14.41667
+    },
+    {
+      "date": "2024-04-01",
+      "country": "Brazil",
+      "country_code": "BR",
+      "netflow": -13.91666
+    },
+    {
+      "date": "2024-05-01",
+      "country": "Brazil",
+      "country_code": "BR",
+      "netflow": -12.5
+    },
+    {
+      "date": "2024-06-01",
+      "country": "Brazil",
+      "country_code": "BR",
+      "netflow": -11.08333
+    },
+    {
+      "date": "2024-07-01",
+      "country": "Brazil",
+      "country_code": "BR",
+      "netflow": -9.16666
+    },
+    {
+      "date": "2024-08-01",
+      "country": "Brazil",
+      "country_code": "BR",
+      "netflow": -7.75
+    },
+    {
+      "date": "2024-09-01",
+      "country": "Brazil",
+      "country_code": "BR",
+      "netflow": -7.75
+    },
+    {
+      "date": "2024-10-01",
+      "country": "Brazil",
+      "country_code": "BR",
+      "netflow": -7.33333
+    },
+    {
+      "date": "2024-11-01",
+      "country": "Brazil",
+      "country_code": "BR",
+      "netflow": -7.0
+    },
+    {
+      "date": "2024-12-01",
+      "country": "Brazil",
+      "country_code": "BR",
+      "netflow": -6.25
+    },
+    {
+      "date": "2025-01-01",
+      "country": "Brazil",
+      "country_code": "BR",
+      "netflow": -5.75
+    },
+    {
+      "date": "2025-02-01",
+      "country": "Brazil",
+      "country_code": "BR",
+      "netflow": -6.33333
+    },
+    {
+      "date": "2025-03-01",
+      "country": "Brazil",
+      "country_code": "BR",
+      "netflow": -5.83333
+    },
+    {
+      "date": "2025-04-01",
+      "country": "Brazil",
+      "country_code": "BR",
+      "netflow": -5.41667
+    },
+    {
+      "date": "2025-05-01",
+      "country": "Brazil",
+      "country_code": "BR",
+      "netflow": -4.91667
+    },
+    {
+      "date": "2025-06-01",
+      "country": "Brazil",
+      "country_code": "BR",
+      "netflow": -4.41667
+    },
+    {
+      "date": "2025-07-01",
+      "country": "Brazil",
+      "country_code": "BR",
+      "netflow": -4.5
+    },
+    {
+      "date": "2025-08-01",
+      "country": "Brazil",
+      "country_code": "BR",
+      "netflow": -3.58333
+    },
+    {
+      "date": "2024-01-01",
+      "country": "Brazil",
+      "country_code": "BR",
+      "netflow": -17.41667
+    },
+    {
+      "date": "2023-12-01",
+      "country": "Brazil",
+      "country_code": "BR",
+      "netflow": -19.16667
+    },
+    {
+      "date": "2023-11-01",
+      "country": "Brazil",
+      "country_code": "BR",
+      "netflow": -19.91667
+    },
+    {
+      "date": "2023-10-01",
+      "country": "Brazil",
+      "country_code": "BR",
+      "netflow": -19.5
+    },
+    {
+      "date": "2023-01-01",
+      "country": "Brazil",
+      "country_code": "BR",
+      "netflow": -29.58334
+    },
+    {
+      "date": "2023-02-01",
+      "country": "Brazil",
+      "country_code": "BR",
+      "netflow": -27.5
+    },
+    {
+      "date": "2023-03-01",
+      "country": "Brazil",
+      "country_code": "BR",
+      "netflow": -25.58334
+    },
+    {
+      "date": "2023-04-01",
+      "country": "Brazil",
+      "country_code": "BR",
+      "netflow": -23.58333
+    },
+    {
+      "date": "2023-05-01",
+      "country": "Brazil",
+      "country_code": "BR",
+      "netflow": -23.83333
+    },
+    {
+      "date": "2023-06-01",
+      "country": "Brazil",
+      "country_code": "BR",
+      "netflow": -23.41666
+    },
+    {
+      "date": "2023-07-01",
+      "country": "Brazil",
+      "country_code": "BR",
+      "netflow": -22.75
+    },
+    {
+      "date": "2023-08-01",
+      "country": "Brazil",
+      "country_code": "BR",
+      "netflow": -21.91667
+    },
+    {
+      "date": "2025-09-01",
+      "country": "Canada",
+      "country_code": "CA",
+      "netflow": -7.08333
+    },
+    {
+      "date": "2024-02-01",
+      "country": "Canada",
+      "country_code": "CA",
+      "netflow": 11.33333
+    },
+    {
+      "date": "2024-03-01",
+      "country": "Canada",
+      "country_code": "CA",
+      "netflow": 8.91667
+    },
+    {
+      "date": "2024-04-01",
+      "country": "Canada",
+      "country_code": "CA",
+      "netflow": 6.33333
+    },
+    {
+      "date": "2024-05-01",
+      "country": "Canada",
+      "country_code": "CA",
+      "netflow": 2.41667
+    },
+    {
+      "date": "2024-06-01",
+      "country": "Canada",
+      "country_code": "CA",
+      "netflow": -1.58334
+    },
+    {
+      "date": "2024-07-01",
+      "country": "Canada",
+      "country_code": "CA",
+      "netflow": -2.66667
+    },
+    {
+      "date": "2024-08-01",
+      "country": "Canada",
+      "country_code": "CA",
+      "netflow": -3.91666
+    },
+    {
+      "date": "2024-09-01",
+      "country": "Canada",
+      "country_code": "CA",
+      "netflow": -8.08334
+    },
+    {
+      "date": "2024-10-01",
+      "country": "Canada",
+      "country_code": "CA",
+      "netflow": -7.16666
+    },
+    {
+      "date": "2024-01-01",
+      "country": "Canada",
+      "country_code": "CA",
+      "netflow": 13.0
+    },
+    {
+      "date": "2024-11-01",
+      "country": "Canada",
+      "country_code": "CA",
+      "netflow": -7.41667
+    },
+    {
+      "date": "2025-01-01",
+      "country": "Canada",
+      "country_code": "CA",
+      "netflow": -11.25
+    },
+    {
+      "date": "2025-02-01",
+      "country": "Canada",
+      "country_code": "CA",
+      "netflow": -10.5
+    },
+    {
+      "date": "2025-03-01",
+      "country": "Canada",
+      "country_code": "CA",
+      "netflow": -9.58333
+    },
+    {
+      "date": "2025-04-01",
+      "country": "Canada",
+      "country_code": "CA",
+      "netflow": -9.41667
+    },
+    {
+      "date": "2025-05-01",
+      "country": "Canada",
+      "country_code": "CA",
+      "netflow": -10.5
+    },
+    {
+      "date": "2025-06-01",
+      "country": "Canada",
+      "country_code": "CA",
+      "netflow": -9.25
+    },
+    {
+      "date": "2025-07-01",
+      "country": "Canada",
+      "country_code": "CA",
+      "netflow": -8.25
+    },
+    {
+      "date": "2025-08-01",
+      "country": "Canada",
+      "country_code": "CA",
+      "netflow": -6.66666
+    },
+    {
+      "date": "2024-12-01",
+      "country": "Canada",
+      "country_code": "CA",
+      "netflow": -8.41667
+    },
+    {
+      "date": "2023-12-01",
+      "country": "Canada",
+      "country_code": "CA",
+      "netflow": 13.91667
+    },
+    {
+      "date": "2023-10-01",
+      "country": "Canada",
+      "country_code": "CA",
+      "netflow": 14.33333
+    },
+    {
+      "date": "2023-11-01",
+      "country": "Canada",
+      "country_code": "CA",
+      "netflow": 14.5
+    },
+    {
+      "date": "2023-01-01",
+      "country": "Canada",
+      "country_code": "CA",
+      "netflow": 17.5
+    },
+    {
+      "date": "2023-02-01",
+      "country": "Canada",
+      "country_code": "CA",
+      "netflow": 18.83333
+    },
+    {
+      "date": "2023-03-01",
+      "country": "Canada",
+      "country_code": "CA",
+      "netflow": 19.41667
+    },
+    {
+      "date": "2023-04-01",
+      "country": "Canada",
+      "country_code": "CA",
+      "netflow": 19.08333
+    },
+    {
+      "date": "2023-05-01",
+      "country": "Canada",
+      "country_code": "CA",
+      "netflow": 19.66667
+    },
+    {
+      "date": "2023-06-01",
+      "country": "Canada",
+      "country_code": "CA",
+      "netflow": 22.5
+    },
+    {
+      "date": "2023-07-01",
+      "country": "Canada",
+      "country_code": "CA",
+      "netflow": 20.75
+    },
+    {
+      "date": "2023-08-01",
+      "country": "Canada",
+      "country_code": "CA",
+      "netflow": 19.75
+    },
+    {
+      "date": "2023-09-01",
+      "country": "Canada",
+      "country_code": "CA",
+      "netflow": 19.16667
+    },
+    {
+      "date": "2023-09-01",
+      "country": "Denmark",
+      "country_code": "DK",
+      "netflow": 2.66667
+    },
+    {
+      "date": "2024-02-01",
+      "country": "Denmark",
+      "country_code": "DK",
+      "netflow": 0.75
+    },
+    {
+      "date": "2024-03-01",
+      "country": "Denmark",
+      "country_code": "DK",
+      "netflow": 0.91667
+    },
+    {
+      "date": "2024-04-01",
+      "country": "Denmark",
+      "country_code": "DK",
+      "netflow": 0.83333
+    },
+    {
+      "date": "2024-05-01",
+      "country": "Denmark",
+      "country_code": "DK",
+      "netflow": 1.41667
+    },
+    {
+      "date": "2024-06-01",
+      "country": "Denmark",
+      "country_code": "DK",
+      "netflow": 1.16667
+    },
+    {
+      "date": "2024-07-01",
+      "country": "Denmark",
+      "country_code": "DK",
+      "netflow": 1.08334
+    },
+    {
+      "date": "2024-08-01",
+      "country": "Denmark",
+      "country_code": "DK",
+      "netflow": 0.83334
+    },
+    {
+      "date": "2024-09-01",
+      "country": "Denmark",
+      "country_code": "DK",
+      "netflow": 1.58333
+    },
+    {
+      "date": "2024-10-01",
+      "country": "Denmark",
+      "country_code": "DK",
+      "netflow": 2.5
+    },
+    {
+      "date": "2024-11-01",
+      "country": "Denmark",
+      "country_code": "DK",
+      "netflow": 3.16667
+    },
+    {
+      "date": "2024-12-01",
+      "country": "Denmark",
+      "country_code": "DK",
+      "netflow": 3.41667
+    },
+    {
+      "date": "2025-01-01",
+      "country": "Denmark",
+      "country_code": "DK",
+      "netflow": 3.16667
+    },
+    {
+      "date": "2025-02-01",
+      "country": "Denmark",
+      "country_code": "DK",
+      "netflow": 2.91667
+    },
+    {
+      "date": "2025-03-01",
+      "country": "Denmark",
+      "country_code": "DK",
+      "netflow": 2.33333
+    },
+    {
+      "date": "2025-04-01",
+      "country": "Denmark",
+      "country_code": "DK",
+      "netflow": 2.83333
+    },
+    {
+      "date": "2025-05-01",
+      "country": "Denmark",
+      "country_code": "DK",
+      "netflow": 2.25
+    },
+    {
+      "date": "2025-08-01",
+      "country": "Denmark",
+      "country_code": "DK",
+      "netflow": 2.0
+    },
+    {
+      "date": "2025-09-01",
+      "country": "Denmark",
+      "country_code": "DK",
+      "netflow": 2.08333
+    },
+    {
+      "date": "2024-01-01",
+      "country": "Denmark",
+      "country_code": "DK",
+      "netflow": 0.58333
+    },
+    {
+      "date": "2023-12-01",
+      "country": "Denmark",
+      "country_code": "DK",
+      "netflow": 0.33333
+    },
+    {
+      "date": "2023-11-01",
+      "country": "Denmark",
+      "country_code": "DK",
+      "netflow": 0.41667
+    },
+    {
+      "date": "2023-10-01",
+      "country": "Denmark",
+      "country_code": "DK",
+      "netflow": 1.33333
+    },
+    {
+      "date": "2023-01-01",
+      "country": "Denmark",
+      "country_code": "DK",
+      "netflow": 1.58333
+    },
+    {
+      "date": "2023-02-01",
+      "country": "Denmark",
+      "country_code": "DK",
+      "netflow": 2.16667
+    },
+    {
+      "date": "2023-03-01",
+      "country": "Denmark",
+      "country_code": "DK",
+      "netflow": 2.5
+    },
+    {
+      "date": "2023-04-01",
+      "country": "Denmark",
+      "country_code": "DK",
+      "netflow": 2.08333
+    },
+    {
+      "date": "2023-05-01",
+      "country": "Denmark",
+      "country_code": "DK",
+      "netflow": 2.0
+    },
+    {
+      "date": "2023-06-01",
+      "country": "Denmark",
+      "country_code": "DK",
+      "netflow": 2.83333
+    },
+    {
+      "date": "2023-07-01",
+      "country": "Denmark",
+      "country_code": "DK",
+      "netflow": 3.33334
+    },
+    {
+      "date": "2023-08-01",
+      "country": "Denmark",
+      "country_code": "DK",
+      "netflow": 2.58333
+    },
+    {
+      "date": "2025-07-01",
+      "country": "Denmark",
+      "country_code": "DK",
+      "netflow": 2.16667
+    },
+    {
+      "date": "2024-01-01",
+      "country": "Finland",
+      "country_code": "FI",
+      "netflow": 0.75
+    },
+    {
+      "date": "2024-02-01",
+      "country": "Finland",
+      "country_code": "FI",
+      "netflow": 1.16667
+    },
+    {
+      "date": "2024-03-01",
+      "country": "Finland",
+      "country_code": "FI",
+      "netflow": 2.16667
+    },
+    {
+      "date": "2024-04-01",
+      "country": "Finland",
+      "country_code": "FI",
+      "netflow": 1.75
+    },
+    {
+      "date": "2024-05-01",
+      "country": "Finland",
+      "country_code": "FI",
+      "netflow": 1.83333
+    },
+    {
+      "date": "2024-06-01",
+      "country": "Finland",
+      "country_code": "FI",
+      "netflow": 1.75
+    },
+    {
+      "date": "2024-07-01",
+      "country": "Finland",
+      "country_code": "FI",
+      "netflow": 2.0
+    },
+    {
+      "date": "2024-08-01",
+      "country": "Finland",
+      "country_code": "FI",
+      "netflow": 2.33333
+    },
+    {
+      "date": "2024-09-01",
+      "country": "Finland",
+      "country_code": "FI",
+      "netflow": 2.83333
+    },
+    {
+      "date": "2024-10-01",
+      "country": "Finland",
+      "country_code": "FI",
+      "netflow": 1.75
+    },
+    {
+      "date": "2024-11-01",
+      "country": "Finland",
+      "country_code": "FI",
+      "netflow": 1.08333
+    },
+    {
+      "date": "2024-12-01",
+      "country": "Finland",
+      "country_code": "FI",
+      "netflow": 0.91667
+    },
+    {
+      "date": "2025-01-01",
+      "country": "Finland",
+      "country_code": "FI",
+      "netflow": -0.16667
+    },
+    {
+      "date": "2025-02-01",
+      "country": "Finland",
+      "country_code": "FI",
+      "netflow": -0.25
+    },
+    {
+      "date": "2025-03-01",
+      "country": "Finland",
+      "country_code": "FI",
+      "netflow": -0.5
+    },
+    {
+      "date": "2025-05-01",
+      "country": "Finland",
+      "country_code": "FI",
+      "netflow": -0.41666
+    },
+    {
+      "date": "2025-06-01",
+      "country": "Finland",
+      "country_code": "FI",
+      "netflow": -0.83334
+    },
+    {
+      "date": "2025-08-01",
+      "country": "Finland",
+      "country_code": "FI",
+      "netflow": -1.08333
+    },
+    {
+      "date": "2023-12-01",
+      "country": "Finland",
+      "country_code": "FI",
+      "netflow": -0.08333
+    },
+    {
+      "date": "2023-11-01",
+      "country": "Finland",
+      "country_code": "FI",
+      "netflow": 0.08334
+    },
+    {
+      "date": "2023-09-01",
+      "country": "Finland",
+      "country_code": "FI",
+      "netflow": -2.41666
+    },
+    {
+      "date": "2023-01-01",
+      "country": "Finland",
+      "country_code": "FI",
+      "netflow": -3.66666
+    },
+    {
+      "date": "2023-02-01",
+      "country": "Finland",
+      "country_code": "FI",
+      "netflow": -3.16666
+    },
+    {
+      "date": "2023-03-01",
+      "country": "Finland",
+      "country_code": "FI",
+      "netflow": -4.33333
+    },
+    {
+      "date": "2023-04-01",
+      "country": "Finland",
+      "country_code": "FI",
+      "netflow": -3.75
+    },
+    {
+      "date": "2023-05-01",
+      "country": "Finland",
+      "country_code": "FI",
+      "netflow": -3.41667
+    },
+    {
+      "date": "2023-06-01",
+      "country": "Finland",
+      "country_code": "FI",
+      "netflow": -2.41667
+    },
+    {
+      "date": "2023-07-01",
+      "country": "Finland",
+      "country_code": "FI",
+      "netflow": -1.91667
+    },
+    {
+      "date": "2023-10-01",
+      "country": "Finland",
+      "country_code": "FI",
+      "netflow": -0.58333
+    },
+    {
+      "date": "2023-08-01",
+      "country": "Finland",
+      "country_code": "FI",
+      "netflow": -1.91667
+    },
+    {
+      "date": "2025-08-01",
+      "country": "France",
+      "country_code": "FR",
+      "netflow": -0.16667
+    },
+    {
+      "date": "2024-02-01",
+      "country": "France",
+      "country_code": "FR",
+      "netflow": 0.41666
+    },
+    {
+      "date": "2024-03-01",
+      "country": "France",
+      "country_code": "FR",
+      "netflow": -0.5
+    },
+    {
+      "date": "2024-04-01",
+      "country": "France",
+      "country_code": "FR",
+      "netflow": -1.5
+    },
+    {
+      "date": "2024-05-01",
+      "country": "France",
+      "country_code": "FR",
+      "netflow": -0.5
+    },
+    {
+      "date": "2024-06-01",
+      "country": "France",
+      "country_code": "FR",
+      "netflow": 0.58334
+    },
+    {
+      "date": "2024-07-01",
+      "country": "France",
+      "country_code": "FR",
+      "netflow": -0.25
+    },
+    {
+      "date": "2024-08-01",
+      "country": "France",
+      "country_code": "FR",
+      "netflow": 1.16667
+    },
+    {
+      "date": "2024-09-01",
+      "country": "France",
+      "country_code": "FR",
+      "netflow": -1.16667
+    },
+    {
+      "date": "2024-10-01",
+      "country": "France",
+      "country_code": "FR",
+      "netflow": -1.41667
+    },
+    {
+      "date": "2024-01-01",
+      "country": "France",
+      "country_code": "FR",
+      "netflow": -0.58334
+    },
+    {
+      "date": "2024-11-01",
+      "country": "France",
+      "country_code": "FR",
+      "netflow": -2.33333
+    },
+    {
+      "date": "2025-01-01",
+      "country": "France",
+      "country_code": "FR",
+      "netflow": -2.16667
+    },
+    {
+      "date": "2025-02-01",
+      "country": "France",
+      "country_code": "FR",
+      "netflow": -2.0
+    },
+    {
+      "date": "2025-03-01",
+      "country": "France",
+      "country_code": "FR",
+      "netflow": -1.33334
+    },
+    {
+      "date": "2025-04-01",
+      "country": "France",
+      "country_code": "FR",
+      "netflow": -1.08333
+    },
+    {
+      "date": "2025-05-01",
+      "country": "France",
+      "country_code": "FR",
+      "netflow": -1.41666
+    },
+    {
+      "date": "2025-06-01",
+      "country": "France",
+      "country_code": "FR",
+      "netflow": -1.16667
+    },
+    {
+      "date": "2025-07-01",
+      "country": "France",
+      "country_code": "FR",
+      "netflow": -0.41667
+    },
+    {
+      "date": "2025-09-01",
+      "country": "France",
+      "country_code": "FR",
+      "netflow": 0.08333
+    },
+    {
+      "date": "2024-12-01",
+      "country": "France",
+      "country_code": "FR",
+      "netflow": -2.08334
+    },
+    {
+      "date": "2023-12-01",
+      "country": "France",
+      "country_code": "FR",
+      "netflow": -2.83333
+    },
+    {
+      "date": "2023-10-01",
+      "country": "France",
+      "country_code": "FR",
+      "netflow": -5.25
+    },
+    {
+      "date": "2023-11-01",
+      "country": "France",
+      "country_code": "FR",
+      "netflow": -3.25
+    },
+    {
+      "date": "2023-01-01",
+      "country": "France",
+      "country_code": "FR",
+      "netflow": -14.08333
+    },
+    {
+      "date": "2023-02-01",
+      "country": "France",
+      "country_code": "FR",
+      "netflow": -14.16667
+    },
+    {
+      "date": "2023-03-01",
+      "country": "France",
+      "country_code": "FR",
+      "netflow": -12.5
+    },
+    {
+      "date": "2023-04-01",
+      "country": "France",
+      "country_code": "FR",
+      "netflow": -11.41666
+    },
+    {
+      "date": "2023-05-01",
+      "country": "France",
+      "country_code": "FR",
+      "netflow": -10.5
+    },
+    {
+      "date": "2023-06-01",
+      "country": "France",
+      "country_code": "FR",
+      "netflow": -9.5
+    },
+    {
+      "date": "2023-07-01",
+      "country": "France",
+      "country_code": "FR",
+      "netflow": -7.75
+    },
+    {
+      "date": "2023-08-01",
+      "country": "France",
+      "country_code": "FR",
+      "netflow": -8.58334
+    },
+    {
+      "date": "2023-09-01",
+      "country": "France",
+      "country_code": "FR",
+      "netflow": -5.33333
+    },
+    {
+      "date": "2025-09-01",
+      "country": "Germany",
+      "country_code": "DE",
+      "netflow": -2.41666
+    },
+    {
+      "date": "2024-02-01",
+      "country": "Germany",
+      "country_code": "DE",
+      "netflow": 4.25
+    },
+    {
+      "date": "2024-03-01",
+      "country": "Germany",
+      "country_code": "DE",
+      "netflow": 5.33334
+    },
+    {
+      "date": "2024-04-01",
+      "country": "Germany",
+      "country_code": "DE",
+      "netflow": 5.83334
+    },
+    {
+      "date": "2024-05-01",
+      "country": "Germany",
+      "country_code": "DE",
+      "netflow": 3.58334
+    },
+    {
+      "date": "2024-06-01",
+      "country": "Germany",
+      "country_code": "DE",
+      "netflow": 3.91667
+    },
+    {
+      "date": "2024-07-01",
+      "country": "Germany",
+      "country_code": "DE",
+      "netflow": 5.08333
+    },
+    {
+      "date": "2024-08-01",
+      "country": "Germany",
+      "country_code": "DE",
+      "netflow": 6.5
+    },
+    {
+      "date": "2024-09-01",
+      "country": "Germany",
+      "country_code": "DE",
+      "netflow": 5.25
+    },
+    {
+      "date": "2024-10-01",
+      "country": "Germany",
+      "country_code": "DE",
+      "netflow": 4.5
+    },
+    {
+      "date": "2024-01-01",
+      "country": "Germany",
+      "country_code": "DE",
+      "netflow": 2.58334
+    },
+    {
+      "date": "2024-11-01",
+      "country": "Germany",
+      "country_code": "DE",
+      "netflow": 2.58334
+    },
+    {
+      "date": "2025-01-01",
+      "country": "Germany",
+      "country_code": "DE",
+      "netflow": 1.58333
+    },
+    {
+      "date": "2025-02-01",
+      "country": "Germany",
+      "country_code": "DE",
+      "netflow": -0.16667
+    },
+    {
+      "date": "2025-03-01",
+      "country": "Germany",
+      "country_code": "DE",
+      "netflow": -1.33333
+    },
+    {
+      "date": "2025-04-01",
+      "country": "Germany",
+      "country_code": "DE",
+      "netflow": -2.75
+    },
+    {
+      "date": "2025-05-01",
+      "country": "Germany",
+      "country_code": "DE",
+      "netflow": -2.41667
+    },
+    {
+      "date": "2025-06-01",
+      "country": "Germany",
+      "country_code": "DE",
+      "netflow": -3.58334
+    },
+    {
+      "date": "2025-07-01",
+      "country": "Germany",
+      "country_code": "DE",
+      "netflow": -3.16667
+    },
+    {
+      "date": "2025-08-01",
+      "country": "Germany",
+      "country_code": "DE",
+      "netflow": -3.25
+    },
+    {
+      "date": "2024-12-01",
+      "country": "Germany",
+      "country_code": "DE",
+      "netflow": 2.08333
+    },
+    {
+      "date": "2023-12-01",
+      "country": "Germany",
+      "country_code": "DE",
+      "netflow": 0.5
+    },
+    {
+      "date": "2023-10-01",
+      "country": "Germany",
+      "country_code": "DE",
+      "netflow": -0.83333
+    },
+    {
+      "date": "2023-11-01",
+      "country": "Germany",
+      "country_code": "DE",
+      "netflow": -0.16667
+    },
+    {
+      "date": "2023-01-01",
+      "country": "Germany",
+      "country_code": "DE",
+      "netflow": 1.16667
+    },
+    {
+      "date": "2023-02-01",
+      "country": "Germany",
+      "country_code": "DE",
+      "netflow": -1.16667
+    },
+    {
+      "date": "2023-03-01",
+      "country": "Germany",
+      "country_code": "DE",
+      "netflow": -3.41667
+    },
+    {
+      "date": "2023-04-01",
+      "country": "Germany",
+      "country_code": "DE",
+      "netflow": -5.08334
+    },
+    {
+      "date": "2023-05-01",
+      "country": "Germany",
+      "country_code": "DE",
+      "netflow": -4.58334
+    },
+    {
+      "date": "2023-06-01",
+      "country": "Germany",
+      "country_code": "DE",
+      "netflow": -5.08333
+    },
+    {
+      "date": "2023-07-01",
+      "country": "Germany",
+      "country_code": "DE",
+      "netflow": -6.0
+    },
+    {
+      "date": "2023-08-01",
+      "country": "Germany",
+      "country_code": "DE",
+      "netflow": -5.91667
+    },
+    {
+      "date": "2023-09-01",
+      "country": "Germany",
+      "country_code": "DE",
+      "netflow": -2.33334
+    },
+    {
+      "date": "2023-09-01",
+      "country": "India",
+      "country_code": "IN",
+      "netflow": -257.75
+    },
+    {
+      "date": "2024-02-01",
+      "country": "India",
+      "country_code": "IN",
+      "netflow": -217.33333
+    },
+    {
+      "date": "2024-03-01",
+      "country": "India",
+      "country_code": "IN",
+      "netflow": -210.25
+    },
+    {
+      "date": "2024-04-01",
+      "country": "India",
+      "country_code": "IN",
+      "netflow": -204.91667
+    },
+    {
+      "date": "2024-05-01",
+      "country": "India",
+      "country_code": "IN",
+      "netflow": -181.58333
+    },
+    {
+      "date": "2024-06-01",
+      "country": "India",
+      "country_code": "IN",
+      "netflow": -173.0
+    },
+    {
+      "date": "2024-07-01",
+      "country": "India",
+      "country_code": "IN",
+      "netflow": -169.66666
+    },
+    {
+      "date": "2024-08-01",
+      "country": "India",
+      "country_code": "IN",
+      "netflow": -152.41667
+    },
+    {
+      "date": "2024-09-01",
+      "country": "India",
+      "country_code": "IN",
+      "netflow": -132.66667
+    },
+    {
+      "date": "2024-10-01",
+      "country": "India",
+      "country_code": "IN",
+      "netflow": -123.16667
+    },
+    {
+      "date": "2024-01-01",
+      "country": "India",
+      "country_code": "IN",
+      "netflow": -224.33333
+    },
+    {
+      "date": "2024-11-01",
+      "country": "India",
+      "country_code": "IN",
+      "netflow": -118.5
+    },
+    {
+      "date": "2025-01-01",
+      "country": "India",
+      "country_code": "IN",
+      "netflow": -92.5
+    },
+    {
+      "date": "2025-02-01",
+      "country": "India",
+      "country_code": "IN",
+      "netflow": -84.08333
+    },
+    {
+      "date": "2025-03-01",
+      "country": "India",
+      "country_code": "IN",
+      "netflow": -79.08333
+    },
+    {
+      "date": "2025-04-01",
+      "country": "India",
+      "country_code": "IN",
+      "netflow": -73.08334
+    },
+    {
+      "date": "2025-09-01",
+      "country": "India",
+      "country_code": "IN",
+      "netflow": -16.91667
+    },
+    {
+      "date": "2025-06-01",
+      "country": "India",
+      "country_code": "IN",
+      "netflow": -42.66667
+    },
+    {
+      "date": "2025-07-01",
+      "country": "India",
+      "country_code": "IN",
+      "netflow": -39.08334
+    },
+    {
+      "date": "2025-08-01",
+      "country": "India",
+      "country_code": "IN",
+      "netflow": -26.0
+    },
+    {
+      "date": "2024-12-01",
+      "country": "India",
+      "country_code": "IN",
+      "netflow": -114.25
+    },
+    {
+      "date": "2023-12-01",
+      "country": "India",
+      "country_code": "IN",
+      "netflow": -239.0
+    },
+    {
+      "date": "2023-10-01",
+      "country": "India",
+      "country_code": "IN",
+      "netflow": -248.91666
+    },
+    {
+      "date": "2023-11-01",
+      "country": "India",
+      "country_code": "IN",
+      "netflow": -242.33333
+    },
+    {
+      "date": "2023-01-01",
+      "country": "India",
+      "country_code": "IN",
+      "netflow": -322.66667
+    },
+    {
+      "date": "2023-02-01",
+      "country": "India",
+      "country_code": "IN",
+      "netflow": -323.0
+    },
+    {
+      "date": "2023-03-01",
+      "country": "India",
+      "country_code": "IN",
+      "netflow": -320.41667
+    },
+    {
+      "date": "2023-04-01",
+      "country": "India",
+      "country_code": "IN",
+      "netflow": -317.75
+    },
+    {
+      "date": "2023-05-01",
+      "country": "India",
+      "country_code": "IN",
+      "netflow": -297.75
+    },
+    {
+      "date": "2023-06-01",
+      "country": "India",
+      "country_code": "IN",
+      "netflow": -288.0
+    },
+    {
+      "date": "2023-07-01",
+      "country": "India",
+      "country_code": "IN",
+      "netflow": -284.25
+    },
+    {
+      "date": "2023-08-01",
+      "country": "India",
+      "country_code": "IN",
+      "netflow": -271.91667
+    },
+    {
+      "date": "2025-05-01",
+      "country": "India",
+      "country_code": "IN",
+      "netflow": -57.41667
+    },
+    {
+      "date": "2023-09-01",
+      "country": "Israel",
+      "country_code": "IL",
+      "netflow": -3.5
+    },
+    {
+      "date": "2024-01-01",
+      "country": "Israel",
+      "country_code": "IL",
+      "netflow": -3.25
+    },
+    {
+      "date": "2024-02-01",
+      "country": "Israel",
+      "country_code": "IL",
+      "netflow": -3.75
+    },
+    {
+      "date": "2024-03-01",
+      "country": "Israel",
+      "country_code": "IL",
+      "netflow": -3.66667
+    },
+    {
+      "date": "2024-04-01",
+      "country": "Israel",
+      "country_code": "IL",
+      "netflow": -3.41666
+    },
+    {
+      "date": "2024-05-01",
+      "country": "Israel",
+      "country_code": "IL",
+      "netflow": -3.75
+    },
+    {
+      "date": "2024-06-01",
+      "country": "Israel",
+      "country_code": "IL",
+      "netflow": -4.5
+    },
+    {
+      "date": "2024-07-01",
+      "country": "Israel",
+      "country_code": "IL",
+      "netflow": -4.66666
+    },
+    {
+      "date": "2024-08-01",
+      "country": "Israel",
+      "country_code": "IL",
+      "netflow": -4.58333
+    },
+    {
+      "date": "2024-09-01",
+      "country": "Israel",
+      "country_code": "IL",
+      "netflow": -3.91667
+    },
+    {
+      "date": "2024-10-01",
+      "country": "Israel",
+      "country_code": "IL",
+      "netflow": -4.58333
+    },
+    {
+      "date": "2024-11-01",
+      "country": "Israel",
+      "country_code": "IL",
+      "netflow": -4.0
+    },
+    {
+      "date": "2024-12-01",
+      "country": "Israel",
+      "country_code": "IL",
+      "netflow": -3.66667
+    },
+    {
+      "date": "2025-01-01",
+      "country": "Israel",
+      "country_code": "IL",
+      "netflow": -3.33334
+    },
+    {
+      "date": "2025-02-01",
+      "country": "Israel",
+      "country_code": "IL",
+      "netflow": -3.08334
+    },
+    {
+      "date": "2025-03-01",
+      "country": "Israel",
+      "country_code": "IL",
+      "netflow": -2.83333
+    },
+    {
+      "date": "2025-04-01",
+      "country": "Israel",
+      "country_code": "IL",
+      "netflow": -2.66666
+    },
+    {
+      "date": "2025-05-01",
+      "country": "Israel",
+      "country_code": "IL",
+      "netflow": -2.5
+    },
+    {
+      "date": "2025-07-01",
+      "country": "Israel",
+      "country_code": "IL",
+      "netflow": -1.91666
+    },
+    {
+      "date": "2023-12-01",
+      "country": "Israel",
+      "country_code": "IL",
+      "netflow": -3.5
+    },
+    {
+      "date": "2023-11-01",
+      "country": "Israel",
+      "country_code": "IL",
+      "netflow": -3.5
+    },
+    {
+      "date": "2023-08-01",
+      "country": "Israel",
+      "country_code": "IL",
+      "netflow": -3.25
+    },
+    {
+      "date": "2023-01-01",
+      "country": "Israel",
+      "country_code": "IL",
+      "netflow": -3.25
+    },
+    {
+      "date": "2023-02-01",
+      "country": "Israel",
+      "country_code": "IL",
+      "netflow": -2.91667
+    },
+    {
+      "date": "2023-03-01",
+      "country": "Israel",
+      "country_code": "IL",
+      "netflow": -3.08334
+    },
+    {
+      "date": "2023-04-01",
+      "country": "Israel",
+      "country_code": "IL",
+      "netflow": -4.0
+    },
+    {
+      "date": "2023-05-01",
+      "country": "Israel",
+      "country_code": "IL",
+      "netflow": -4.16667
+    },
+    {
+      "date": "2023-06-01",
+      "country": "Israel",
+      "country_code": "IL",
+      "netflow": -4.0
+    },
+    {
+      "date": "2023-07-01",
+      "country": "Israel",
+      "country_code": "IL",
+      "netflow": -4.0
+    },
+    {
+      "date": "2023-10-01",
+      "country": "Israel",
+      "country_code": "IL",
+      "netflow": -3.16667
+    },
+    {
+      "date": "2025-06-01",
+      "country": "Italy",
+      "country_code": "IT",
+      "netflow": -1.16666
+    },
+    {
+      "date": "2024-02-01",
+      "country": "Italy",
+      "country_code": "IT",
+      "netflow": -6.16667
+    },
+    {
+      "date": "2024-03-01",
+      "country": "Italy",
+      "country_code": "IT",
+      "netflow": -4.83333
+    },
+    {
+      "date": "2024-04-01",
+      "country": "Italy",
+      "country_code": "IT",
+      "netflow": -3.91666
+    },
+    {
+      "date": "2024-05-01",
+      "country": "Italy",
+      "country_code": "IT",
+      "netflow": -2.5
+    },
+    {
+      "date": "2024-06-01",
+      "country": "Italy",
+      "country_code": "IT",
+      "netflow": -1.16666
+    },
+    {
+      "date": "2024-07-01",
+      "country": "Italy",
+      "country_code": "IT",
+      "netflow": -2.0
+    },
+    {
+      "date": "2024-08-01",
+      "country": "Italy",
+      "country_code": "IT",
+      "netflow": -2.33334
+    },
+    {
+      "date": "2024-09-01",
+      "country": "Italy",
+      "country_code": "IT",
+      "netflow": -1.91667
+    },
+    {
+      "date": "2024-10-01",
+      "country": "Italy",
+      "country_code": "IT",
+      "netflow": -2.25
+    },
+    {
+      "date": "2024-01-01",
+      "country": "Italy",
+      "country_code": "IT",
+      "netflow": -5.91667
+    },
+    {
+      "date": "2024-11-01",
+      "country": "Italy",
+      "country_code": "IT",
+      "netflow": -2.66667
+    },
+    {
+      "date": "2025-01-01",
+      "country": "Italy",
+      "country_code": "IT",
+      "netflow": -1.33333
+    },
+    {
+      "date": "2025-02-01",
+      "country": "Italy",
+      "country_code": "IT",
+      "netflow": -0.5
+    },
+    {
+      "date": "2025-03-01",
+      "country": "Italy",
+      "country_code": "IT",
+      "netflow": -0.58333
+    },
+    {
+      "date": "2025-04-01",
+      "country": "Italy",
+      "country_code": "IT",
+      "netflow": -0.91667
+    },
+    {
+      "date": "2025-09-01",
+      "country": "Italy",
+      "country_code": "IT",
+      "netflow": 0.0
+    },
+    {
+      "date": "2025-05-01",
+      "country": "Italy",
+      "country_code": "IT",
+      "netflow": -1.33333
+    },
+    {
+      "date": "2025-07-01",
+      "country": "Italy",
+      "country_code": "IT",
+      "netflow": -1.08333
+    },
+    {
+      "date": "2025-08-01",
+      "country": "Italy",
+      "country_code": "IT",
+      "netflow": -0.33333
+    },
+    {
+      "date": "2024-12-01",
+      "country": "Italy",
+      "country_code": "IT",
+      "netflow": -2.75
+    },
+    {
+      "date": "2023-12-01",
+      "country": "Italy",
+      "country_code": "IT",
+      "netflow": -5.75
+    },
+    {
+      "date": "2023-10-01",
+      "country": "Italy",
+      "country_code": "IT",
+      "netflow": -5.75
+    },
+    {
+      "date": "2023-11-01",
+      "country": "Italy",
+      "country_code": "IT",
+      "netflow": -6.08333
+    },
+    {
+      "date": "2023-01-01",
+      "country": "Italy",
+      "country_code": "IT",
+      "netflow": -11.33334
+    },
+    {
+      "date": "2023-02-01",
+      "country": "Italy",
+      "country_code": "IT",
+      "netflow": -11.16666
+    },
+    {
+      "date": "2023-03-01",
+      "country": "Italy",
+      "country_code": "IT",
+      "netflow": -11.33334
+    },
+    {
+      "date": "2023-04-01",
+      "country": "Italy",
+      "country_code": "IT",
+      "netflow": -10.66666
+    },
+    {
+      "date": "2023-05-01",
+      "country": "Italy",
+      "country_code": "IT",
+      "netflow": -9.75
+    },
+    {
+      "date": "2023-06-01",
+      "country": "Italy",
+      "country_code": "IT",
+      "netflow": -10.83334
+    },
+    {
+      "date": "2023-07-01",
+      "country": "Italy",
+      "country_code": "IT",
+      "netflow": -10.0
+    },
+    {
+      "date": "2023-08-01",
+      "country": "Italy",
+      "country_code": "IT",
+      "netflow": -9.08333
+    },
+    {
+      "date": "2023-09-01",
+      "country": "Italy",
+      "country_code": "IT",
+      "netflow": -7.58333
+    },
+    {
+      "date": "2024-02-01",
+      "country": "Japan",
+      "country_code": "JP",
+      "netflow": 0.41666
+    },
+    {
+      "date": "2024-03-01",
+      "country": "Japan",
+      "country_code": "JP",
+      "netflow": -0.5
+    },
+    {
+      "date": "2024-04-01",
+      "country": "Japan",
+      "country_code": "JP",
+      "netflow": -1.5
+    },
+    {
+      "date": "2024-05-01",
+      "country": "Japan",
+      "country_code": "JP",
+      "netflow": -2.5
+    },
+    {
+      "date": "2024-06-01",
+      "country": "Japan",
+      "country_code": "JP",
+      "netflow": -3.5
+    },
+    {
+      "date": "2024-07-01",
+      "country": "Japan",
+      "country_code": "JP",
+      "netflow": -2.5
+    },
+    {
+      "date": "2024-08-01",
+      "country": "Japan",
+      "country_code": "JP",
+      "netflow": -2.5
+    },
+    {
+      "date": "2024-09-01",
+      "country": "Japan",
+      "country_code": "JP",
+      "netflow": -2.33333
+    },
+    {
+      "date": "2024-10-01",
+      "country": "Japan",
+      "country_code": "JP",
+      "netflow": -2.41667
+    },
+    {
+      "date": "2024-01-01",
+      "country": "Japan",
+      "country_code": "JP",
+      "netflow": -0.41667
+    },
+    {
+      "date": "2024-11-01",
+      "country": "Japan",
+      "country_code": "JP",
+      "netflow": -1.25
+    },
+    {
+      "date": "2025-01-01",
+      "country": "Japan",
+      "country_code": "JP",
+      "netflow": -0.25
+    },
+    {
+      "date": "2025-02-01",
+      "country": "Japan",
+      "country_code": "JP",
+      "netflow": -0.83334
+    },
+    {
+      "date": "2025-03-01",
+      "country": "Japan",
+      "country_code": "JP",
+      "netflow": -0.58334
+    },
+    {
+      "date": "2025-04-01",
+      "country": "Japan",
+      "country_code": "JP",
+      "netflow": -1.58333
+    },
+    {
+      "date": "2025-05-01",
+      "country": "Japan",
+      "country_code": "JP",
+      "netflow": -1.33333
+    },
+    {
+      "date": "2025-06-01",
+      "country": "Japan",
+      "country_code": "JP",
+      "netflow": -1.41666
+    },
+    {
+      "date": "2025-07-01",
+      "country": "Japan",
+      "country_code": "JP",
+      "netflow": -1.58333
+    },
+    {
+      "date": "2025-08-01",
+      "country": "Japan",
+      "country_code": "JP",
+      "netflow": -0.91667
+    },
+    {
+      "date": "2025-09-01",
+      "country": "Japan",
+      "country_code": "JP",
+      "netflow": 0.0
+    },
+    {
+      "date": "2024-12-01",
+      "country": "Japan",
+      "country_code": "JP",
+      "netflow": -1.58333
+    },
+    {
+      "date": "2023-12-01",
+      "country": "Japan",
+      "country_code": "JP",
+      "netflow": -0.58333
+    },
+    {
+      "date": "2023-10-01",
+      "country": "Japan",
+      "country_code": "JP",
+      "netflow": -0.5
+    },
+    {
+      "date": "2023-11-01",
+      "country": "Japan",
+      "country_code": "JP",
+      "netflow": -0.66667
+    },
+    {
+      "date": "2023-01-01",
+      "country": "Japan",
+      "country_code": "JP",
+      "netflow": -5.5
+    },
+    {
+      "date": "2023-02-01",
+      "country": "Japan",
+      "country_code": "JP",
+      "netflow": -5.33334
+    },
+    {
+      "date": "2023-03-01",
+      "country": "Japan",
+      "country_code": "JP",
+      "netflow": -3.66667
+    },
+    {
+      "date": "2023-04-01",
+      "country": "Japan",
+      "country_code": "JP",
+      "netflow": -2.0
+    },
+    {
+      "date": "2023-05-01",
+      "country": "Japan",
+      "country_code": "JP",
+      "netflow": -0.66667
+    },
+    {
+      "date": "2023-06-01",
+      "country": "Japan",
+      "country_code": "JP",
+      "netflow": 0.41667
+    },
+    {
+      "date": "2023-07-01",
+      "country": "Japan",
+      "country_code": "JP",
+      "netflow": -0.83333
+    },
+    {
+      "date": "2023-08-01",
+      "country": "Japan",
+      "country_code": "JP",
+      "netflow": 0.75
+    },
+    {
+      "date": "2023-09-01",
+      "country": "Japan",
+      "country_code": "JP",
+      "netflow": 0.41667
+    },
+    {
+      "date": "2025-09-01",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "netflow": -1.83333
+    },
+    {
+      "date": "2024-01-01",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "netflow": 9.16666
+    },
+    {
+      "date": "2024-02-01",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "netflow": 8.58334
+    },
+    {
+      "date": "2024-03-01",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "netflow": 8.16667
+    },
+    {
+      "date": "2024-04-01",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "netflow": 8.33333
+    },
+    {
+      "date": "2024-05-01",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "netflow": 7.41666
+    },
+    {
+      "date": "2024-06-01",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "netflow": 6.83334
+    },
+    {
+      "date": "2024-07-01",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "netflow": 5.0
+    },
+    {
+      "date": "2024-08-01",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "netflow": 5.0
+    },
+    {
+      "date": "2024-09-01",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "netflow": 2.0
+    },
+    {
+      "date": "2023-12-01",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "netflow": 9.25
+    },
+    {
+      "date": "2024-10-01",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "netflow": 1.25
+    },
+    {
+      "date": "2024-12-01",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "netflow": -0.08333
+    },
+    {
+      "date": "2025-01-01",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "netflow": -1.41667
+    },
+    {
+      "date": "2025-02-01",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "netflow": -1.5
+    },
+    {
+      "date": "2025-03-01",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "netflow": -2.5
+    },
+    {
+      "date": "2025-04-01",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "netflow": -2.16667
+    },
+    {
+      "date": "2025-06-01",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "netflow": -2.91666
+    },
+    {
+      "date": "2025-07-01",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "netflow": -2.0
+    },
+    {
+      "date": "2025-08-01",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "netflow": -2.0
+    },
+    {
+      "date": "2024-11-01",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "netflow": 1.08333
+    },
+    {
+      "date": "2023-11-01",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "netflow": 8.66667
+    },
+    {
+      "date": "2023-09-01",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "netflow": 9.5
+    },
+    {
+      "date": "2023-10-01",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "netflow": 8.58333
+    },
+    {
+      "date": "2023-01-01",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "netflow": 8.66667
+    },
+    {
+      "date": "2023-02-01",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "netflow": 7.41666
+    },
+    {
+      "date": "2023-03-01",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "netflow": 8.5
+    },
+    {
+      "date": "2023-04-01",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "netflow": 7.83334
+    },
+    {
+      "date": "2023-05-01",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "netflow": 7.41666
+    },
+    {
+      "date": "2023-06-01",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "netflow": 8.0
+    },
+    {
+      "date": "2023-07-01",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "netflow": 8.66667
+    },
+    {
+      "date": "2023-08-01",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "netflow": 8.5
+    },
+    {
+      "date": "2025-05-01",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "netflow": -1.58334
+    },
+    {
+      "date": "2023-11-01",
+      "country": "Saudi Arabia",
+      "country_code": "SA",
+      "netflow": 2.25
+    },
+    {
+      "date": "2023-12-01",
+      "country": "Saudi Arabia",
+      "country_code": "SA",
+      "netflow": 2.58333
+    },
+    {
+      "date": "2024-01-01",
+      "country": "Saudi Arabia",
+      "country_code": "SA",
+      "netflow": 2.41667
+    },
+    {
+      "date": "2024-02-01",
+      "country": "Saudi Arabia",
+      "country_code": "SA",
+      "netflow": 3.33334
+    },
+    {
+      "date": "2024-03-01",
+      "country": "Saudi Arabia",
+      "country_code": "SA",
+      "netflow": 3.5
+    },
+    {
+      "date": "2024-04-01",
+      "country": "Saudi Arabia",
+      "country_code": "SA",
+      "netflow": 4.08334
+    },
+    {
+      "date": "2024-05-01",
+      "country": "Saudi Arabia",
+      "country_code": "SA",
+      "netflow": 4.16667
+    },
+    {
+      "date": "2024-06-01",
+      "country": "Saudi Arabia",
+      "country_code": "SA",
+      "netflow": 3.91666
+    },
+    {
+      "date": "2023-10-01",
+      "country": "Saudi Arabia",
+      "country_code": "SA",
+      "netflow": 2.66667
+    },
+    {
+      "date": "2024-07-01",
+      "country": "Saudi Arabia",
+      "country_code": "SA",
+      "netflow": 4.25
+    },
+    {
+      "date": "2024-09-01",
+      "country": "Saudi Arabia",
+      "country_code": "SA",
+      "netflow": 4.0
+    },
+    {
+      "date": "2024-10-01",
+      "country": "Saudi Arabia",
+      "country_code": "SA",
+      "netflow": 3.58333
+    },
+    {
+      "date": "2024-11-01",
+      "country": "Saudi Arabia",
+      "country_code": "SA",
+      "netflow": 3.66666
+    },
+    {
+      "date": "2024-12-01",
+      "country": "Saudi Arabia",
+      "country_code": "SA",
+      "netflow": 3.5
+    },
+    {
+      "date": "2025-01-01",
+      "country": "Saudi Arabia",
+      "country_code": "SA",
+      "netflow": 3.83334
+    },
+    {
+      "date": "2025-02-01",
+      "country": "Saudi Arabia",
+      "country_code": "SA",
+      "netflow": 3.25
+    },
+    {
+      "date": "2025-03-01",
+      "country": "Saudi Arabia",
+      "country_code": "SA",
+      "netflow": 3.08334
+    },
+    {
+      "date": "2024-08-01",
+      "country": "Saudi Arabia",
+      "country_code": "SA",
+      "netflow": 3.91666
+    },
+    {
+      "date": "2023-09-01",
+      "country": "Saudi Arabia",
+      "country_code": "SA",
+      "netflow": 2.83334
+    },
+    {
+      "date": "2023-08-01",
+      "country": "Saudi Arabia",
+      "country_code": "SA",
+      "netflow": 2.58333
+    },
+    {
+      "date": "2023-07-01",
+      "country": "Saudi Arabia",
+      "country_code": "SA",
+      "netflow": 1.08333
+    },
+    {
+      "date": "2023-01-01",
+      "country": "Saudi Arabia",
+      "country_code": "SA",
+      "netflow": 1.0
+    },
+    {
+      "date": "2023-02-01",
+      "country": "Saudi Arabia",
+      "country_code": "SA",
+      "netflow": 1.16667
+    },
+    {
+      "date": "2023-03-01",
+      "country": "Saudi Arabia",
+      "country_code": "SA",
+      "netflow": 1.16667
+    },
+    {
+      "date": "2023-04-01",
+      "country": "Saudi Arabia",
+      "country_code": "SA",
+      "netflow": 0.75
+    },
+    {
+      "date": "2023-05-01",
+      "country": "Saudi Arabia",
+      "country_code": "SA",
+      "netflow": 1.25
+    },
+    {
+      "date": "2023-06-01",
+      "country": "Saudi Arabia",
+      "country_code": "SA",
+      "netflow": 1.0
+    },
+    {
+      "date": "2025-06-01",
+      "country": "Singapore",
+      "country_code": "SG",
+      "netflow": -3.58333
+    },
+    {
+      "date": "2024-01-01",
+      "country": "Singapore",
+      "country_code": "SG",
+      "netflow": -3.91667
+    },
+    {
+      "date": "2024-02-01",
+      "country": "Singapore",
+      "country_code": "SG",
+      "netflow": -3.83333
+    },
+    {
+      "date": "2024-03-01",
+      "country": "Singapore",
+      "country_code": "SG",
+      "netflow": -4.5
+    },
+    {
+      "date": "2024-04-01",
+      "country": "Singapore",
+      "country_code": "SG",
+      "netflow": -4.5
+    },
+    {
+      "date": "2024-05-01",
+      "country": "Singapore",
+      "country_code": "SG",
+      "netflow": -4.66666
+    },
+    {
+      "date": "2024-06-01",
+      "country": "Singapore",
+      "country_code": "SG",
+      "netflow": -4.83333
+    },
+    {
+      "date": "2024-07-01",
+      "country": "Singapore",
+      "country_code": "SG",
+      "netflow": -5.16667
+    },
+    {
+      "date": "2024-08-01",
+      "country": "Singapore",
+      "country_code": "SG",
+      "netflow": -4.75
+    },
+    {
+      "date": "2024-09-01",
+      "country": "Singapore",
+      "country_code": "SG",
+      "netflow": -5.0
+    },
+    {
+      "date": "2023-12-01",
+      "country": "Singapore",
+      "country_code": "SG",
+      "netflow": -5.16666
+    },
+    {
+      "date": "2024-10-01",
+      "country": "Singapore",
+      "country_code": "SG",
+      "netflow": -4.91666
+    },
+    {
+      "date": "2024-12-01",
+      "country": "Singapore",
+      "country_code": "SG",
+      "netflow": -5.5
+    },
+    {
+      "date": "2025-01-01",
+      "country": "Singapore",
+      "country_code": "SG",
+      "netflow": -5.5
+    },
+    {
+      "date": "2025-02-01",
+      "country": "Singapore",
+      "country_code": "SG",
+      "netflow": -5.5
+    },
+    {
+      "date": "2025-03-01",
+      "country": "Singapore",
+      "country_code": "SG",
+      "netflow": -4.33333
+    },
+    {
+      "date": "2025-04-01",
+      "country": "Singapore",
+      "country_code": "SG",
+      "netflow": -3.75
+    },
+    {
+      "date": "2025-05-01",
+      "country": "Singapore",
+      "country_code": "SG",
+      "netflow": -4.08334
+    },
+    {
+      "date": "2025-07-01",
+      "country": "Singapore",
+      "country_code": "SG",
+      "netflow": -3.16667
+    },
+    {
+      "date": "2025-08-01",
+      "country": "Singapore",
+      "country_code": "SG",
+      "netflow": -2.58333
+    },
+    {
+      "date": "2024-11-01",
+      "country": "Singapore",
+      "country_code": "SG",
+      "netflow": -5.16667
+    },
+    {
+      "date": "2023-11-01",
+      "country": "Singapore",
+      "country_code": "SG",
+      "netflow": -4.91667
+    },
+    {
+      "date": "2023-09-01",
+      "country": "Singapore",
+      "country_code": "SG",
+      "netflow": -3.5
+    },
+    {
+      "date": "2023-10-01",
+      "country": "Singapore",
+      "country_code": "SG",
+      "netflow": -4.41667
+    },
+    {
+      "date": "2023-01-01",
+      "country": "Singapore",
+      "country_code": "SG",
+      "netflow": -2.91667
+    },
+    {
+      "date": "2023-02-01",
+      "country": "Singapore",
+      "country_code": "SG",
+      "netflow": -2.91666
+    },
+    {
+      "date": "2023-03-01",
+      "country": "Singapore",
+      "country_code": "SG",
+      "netflow": -3.33334
+    },
+    {
+      "date": "2023-04-01",
+      "country": "Singapore",
+      "country_code": "SG",
+      "netflow": -3.58333
+    },
+    {
+      "date": "2023-05-01",
+      "country": "Singapore",
+      "country_code": "SG",
+      "netflow": -3.5
+    },
+    {
+      "date": "2023-06-01",
+      "country": "Singapore",
+      "country_code": "SG",
+      "netflow": -4.16666
+    },
+    {
+      "date": "2023-07-01",
+      "country": "Singapore",
+      "country_code": "SG",
+      "netflow": -4.0
+    },
+    {
+      "date": "2023-08-01",
+      "country": "Singapore",
+      "country_code": "SG",
+      "netflow": -4.0
+    },
+    {
+      "date": "2024-03-01",
+      "country": "South Korea",
+      "country_code": "KR",
+      "netflow": -13.83333
+    },
+    {
+      "date": "2024-04-01",
+      "country": "South Korea",
+      "country_code": "KR",
+      "netflow": -13.91667
+    },
+    {
+      "date": "2024-05-01",
+      "country": "South Korea",
+      "country_code": "KR",
+      "netflow": -11.83333
+    },
+    {
+      "date": "2024-06-01",
+      "country": "South Korea",
+      "country_code": "KR",
+      "netflow": -10.5
+    },
+    {
+      "date": "2024-07-01",
+      "country": "South Korea",
+      "country_code": "KR",
+      "netflow": -9.83333
+    },
+    {
+      "date": "2024-08-01",
+      "country": "South Korea",
+      "country_code": "KR",
+      "netflow": -9.16666
+    },
+    {
+      "date": "2024-09-01",
+      "country": "South Korea",
+      "country_code": "KR",
+      "netflow": -8.58334
+    },
+    {
+      "date": "2024-10-01",
+      "country": "South Korea",
+      "country_code": "KR",
+      "netflow": -7.58334
+    },
+    {
+      "date": "2024-11-01",
+      "country": "South Korea",
+      "country_code": "KR",
+      "netflow": -7.66666
+    },
+    {
+      "date": "2024-02-01",
+      "country": "South Korea",
+      "country_code": "KR",
+      "netflow": -13.58334
+    },
+    {
+      "date": "2024-12-01",
+      "country": "South Korea",
+      "country_code": "KR",
+      "netflow": -7.5
+    },
+    {
+      "date": "2025-02-01",
+      "country": "South Korea",
+      "country_code": "KR",
+      "netflow": -6.58333
+    },
+    {
+      "date": "2025-03-01",
+      "country": "South Korea",
+      "country_code": "KR",
+      "netflow": -6.41667
+    },
+    {
+      "date": "2025-04-01",
+      "country": "South Korea",
+      "country_code": "KR",
+      "netflow": -5.25
+    },
+    {
+      "date": "2025-05-01",
+      "country": "South Korea",
+      "country_code": "KR",
+      "netflow": -4.91667
+    },
+    {
+      "date": "2025-06-01",
+      "country": "South Korea",
+      "country_code": "KR",
+      "netflow": -4.08333
+    },
+    {
+      "date": "2025-07-01",
+      "country": "South Korea",
+      "country_code": "KR",
+      "netflow": -3.66667
+    },
+    {
+      "date": "2025-08-01",
+      "country": "South Korea",
+      "country_code": "KR",
+      "netflow": -2.25
+    },
+    {
+      "date": "2025-09-01",
+      "country": "South Korea",
+      "country_code": "KR",
+      "netflow": -1.75
+    },
+    {
+      "date": "2025-01-01",
+      "country": "South Korea",
+      "country_code": "KR",
+      "netflow": -7.0
+    },
+    {
+      "date": "2024-01-01",
+      "country": "South Korea",
+      "country_code": "KR",
+      "netflow": -13.33333
+    },
+    {
+      "date": "2023-11-01",
+      "country": "South Korea",
+      "country_code": "KR",
+      "netflow": -14.25
+    },
+    {
+      "date": "2023-12-01",
+      "country": "South Korea",
+      "country_code": "KR",
+      "netflow": -14.58333
+    },
+    {
+      "date": "2023-01-01",
+      "country": "South Korea",
+      "country_code": "KR",
+      "netflow": -15.91667
+    },
+    {
+      "date": "2023-02-01",
+      "country": "South Korea",
+      "country_code": "KR",
+      "netflow": -15.83333
+    },
+    {
+      "date": "2023-03-01",
+      "country": "South Korea",
+      "country_code": "KR",
+      "netflow": -16.91667
+    },
+    {
+      "date": "2023-04-01",
+      "country": "South Korea",
+      "country_code": "KR",
+      "netflow": -15.91666
+    },
+    {
+      "date": "2023-05-01",
+      "country": "South Korea",
+      "country_code": "KR",
+      "netflow": -17.0
+    },
+    {
+      "date": "2023-06-01",
+      "country": "South Korea",
+      "country_code": "KR",
+      "netflow": -16.58333
+    },
+    {
+      "date": "2023-07-01",
+      "country": "South Korea",
+      "country_code": "KR",
+      "netflow": -16.0
+    },
+    {
+      "date": "2023-08-01",
+      "country": "South Korea",
+      "country_code": "KR",
+      "netflow": -14.83334
+    },
+    {
+      "date": "2023-10-01",
+      "country": "South Korea",
+      "country_code": "KR",
+      "netflow": -14.83333
+    },
+    {
+      "date": "2023-09-01",
+      "country": "South Korea",
+      "country_code": "KR",
+      "netflow": -14.91666
+    },
+    {
+      "date": "2025-09-01",
+      "country": "Spain",
+      "country_code": "ES",
+      "netflow": 2.58333
+    },
+    {
+      "date": "2024-02-01",
+      "country": "Spain",
+      "country_code": "ES",
+      "netflow": 4.75
+    },
+    {
+      "date": "2024-03-01",
+      "country": "Spain",
+      "country_code": "ES",
+      "netflow": 3.91666
+    },
+    {
+      "date": "2024-04-01",
+      "country": "Spain",
+      "country_code": "ES",
+      "netflow": 4.16667
+    },
+    {
+      "date": "2024-05-01",
+      "country": "Spain",
+      "country_code": "ES",
+      "netflow": 3.58333
+    },
+    {
+      "date": "2024-06-01",
+      "country": "Spain",
+      "country_code": "ES",
+      "netflow": 3.25
+    },
+    {
+      "date": "2024-07-01",
+      "country": "Spain",
+      "country_code": "ES",
+      "netflow": 5.08333
+    },
+    {
+      "date": "2024-08-01",
+      "country": "Spain",
+      "country_code": "ES",
+      "netflow": 5.33333
+    },
+    {
+      "date": "2024-09-01",
+      "country": "Spain",
+      "country_code": "ES",
+      "netflow": 6.16667
+    },
+    {
+      "date": "2024-10-01",
+      "country": "Spain",
+      "country_code": "ES",
+      "netflow": 5.41667
+    },
+    {
+      "date": "2024-01-01",
+      "country": "Spain",
+      "country_code": "ES",
+      "netflow": 5.33333
+    },
+    {
+      "date": "2024-11-01",
+      "country": "Spain",
+      "country_code": "ES",
+      "netflow": 5.25
+    },
+    {
+      "date": "2025-01-01",
+      "country": "Spain",
+      "country_code": "ES",
+      "netflow": 4.0
+    },
+    {
+      "date": "2025-02-01",
+      "country": "Spain",
+      "country_code": "ES",
+      "netflow": 4.08334
+    },
+    {
+      "date": "2025-03-01",
+      "country": "Spain",
+      "country_code": "ES",
+      "netflow": 3.66667
+    },
+    {
+      "date": "2025-04-01",
+      "country": "Spain",
+      "country_code": "ES",
+      "netflow": 3.16667
+    },
+    {
+      "date": "2025-05-01",
+      "country": "Spain",
+      "country_code": "ES",
+      "netflow": 4.08334
+    },
+    {
+      "date": "2025-06-01",
+      "country": "Spain",
+      "country_code": "ES",
+      "netflow": 4.66666
+    },
+    {
+      "date": "2025-07-01",
+      "country": "Spain",
+      "country_code": "ES",
+      "netflow": 3.16667
+    },
+    {
+      "date": "2025-08-01",
+      "country": "Spain",
+      "country_code": "ES",
+      "netflow": 3.0
+    },
+    {
+      "date": "2024-12-01",
+      "country": "Spain",
+      "country_code": "ES",
+      "netflow": 5.16667
+    },
+    {
+      "date": "2023-12-01",
+      "country": "Spain",
+      "country_code": "ES",
+      "netflow": 5.58334
+    },
+    {
+      "date": "2023-10-01",
+      "country": "Spain",
+      "country_code": "ES",
+      "netflow": 3.66667
+    },
+    {
+      "date": "2023-11-01",
+      "country": "Spain",
+      "country_code": "ES",
+      "netflow": 5.25
+    },
+    {
+      "date": "2023-01-01",
+      "country": "Spain",
+      "country_code": "ES",
+      "netflow": -2.66667
+    },
+    {
+      "date": "2023-02-01",
+      "country": "Spain",
+      "country_code": "ES",
+      "netflow": -1.5
+    },
+    {
+      "date": "2023-03-01",
+      "country": "Spain",
+      "country_code": "ES",
+      "netflow": -0.16666
+    },
+    {
+      "date": "2023-04-01",
+      "country": "Spain",
+      "country_code": "ES",
+      "netflow": 1.33333
+    },
+    {
+      "date": "2023-05-01",
+      "country": "Spain",
+      "country_code": "ES",
+      "netflow": 1.41667
+    },
+    {
+      "date": "2023-06-01",
+      "country": "Spain",
+      "country_code": "ES",
+      "netflow": 2.91667
+    },
+    {
+      "date": "2023-07-01",
+      "country": "Spain",
+      "country_code": "ES",
+      "netflow": 3.66667
+    },
+    {
+      "date": "2023-08-01",
+      "country": "Spain",
+      "country_code": "ES",
+      "netflow": 4.08333
+    },
+    {
+      "date": "2023-09-01",
+      "country": "Spain",
+      "country_code": "ES",
+      "netflow": 3.5
+    },
+    {
+      "date": "2023-09-01",
+      "country": "Sweden",
+      "country_code": "SE",
+      "netflow": -2.5
+    },
+    {
+      "date": "2024-02-01",
+      "country": "Sweden",
+      "country_code": "SE",
+      "netflow": -0.25
+    },
+    {
+      "date": "2024-03-01",
+      "country": "Sweden",
+      "country_code": "SE",
+      "netflow": -0.5
+    },
+    {
+      "date": "2024-04-01",
+      "country": "Sweden",
+      "country_code": "SE",
+      "netflow": -1.58333
+    },
+    {
+      "date": "2024-05-01",
+      "country": "Sweden",
+      "country_code": "SE",
+      "netflow": -1.25
+    },
+    {
+      "date": "2024-06-01",
+      "country": "Sweden",
+      "country_code": "SE",
+      "netflow": -0.25
+    },
+    {
+      "date": "2024-07-01",
+      "country": "Sweden",
+      "country_code": "SE",
+      "netflow": -1.08333
+    },
+    {
+      "date": "2024-08-01",
+      "country": "Sweden",
+      "country_code": "SE",
+      "netflow": -1.5
+    },
+    {
+      "date": "2024-09-01",
+      "country": "Sweden",
+      "country_code": "SE",
+      "netflow": -0.33333
+    },
+    {
+      "date": "2024-10-01",
+      "country": "Sweden",
+      "country_code": "SE",
+      "netflow": -1.16667
+    },
+    {
+      "date": "2024-01-01",
+      "country": "Sweden",
+      "country_code": "SE",
+      "netflow": -0.91667
+    },
+    {
+      "date": "2024-11-01",
+      "country": "Sweden",
+      "country_code": "SE",
+      "netflow": -0.66667
+    },
+    {
+      "date": "2025-01-01",
+      "country": "Sweden",
+      "country_code": "SE",
+      "netflow": -1.25
+    },
+    {
+      "date": "2025-02-01",
+      "country": "Sweden",
+      "country_code": "SE",
+      "netflow": -1.91667
+    },
+    {
+      "date": "2025-03-01",
+      "country": "Sweden",
+      "country_code": "SE",
+      "netflow": -1.16666
+    },
+    {
+      "date": "2025-04-01",
+      "country": "Sweden",
+      "country_code": "SE",
+      "netflow": -0.66666
+    },
+    {
+      "date": "2025-05-01",
+      "country": "Sweden",
+      "country_code": "SE",
+      "netflow": -0.16667
+    },
+    {
+      "date": "2025-06-01",
+      "country": "Sweden",
+      "country_code": "SE",
+      "netflow": -1.16667
+    },
+    {
+      "date": "2025-07-01",
+      "country": "Sweden",
+      "country_code": "SE",
+      "netflow": -0.16667
+    },
+    {
+      "date": "2025-09-01",
+      "country": "Sweden",
+      "country_code": "SE",
+      "netflow": -0.58333
+    },
+    {
+      "date": "2024-12-01",
+      "country": "Sweden",
+      "country_code": "SE",
+      "netflow": -0.91667
+    },
+    {
+      "date": "2023-12-01",
+      "country": "Sweden",
+      "country_code": "SE",
+      "netflow": -1.58333
+    },
+    {
+      "date": "2023-10-01",
+      "country": "Sweden",
+      "country_code": "SE",
+      "netflow": -1.83334
+    },
+    {
+      "date": "2023-11-01",
+      "country": "Sweden",
+      "country_code": "SE",
+      "netflow": -2.25
+    },
+    {
+      "date": "2023-01-01",
+      "country": "Sweden",
+      "country_code": "SE",
+      "netflow": 1.25
+    },
+    {
+      "date": "2023-02-01",
+      "country": "Sweden",
+      "country_code": "SE",
+      "netflow": 1.5
+    },
+    {
+      "date": "2023-03-01",
+      "country": "Sweden",
+      "country_code": "SE",
+      "netflow": 0.75
+    },
+    {
+      "date": "2023-04-01",
+      "country": "Sweden",
+      "country_code": "SE",
+      "netflow": 1.0
+    },
+    {
+      "date": "2023-05-01",
+      "country": "Sweden",
+      "country_code": "SE",
+      "netflow": -0.75
+    },
+    {
+      "date": "2023-06-01",
+      "country": "Sweden",
+      "country_code": "SE",
+      "netflow": -1.16666
+    },
+    {
+      "date": "2023-07-01",
+      "country": "Sweden",
+      "country_code": "SE",
+      "netflow": -1.08333
+    },
+    {
+      "date": "2023-08-01",
+      "country": "Sweden",
+      "country_code": "SE",
+      "netflow": -0.91667
+    },
+    {
+      "date": "2025-08-01",
+      "country": "Sweden",
+      "country_code": "SE",
+      "netflow": -0.66666
+    },
+    {
+      "date": "2023-09-01",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "netflow": 9.16667
+    },
+    {
+      "date": "2024-02-01",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "netflow": 5.16667
+    },
+    {
+      "date": "2024-03-01",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "netflow": 4.41666
+    },
+    {
+      "date": "2024-04-01",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "netflow": 4.83333
+    },
+    {
+      "date": "2024-05-01",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "netflow": 2.75
+    },
+    {
+      "date": "2024-06-01",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "netflow": 3.25
+    },
+    {
+      "date": "2024-07-01",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "netflow": 4.25
+    },
+    {
+      "date": "2024-08-01",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "netflow": 3.66667
+    },
+    {
+      "date": "2024-09-01",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "netflow": 4.75
+    },
+    {
+      "date": "2024-10-01",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "netflow": 5.75
+    },
+    {
+      "date": "2024-01-01",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "netflow": 7.0
+    },
+    {
+      "date": "2024-11-01",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "netflow": 4.33334
+    },
+    {
+      "date": "2025-01-01",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "netflow": 3.41667
+    },
+    {
+      "date": "2025-02-01",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "netflow": 3.08334
+    },
+    {
+      "date": "2025-03-01",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "netflow": 3.0
+    },
+    {
+      "date": "2025-04-01",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "netflow": 2.75
+    },
+    {
+      "date": "2025-05-01",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "netflow": 2.75
+    },
+    {
+      "date": "2025-06-01",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "netflow": 2.08333
+    },
+    {
+      "date": "2025-07-01",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "netflow": 1.75
+    },
+    {
+      "date": "2025-08-01",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "netflow": 1.41666
+    },
+    {
+      "date": "2025-09-01",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "netflow": 0.25
+    },
+    {
+      "date": "2024-12-01",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "netflow": 3.91667
+    },
+    {
+      "date": "2023-12-01",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "netflow": 7.83333
+    },
+    {
+      "date": "2023-10-01",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "netflow": 8.91667
+    },
+    {
+      "date": "2023-11-01",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "netflow": 8.41666
+    },
+    {
+      "date": "2023-01-01",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "netflow": 18.83333
+    },
+    {
+      "date": "2023-02-01",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "netflow": 17.83334
+    },
+    {
+      "date": "2023-03-01",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "netflow": 15.58333
+    },
+    {
+      "date": "2023-04-01",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "netflow": 13.16667
+    },
+    {
+      "date": "2023-05-01",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "netflow": 15.0
+    },
+    {
+      "date": "2023-06-01",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "netflow": 14.25
+    },
+    {
+      "date": "2023-07-01",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "netflow": 11.75
+    },
+    {
+      "date": "2023-08-01",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "netflow": 11.75
+    },
+    {
+      "date": "2025-09-01",
+      "country": "United Arab Emirates",
+      "country_code": "AE",
+      "netflow": 2.58333
+    },
+    {
+      "date": "2023-08-01",
+      "country": "United Arab Emirates",
+      "country_code": "AE",
+      "netflow": 6.5
+    },
+    {
+      "date": "2024-01-01",
+      "country": "United Arab Emirates",
+      "country_code": "AE",
+      "netflow": 8.08334
+    },
+    {
+      "date": "2024-02-01",
+      "country": "United Arab Emirates",
+      "country_code": "AE",
+      "netflow": 8.83334
+    },
+    {
+      "date": "2024-03-01",
+      "country": "United Arab Emirates",
+      "country_code": "AE",
+      "netflow": 8.5
+    },
+    {
+      "date": "2024-04-01",
+      "country": "United Arab Emirates",
+      "country_code": "AE",
+      "netflow": 8.25
+    },
+    {
+      "date": "2024-05-01",
+      "country": "United Arab Emirates",
+      "country_code": "AE",
+      "netflow": 9.25
+    },
+    {
+      "date": "2024-06-01",
+      "country": "United Arab Emirates",
+      "country_code": "AE",
+      "netflow": 9.5
+    },
+    {
+      "date": "2024-07-01",
+      "country": "United Arab Emirates",
+      "country_code": "AE",
+      "netflow": 9.5
+    },
+    {
+      "date": "2024-08-01",
+      "country": "United Arab Emirates",
+      "country_code": "AE",
+      "netflow": 10.25
+    },
+    {
+      "date": "2024-09-01",
+      "country": "United Arab Emirates",
+      "country_code": "AE",
+      "netflow": 8.75
+    },
+    {
+      "date": "2024-10-01",
+      "country": "United Arab Emirates",
+      "country_code": "AE",
+      "netflow": 8.5
+    },
+    {
+      "date": "2024-11-01",
+      "country": "United Arab Emirates",
+      "country_code": "AE",
+      "netflow": 7.66666
+    },
+    {
+      "date": "2024-12-01",
+      "country": "United Arab Emirates",
+      "country_code": "AE",
+      "netflow": 8.0
+    },
+    {
+      "date": "2025-01-01",
+      "country": "United Arab Emirates",
+      "country_code": "AE",
+      "netflow": 6.41666
+    },
+    {
+      "date": "2025-02-01",
+      "country": "United Arab Emirates",
+      "country_code": "AE",
+      "netflow": 6.25
+    },
+    {
+      "date": "2025-03-01",
+      "country": "United Arab Emirates",
+      "country_code": "AE",
+      "netflow": 6.25
+    },
+    {
+      "date": "2025-04-01",
+      "country": "United Arab Emirates",
+      "country_code": "AE",
+      "netflow": 6.08333
+    },
+    {
+      "date": "2025-05-01",
+      "country": "United Arab Emirates",
+      "country_code": "AE",
+      "netflow": 4.66667
+    },
+    {
+      "date": "2025-07-01",
+      "country": "United Arab Emirates",
+      "country_code": "AE",
+      "netflow": 3.58333
+    },
+    {
+      "date": "2023-12-01",
+      "country": "United Arab Emirates",
+      "country_code": "AE",
+      "netflow": 7.66666
+    },
+    {
+      "date": "2023-11-01",
+      "country": "United Arab Emirates",
+      "country_code": "AE",
+      "netflow": 8.16667
+    },
+    {
+      "date": "2023-10-01",
+      "country": "United Arab Emirates",
+      "country_code": "AE",
+      "netflow": 7.66667
+    },
+    {
+      "date": "2023-09-01",
+      "country": "United Arab Emirates",
+      "country_code": "AE",
+      "netflow": 7.83333
+    },
+    {
+      "date": "2023-01-01",
+      "country": "United Arab Emirates",
+      "country_code": "AE",
+      "netflow": 5.83333
+    },
+    {
+      "date": "2023-02-01",
+      "country": "United Arab Emirates",
+      "country_code": "AE",
+      "netflow": 5.41666
+    },
+    {
+      "date": "2023-03-01",
+      "country": "United Arab Emirates",
+      "country_code": "AE",
+      "netflow": 5.58334
+    },
+    {
+      "date": "2023-04-01",
+      "country": "United Arab Emirates",
+      "country_code": "AE",
+      "netflow": 5.16667
+    },
+    {
+      "date": "2023-05-01",
+      "country": "United Arab Emirates",
+      "country_code": "AE",
+      "netflow": 5.83334
+    },
+    {
+      "date": "2023-06-01",
+      "country": "United Arab Emirates",
+      "country_code": "AE",
+      "netflow": 5.91667
+    },
+    {
+      "date": "2023-07-01",
+      "country": "United Arab Emirates",
+      "country_code": "AE",
+      "netflow": 7.08333
+    },
+    {
+      "date": "2025-07-01",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "netflow": 6.33333
+    },
+    {
+      "date": "2024-02-01",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "netflow": 7.58333
+    },
+    {
+      "date": "2024-03-01",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "netflow": 6.83334
+    },
+    {
+      "date": "2024-04-01",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "netflow": 6.83334
+    },
+    {
+      "date": "2024-05-01",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "netflow": 2.5
+    },
+    {
+      "date": "2024-06-01",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "netflow": 0.41666
+    },
+    {
+      "date": "2024-07-01",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "netflow": 1.91667
+    },
+    {
+      "date": "2024-08-01",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "netflow": 4.0
+    },
+    {
+      "date": "2024-09-01",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "netflow": 6.16667
+    },
+    {
+      "date": "2024-10-01",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "netflow": 5.66667
+    },
+    {
+      "date": "2024-01-01",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "netflow": 10.0
+    },
+    {
+      "date": "2024-11-01",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "netflow": 5.33333
+    },
+    {
+      "date": "2025-01-01",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "netflow": 6.08333
+    },
+    {
+      "date": "2025-02-01",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "netflow": 5.75
+    },
+    {
+      "date": "2025-03-01",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "netflow": 4.66667
+    },
+    {
+      "date": "2025-04-01",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "netflow": 4.66667
+    },
+    {
+      "date": "2025-05-01",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "netflow": 6.91667
+    },
+    {
+      "date": "2025-06-01",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "netflow": 7.0
+    },
+    {
+      "date": "2025-08-01",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "netflow": 6.83333
+    },
+    {
+      "date": "2025-09-01",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "netflow": 5.16666
+    },
+    {
+      "date": "2024-12-01",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "netflow": 5.25
+    },
+    {
+      "date": "2023-12-01",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "netflow": 12.16666
+    },
+    {
+      "date": "2023-10-01",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "netflow": 16.25
+    },
+    {
+      "date": "2023-11-01",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "netflow": 13.75
+    },
+    {
+      "date": "2023-01-01",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "netflow": 33.08333
+    },
+    {
+      "date": "2023-02-01",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "netflow": 34.33334
+    },
+    {
+      "date": "2023-03-01",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "netflow": 35.41667
+    },
+    {
+      "date": "2023-04-01",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "netflow": 33.41667
+    },
+    {
+      "date": "2023-05-01",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "netflow": 34.5
+    },
+    {
+      "date": "2023-06-01",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "netflow": 31.66667
+    },
+    {
+      "date": "2023-07-01",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "netflow": 29.58333
+    },
+    {
+      "date": "2023-08-01",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "netflow": 25.83333
+    },
+    {
+      "date": "2023-09-01",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "netflow": 20.41667
+    },
+    {
+      "date": "2025-07-01",
+      "country": "United States",
+      "country_code": "US",
+      "netflow": 53.5
+    },
+    {
+      "date": "2023-12-01",
+      "country": "United States",
+      "country_code": "US",
+      "netflow": 230.16666
+    },
+    {
+      "date": "2024-01-01",
+      "country": "United States",
+      "country_code": "US",
+      "netflow": 207.91666
+    },
+    {
+      "date": "2024-02-01",
+      "country": "United States",
+      "country_code": "US",
+      "netflow": 203.25
+    },
+    {
+      "date": "2024-03-01",
+      "country": "United States",
+      "country_code": "US",
+      "netflow": 198.0
+    },
+    {
+      "date": "2024-04-01",
+      "country": "United States",
+      "country_code": "US",
+      "netflow": 194.91666
+    },
+    {
+      "date": "2024-05-01",
+      "country": "United States",
+      "country_code": "US",
+      "netflow": 179.75
+    },
+    {
+      "date": "2024-06-01",
+      "country": "United States",
+      "country_code": "US",
+      "netflow": 174.0
+    },
+    {
+      "date": "2024-07-01",
+      "country": "United States",
+      "country_code": "US",
+      "netflow": 166.0
+    },
+    {
+      "date": "2024-08-01",
+      "country": "United States",
+      "country_code": "US",
+      "netflow": 143.25
+    },
+    {
+      "date": "2023-11-01",
+      "country": "United States",
+      "country_code": "US",
+      "netflow": 234.41666
+    },
+    {
+      "date": "2024-09-01",
+      "country": "United States",
+      "country_code": "US",
+      "netflow": 127.75
+    },
+    {
+      "date": "2024-11-01",
+      "country": "United States",
+      "country_code": "US",
+      "netflow": 121.08333
+    },
+    {
+      "date": "2024-12-01",
+      "country": "United States",
+      "country_code": "US",
+      "netflow": 119.66667
+    },
+    {
+      "date": "2025-01-01",
+      "country": "United States",
+      "country_code": "US",
+      "netflow": 102.66667
+    },
+    {
+      "date": "2025-02-01",
+      "country": "United States",
+      "country_code": "US",
+      "netflow": 97.66667
+    },
+    {
+      "date": "2025-03-01",
+      "country": "United States",
+      "country_code": "US",
+      "netflow": 94.33333
+    },
+    {
+      "date": "2025-04-01",
+      "country": "United States",
+      "country_code": "US",
+      "netflow": 89.66666
+    },
+    {
+      "date": "2025-05-01",
+      "country": "United States",
+      "country_code": "US",
+      "netflow": 73.16666
+    },
+    {
+      "date": "2025-06-01",
+      "country": "United States",
+      "country_code": "US",
+      "netflow": 58.08333
+    },
+    {
+      "date": "2024-10-01",
+      "country": "United States",
+      "country_code": "US",
+      "netflow": 121.58333
+    },
+    {
+      "date": "2023-10-01",
+      "country": "United States",
+      "country_code": "US",
+      "netflow": 241.83334
+    },
+    {
+      "date": "2023-08-01",
+      "country": "United States",
+      "country_code": "US",
+      "netflow": 261.91667
+    },
+    {
+      "date": "2023-09-01",
+      "country": "United States",
+      "country_code": "US",
+      "netflow": 246.16666
+    },
+    {
+      "date": "2023-01-01",
+      "country": "United States",
+      "country_code": "US",
+      "netflow": 320.41667
+    },
+    {
+      "date": "2023-02-01",
+      "country": "United States",
+      "country_code": "US",
+      "netflow": 315.83333
+    },
+    {
+      "date": "2023-03-01",
+      "country": "United States",
+      "country_code": "US",
+      "netflow": 312.83333
+    },
+    {
+      "date": "2023-04-01",
+      "country": "United States",
+      "country_code": "US",
+      "netflow": 310.41667
+    },
+    {
+      "date": "2023-05-01",
+      "country": "United States",
+      "country_code": "US",
+      "netflow": 285.58334
+    },
+    {
+      "date": "2023-06-01",
+      "country": "United States",
+      "country_code": "US",
+      "netflow": 273.33333
+    },
+    {
+      "date": "2023-07-01",
+      "country": "United States",
+      "country_code": "US",
+      "netflow": 274.0
+    },
+    {
+      "date": "2025-08-01",
+      "country": "United States",
+      "country_code": "US",
+      "netflow": 35.91667
+    },
+    {
+      "date": "2025-09-01",
+      "country": "United States",
+      "country_code": "US",
+      "netflow": 26.0
+    }
+  ],
+  "models": [
+    "claude-opus-4-20250514",
+    "gemini-2.5-flash",
+    "gemini-2.5-pro",
+    "mistral-medium-2505",
+    "qwen3-235b-a22b-no-thinking",
+    "o3-2025-04-16",
+    "claude-sonnet-4-20250514",
+    "chatgpt-4o-latest-20250326",
+    "gemma-3-27b-it",
+    "claude-3-7-sonnet-20250219-thinking-32k",
+    "claude-3-7-sonnet-20250219",
+    "command-a-03-2025",
+    "claude-3-5-sonnet-20241022",
+    "o3-mini",
+    "deepseek-r1-0528",
+    "gpt-4.1-2025-04-14",
+    "o4-mini-2025-04-16",
+    "claude-3-5-haiku-20241022",
+    "amazon.nova-pro-v1:0",
+    "claude-opus-4-20250514-thinking-16k",
+    "gpt-4.1-mini-2025-04-14",
+    "deepseek-v3-0324",
+    "gemini-2.0-flash-001",
+    "grok-3-preview-02-24",
+    "grok-3-mini-beta",
+    "llama-4-maverick-03-26-experimental",
+    "claude-sonnet-4-20250514-thinking-32k",
+    "qwen3-30b-a3b",
+    "minimax-m1",
+    "llama-4-maverick-17b-128e-instruct",
+    "gemini-2.5-flash-lite-preview-06-17-thinking",
+    "qwen3-235b-a22b",
+    "gemini-2.5-flash-preview-04-17",
+    "llama-3.3-70b-instruct",
+    "qwen-max-2025-01-25",
+    "qwq-32b",
+    "mistral-small-3.1-24b-instruct-2503",
+    "amazon-nova-experimental-chat-05-14",
+    "gemini-2.5-pro-preview-05-06",
+    "llama-4-scout-17b-16e-instruct",
+    "grok-3-mini-high",
+    "kimi-k2-0711-preview",
+    "gemma-3n-e4b-it",
+    "magistral-medium-2506",
+    "mistral-small-2506",
+    "hunyuan-turbos-20250416",
+    "grok-4-0709",
+    "gemini-2.5-pro-preview-03-25",
+    "qwen3-235b-a22b-instruct-2507",
+    "gpt-4o-mini-2024-07-18",
+    "gpt-4o-2024-11-20",
+    "gemini-2.0-flash-thinking-exp-01-21",
+    "qwen3-coder-480b-a35b-instruct"
+  ],
+  "weeks": [
+    {
+      "date": "2025-04-14",
+      "end": "2025-04-20",
+      "observed_start": "2025-04-17",
+      "observed_end": "2025-04-20",
+      "partial": true,
+      "battles": 2865,
+      "total": 5730,
+      "bad": 369,
+      "counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        233,
+        0,
+        348,
+        239,
+        0,
+        279,
+        0,
+        383,
+        294,
+        0,
+        322,
+        219,
+        209,
+        0,
+        0,
+        0,
+        0,
+        627,
+        253,
+        78,
+        0,
+        0,
+        0,
+        0,
+        259,
+        0,
+        0,
+        170,
+        311,
+        184,
+        177,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        299,
+        0,
+        343,
+        307,
+        196,
+        0
+      ]
+    },
+    {
+      "date": "2025-04-21",
+      "end": "2025-04-27",
+      "observed_start": "2025-04-21",
+      "observed_end": "2025-04-27",
+      "partial": false,
+      "battles": 4094,
+      "total": 8188,
+      "bad": 428,
+      "counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        278,
+        0,
+        681,
+        295,
+        0,
+        318,
+        0,
+        482,
+        464,
+        0,
+        428,
+        337,
+        319,
+        0,
+        0,
+        162,
+        191,
+        778,
+        496,
+        270,
+        0,
+        0,
+        0,
+        0,
+        276,
+        0,
+        0,
+        308,
+        372,
+        300,
+        304,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        447,
+        0,
+        247,
+        265,
+        170,
+        0
+      ]
+    },
+    {
+      "date": "2025-04-28",
+      "end": "2025-05-04",
+      "observed_start": "2025-04-28",
+      "observed_end": "2025-05-04",
+      "partial": false,
+      "battles": 3713,
+      "total": 7426,
+      "bad": 393,
+      "counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        301,
+        0,
+        525,
+        377,
+        0,
+        286,
+        0,
+        449,
+        270,
+        0,
+        262,
+        246,
+        309,
+        0,
+        0,
+        350,
+        314,
+        597,
+        382,
+        364,
+        86,
+        0,
+        222,
+        0,
+        286,
+        0,
+        219,
+        270,
+        237,
+        288,
+        267,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        518,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "date": "2025-05-05",
+      "end": "2025-05-11",
+      "observed_start": "2025-05-05",
+      "observed_end": "2025-05-11",
+      "partial": false,
+      "battles": 3881,
+      "total": 7762,
+      "bad": 452,
+      "counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        301,
+        0,
+        609,
+        308,
+        0,
+        317,
+        0,
+        389,
+        320,
+        0,
+        282,
+        370,
+        297,
+        0,
+        0,
+        284,
+        287,
+        535,
+        305,
+        273,
+        331,
+        0,
+        389,
+        0,
+        315,
+        0,
+        315,
+        262,
+        298,
+        279,
+        373,
+        0,
+        0,
+        199,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        124,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "date": "2025-05-12",
+      "end": "2025-05-18",
+      "observed_start": "2025-05-12",
+      "observed_end": "2025-05-18",
+      "partial": false,
+      "battles": 3693,
+      "total": 7386,
+      "bad": 426,
+      "counts": [
+        0,
+        0,
+        0,
+        36,
+        0,
+        302,
+        0,
+        336,
+        312,
+        44,
+        326,
+        33,
+        336,
+        346,
+        0,
+        291,
+        338,
+        309,
+        37,
+        0,
+        322,
+        354,
+        322,
+        256,
+        316,
+        303,
+        0,
+        274,
+        0,
+        340,
+        0,
+        248,
+        356,
+        327,
+        302,
+        277,
+        0,
+        0,
+        343,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "date": "2025-05-19",
+      "end": "2025-05-25",
+      "observed_start": "2025-05-19",
+      "observed_end": "2025-05-25",
+      "partial": false,
+      "battles": 6950,
+      "total": 13900,
+      "bad": 785,
+      "counts": [
+        381,
+        758,
+        379,
+        819,
+        0,
+        367,
+        413,
+        409,
+        384,
+        859,
+        379,
+        867,
+        403,
+        352,
+        0,
+        375,
+        334,
+        375,
+        874,
+        0,
+        371,
+        383,
+        326,
+        314,
+        350,
+        390,
+        0,
+        315,
+        0,
+        364,
+        0,
+        309,
+        646,
+        398,
+        365,
+        302,
+        0,
+        0,
+        339,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "date": "2025-05-26",
+      "end": "2025-06-01",
+      "observed_start": "2025-05-26",
+      "observed_end": "2025-06-01",
+      "partial": false,
+      "battles": 13163,
+      "total": 26326,
+      "bad": 1558,
+      "counts": [
+        2924,
+        1146,
+        1159,
+        1112,
+        538,
+        563,
+        2277,
+        630,
+        541,
+        1118,
+        608,
+        1120,
+        582,
+        545,
+        969,
+        594,
+        586,
+        590,
+        1239,
+        0,
+        584,
+        577,
+        562,
+        445,
+        556,
+        618,
+        0,
+        500,
+        0,
+        445,
+        0,
+        496,
+        614,
+        572,
+        509,
+        464,
+        0,
+        0,
+        543,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "date": "2025-06-02",
+      "end": "2025-06-08",
+      "observed_start": "2025-06-02",
+      "observed_end": "2025-06-08",
+      "partial": false,
+      "battles": 14113,
+      "total": 28226,
+      "bad": 1579,
+      "counts": [
+        2189,
+        1394,
+        1359,
+        1346,
+        1624,
+        695,
+        1483,
+        643,
+        643,
+        1388,
+        728,
+        1308,
+        379,
+        655,
+        1554,
+        670,
+        694,
+        689,
+        788,
+        231,
+        708,
+        694,
+        379,
+        582,
+        717,
+        682,
+        251,
+        651,
+        0,
+        3,
+        0,
+        621,
+        390,
+        381,
+        347,
+        346,
+        0,
+        0,
+        937,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        77,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "date": "2025-06-09",
+      "end": "2025-06-15",
+      "observed_start": "2025-06-09",
+      "observed_end": "2025-06-15",
+      "partial": false,
+      "battles": 10461,
+      "total": 20922,
+      "bad": 1210,
+      "counts": [
+        793,
+        717,
+        712,
+        714,
+        974,
+        385,
+        679,
+        414,
+        819,
+        638,
+        423,
+        574,
+        408,
+        391,
+        781,
+        397,
+        409,
+        373,
+        513,
+        1188,
+        391,
+        404,
+        288,
+        340,
+        152,
+        378,
+        1122,
+        354,
+        0,
+        123,
+        1856,
+        351,
+        310,
+        316,
+        304,
+        251,
+        249,
+        260,
+        401,
+        0,
+        0,
+        0,
+        0,
+        399,
+        0,
+        371,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "date": "2025-06-16",
+      "end": "2025-06-22",
+      "observed_start": "2025-06-16",
+      "observed_end": "2025-06-22",
+      "partial": false,
+      "battles": 13955,
+      "total": 27910,
+      "bad": 1584,
+      "counts": [
+        864,
+        1005,
+        1004,
+        1048,
+        1447,
+        550,
+        889,
+        535,
+        1160,
+        482,
+        504,
+        525,
+        478,
+        527,
+        1214,
+        471,
+        473,
+        509,
+        502,
+        1706,
+        509,
+        470,
+        342,
+        471,
+        466,
+        482,
+        1689,
+        479,
+        726,
+        506,
+        959,
+        423,
+        474,
+        376,
+        335,
+        313,
+        489,
+        546,
+        309,
+        333,
+        0,
+        0,
+        336,
+        631,
+        0,
+        352,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "date": "2025-06-23",
+      "end": "2025-06-29",
+      "observed_start": "2025-06-23",
+      "observed_end": "2025-06-29",
+      "partial": false,
+      "battles": 11238,
+      "total": 22476,
+      "bad": 1249,
+      "counts": [
+        906,
+        968,
+        926,
+        909,
+        1040,
+        918,
+        475,
+        507,
+        435,
+        530,
+        508,
+        459,
+        526,
+        498,
+        395,
+        454,
+        448,
+        484,
+        476,
+        945,
+        484,
+        493,
+        238,
+        375,
+        447,
+        517,
+        465,
+        447,
+        1513,
+        459,
+        504,
+        398,
+        160,
+        193,
+        216,
+        205,
+        486,
+        513,
+        182,
+        460,
+        0,
+        0,
+        466,
+        292,
+        0,
+        156,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "date": "2025-06-30",
+      "end": "2025-07-06",
+      "observed_start": "2025-06-30",
+      "observed_end": "2025-07-06",
+      "partial": false,
+      "battles": 13253,
+      "total": 26506,
+      "bad": 1569,
+      "counts": [
+        671,
+        1138,
+        1138,
+        1060,
+        1092,
+        1125,
+        611,
+        557,
+        546,
+        636,
+        640,
+        572,
+        592,
+        619,
+        484,
+        600,
+        585,
+        595,
+        626,
+        698,
+        565,
+        587,
+        342,
+        526,
+        597,
+        610,
+        633,
+        559,
+        1027,
+        611,
+        540,
+        510,
+        349,
+        342,
+        287,
+        307,
+        613,
+        557,
+        2,
+        612,
+        0,
+        0,
+        557,
+        375,
+        771,
+        42,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "date": "2025-07-07",
+      "end": "2025-07-13",
+      "observed_start": "2025-07-07",
+      "observed_end": "2025-07-13",
+      "partial": false,
+      "battles": 14614,
+      "total": 29228,
+      "bad": 1811,
+      "counts": [
+        556,
+        1141,
+        1105,
+        1066,
+        1086,
+        1095,
+        643,
+        642,
+        529,
+        670,
+        658,
+        583,
+        629,
+        574,
+        510,
+        612,
+        649,
+        642,
+        600,
+        590,
+        633,
+        552,
+        336,
+        542,
+        594,
+        627,
+        618,
+        584,
+        977,
+        571,
+        608,
+        529,
+        583,
+        347,
+        290,
+        288,
+        638,
+        649,
+        0,
+        599,
+        2052,
+        0,
+        552,
+        390,
+        836,
+        204,
+        49,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "date": "2025-07-14",
+      "end": "2025-07-20",
+      "observed_start": "2025-07-14",
+      "observed_end": "2025-07-20",
+      "partial": false,
+      "battles": 13184,
+      "total": 26368,
+      "bad": 1507,
+      "counts": [
+        558,
+        914,
+        946,
+        809,
+        922,
+        972,
+        545,
+        533,
+        506,
+        542,
+        566,
+        541,
+        520,
+        541,
+        452,
+        540,
+        523,
+        488,
+        485,
+        526,
+        511,
+        542,
+        253,
+        495,
+        563,
+        546,
+        577,
+        465,
+        815,
+        521,
+        530,
+        457,
+        137,
+        268,
+        264,
+        247,
+        537,
+        512,
+        0,
+        539,
+        523,
+        2089,
+        480,
+        342,
+        511,
+        237,
+        978,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "date": "2025-07-21",
+      "end": "2025-07-27",
+      "observed_start": "2025-07-21",
+      "observed_end": "2025-07-24",
+      "partial": true,
+      "battles": 6447,
+      "total": 12894,
+      "bad": 834,
+      "counts": [
+        250,
+        487,
+        491,
+        216,
+        353,
+        444,
+        280,
+        281,
+        232,
+        242,
+        312,
+        256,
+        261,
+        228,
+        195,
+        242,
+        266,
+        278,
+        243,
+        273,
+        247,
+        269,
+        149,
+        258,
+        248,
+        236,
+        258,
+        259,
+        411,
+        253,
+        235,
+        239,
+        1,
+        167,
+        109,
+        138,
+        259,
+        230,
+        0,
+        262,
+        226,
+        654,
+        220,
+        177,
+        255,
+        146,
+        534,
+        0,
+        622,
+        0,
+        0,
+        0,
+        2
+      ]
+    }
+  ],
+  "adoption": [
+    {
+      "period": 202319,
+      "ref_start": "2023-08-28",
+      "adoption": 0.037,
+      "se": 0.0011,
+      "lo": 0.0351905,
+      "hi": 0.0388095,
+      "date": "2023-08-28",
+      "ref_end": "2023-09-10"
+    },
+    {
+      "period": 202320,
+      "ref_start": "2023-09-11",
+      "adoption": 0.037,
+      "se": 0.0013,
+      "lo": 0.0348615,
+      "hi": 0.0391385,
+      "date": "2023-09-11",
+      "ref_end": "2023-09-24"
+    },
+    {
+      "period": 202321,
+      "ref_start": "2023-09-25",
+      "adoption": 0.038,
+      "se": 0.0013,
+      "lo": 0.0358615,
+      "hi": 0.0401385,
+      "date": "2023-09-25",
+      "ref_end": "2023-10-08"
+    },
+    {
+      "period": 202322,
+      "ref_start": "2023-10-09",
+      "adoption": 0.039,
+      "se": 0.0015,
+      "lo": 0.0365325,
+      "hi": 0.0414675,
+      "date": "2023-10-09",
+      "ref_end": "2023-10-22"
+    },
+    {
+      "period": 202323,
+      "ref_start": "2023-10-23",
+      "adoption": 0.044,
+      "se": 0.0011,
+      "lo": 0.0421905,
+      "hi": 0.0458095,
+      "date": "2023-10-23",
+      "ref_end": "2023-11-05"
+    },
+    {
+      "period": 202324,
+      "ref_start": "2023-11-06",
+      "adoption": 0.046,
+      "se": 0.0011,
+      "lo": 0.0441905,
+      "hi": 0.0478095,
+      "date": "2023-11-06",
+      "ref_end": "2023-11-19"
+    },
+    {
+      "period": 202325,
+      "ref_start": "2023-11-20",
+      "adoption": 0.049,
+      "se": 0.0017,
+      "lo": 0.0462035,
+      "hi": 0.0517965,
+      "date": "2023-11-20",
+      "ref_end": "2023-12-03"
+    },
+    {
+      "period": 202326,
+      "ref_start": "2023-12-04",
+      "adoption": 0.049,
+      "se": 0.0009,
+      "lo": 0.0475195,
+      "hi": 0.0504805,
+      "date": "2023-12-04",
+      "ref_end": "2023-12-17"
+    },
+    {
+      "period": 202401,
+      "ref_start": "2023-12-18",
+      "adoption": 0.046,
+      "se": 0.0008,
+      "lo": 0.044684,
+      "hi": 0.047316,
+      "date": "2023-12-18",
+      "ref_end": "2023-12-31"
+    },
+    {
+      "period": 202402,
+      "ref_start": "2024-01-01",
+      "adoption": 0.053,
+      "se": 0.0015,
+      "lo": 0.0505325,
+      "hi": 0.0554674999999999,
+      "date": "2024-01-01",
+      "ref_end": "2024-01-14"
+    },
+    {
+      "period": 202403,
+      "ref_start": "2024-01-15",
+      "adoption": 0.05,
+      "se": 0.0013,
+      "lo": 0.0478615,
+      "hi": 0.0521385,
+      "date": "2024-01-15",
+      "ref_end": "2024-01-28"
+    },
+    {
+      "period": 202404,
+      "ref_start": "2024-01-29",
+      "adoption": 0.054,
+      "se": 0.0012,
+      "lo": 0.052026,
+      "hi": 0.055974,
+      "date": "2024-01-29",
+      "ref_end": "2024-02-11"
+    },
+    {
+      "period": 202405,
+      "ref_start": "2024-02-12",
+      "adoption": 0.043,
+      "se": 0.0013,
+      "lo": 0.0408614999999999,
+      "hi": 0.0451385,
+      "date": "2024-02-12",
+      "ref_end": "2024-02-25"
+    },
+    {
+      "period": 202406,
+      "ref_start": "2024-02-26",
+      "adoption": 0.044,
+      "se": 0.0012,
+      "lo": 0.042026,
+      "hi": 0.045974,
+      "date": "2024-02-26",
+      "ref_end": "2024-03-10"
+    },
+    {
+      "period": 202407,
+      "ref_start": "2024-03-11",
+      "adoption": 0.042,
+      "se": 0.0009,
+      "lo": 0.0405195,
+      "hi": 0.0434805,
+      "date": "2024-03-11",
+      "ref_end": "2024-03-24"
+    },
+    {
+      "period": 202408,
+      "ref_start": "2024-03-25",
+      "adoption": 0.048,
+      "se": 0.0014,
+      "lo": 0.045697,
+      "hi": 0.050303,
+      "date": "2024-03-25",
+      "ref_end": "2024-04-07"
+    },
+    {
+      "period": 202409,
+      "ref_start": "2024-04-08",
+      "adoption": 0.047,
+      "se": 0.0015,
+      "lo": 0.0445325,
+      "hi": 0.0494675,
+      "date": "2024-04-08",
+      "ref_end": "2024-04-21"
+    },
+    {
+      "period": 202410,
+      "ref_start": "2024-04-22",
+      "adoption": 0.048,
+      "se": 0.0009,
+      "lo": 0.0465195,
+      "hi": 0.0494805,
+      "date": "2024-04-22",
+      "ref_end": "2024-05-05"
+    },
+    {
+      "period": 202411,
+      "ref_start": "2024-05-06",
+      "adoption": 0.046,
+      "se": 0.0015,
+      "lo": 0.0435325,
+      "hi": 0.0484675,
+      "date": "2024-05-06",
+      "ref_end": "2024-05-19"
+    },
+    {
+      "period": 202412,
+      "ref_start": "2024-05-20",
+      "adoption": 0.05,
+      "se": 0.0014,
+      "lo": 0.047697,
+      "hi": 0.052303,
+      "date": "2024-05-20",
+      "ref_end": "2024-06-02"
+    },
+    {
+      "period": 202413,
+      "ref_start": "2024-06-03",
+      "adoption": 0.047,
+      "se": 0.0013,
+      "lo": 0.0448615,
+      "hi": 0.0491385,
+      "date": "2024-06-03",
+      "ref_end": "2024-06-16"
+    },
+    {
+      "period": 202414,
+      "ref_start": "2024-06-17",
+      "adoption": 0.05,
+      "se": 0.0016,
+      "lo": 0.047368,
+      "hi": 0.052632,
+      "date": "2024-06-17",
+      "ref_end": "2024-06-30"
+    },
+    {
+      "period": 202415,
+      "ref_start": "2024-07-01",
+      "adoption": 0.051,
+      "se": 0.0018,
+      "lo": 0.048039,
+      "hi": 0.0539609999999999,
+      "date": "2024-07-01",
+      "ref_end": "2024-07-14"
+    },
+    {
+      "period": 202416,
+      "ref_start": "2024-07-15",
+      "adoption": 0.051,
+      "se": 0.0012,
+      "lo": 0.049026,
+      "hi": 0.0529739999999999,
+      "date": "2024-07-15",
+      "ref_end": "2024-07-28"
+    },
+    {
+      "period": 202417,
+      "ref_start": "2024-07-29",
+      "adoption": 0.055,
+      "se": 0.0015,
+      "lo": 0.0525325,
+      "hi": 0.0574675,
+      "date": "2024-07-29",
+      "ref_end": "2024-08-11"
+    },
+    {
+      "period": 202418,
+      "ref_start": "2024-08-12",
+      "adoption": 0.057,
+      "se": 0.0015,
+      "lo": 0.0545325,
+      "hi": 0.0594675,
+      "date": "2024-08-12",
+      "ref_end": "2024-08-25"
+    },
+    {
+      "period": 202419,
+      "ref_start": "2024-08-26",
+      "adoption": 0.059,
+      "se": 0.0016,
+      "lo": 0.056368,
+      "hi": 0.061632,
+      "date": "2024-08-26",
+      "ref_end": "2024-09-08"
+    },
+    {
+      "period": 202420,
+      "ref_start": "2024-09-09",
+      "adoption": 0.06,
+      "se": 0.0015,
+      "lo": 0.0575325,
+      "hi": 0.0624674999999999,
+      "date": "2024-09-09",
+      "ref_end": "2024-09-22"
+    },
+    {
+      "period": 202421,
+      "ref_start": "2024-09-23",
+      "adoption": 0.06,
+      "se": 0.0015,
+      "lo": 0.0575325,
+      "hi": 0.0624674999999999,
+      "date": "2024-09-23",
+      "ref_end": "2024-10-06"
+    },
+    {
+      "period": 202422,
+      "ref_start": "2024-10-07",
+      "adoption": 0.06,
+      "se": 0.0013,
+      "lo": 0.0578614999999999,
+      "hi": 0.0621385,
+      "date": "2024-10-07",
+      "ref_end": "2024-10-20"
+    },
+    {
+      "period": 202423,
+      "ref_start": "2024-10-21",
+      "adoption": 0.061,
+      "se": 0.0018,
+      "lo": 0.058039,
+      "hi": 0.063961,
+      "date": "2024-10-21",
+      "ref_end": "2024-11-03"
+    },
+    {
+      "period": 202424,
+      "ref_start": "2024-11-04",
+      "adoption": 0.061,
+      "se": 0.0016,
+      "lo": 0.0583679999999999,
+      "hi": 0.063632,
+      "date": "2024-11-04",
+      "ref_end": "2024-11-17"
+    },
+    {
+      "period": 202425,
+      "ref_start": "2024-11-18",
+      "adoption": 0.061,
+      "se": 0.0017,
+      "lo": 0.0582035,
+      "hi": 0.0637965,
+      "date": "2024-11-18",
+      "ref_end": "2024-12-01"
+    },
+    {
+      "period": 202426,
+      "ref_start": "2024-12-02",
+      "adoption": 0.063,
+      "se": 0.0015,
+      "lo": 0.0605325,
+      "hi": 0.0654675,
+      "date": "2024-12-02",
+      "ref_end": "2024-12-15"
+    },
+    {
+      "period": 202501,
+      "ref_start": "2024-12-16",
+      "adoption": 0.06,
+      "se": 0.0019,
+      "lo": 0.0568744999999999,
+      "hi": 0.0631255,
+      "date": "2024-12-16",
+      "ref_end": "2024-12-29"
+    },
+    {
+      "period": 202502,
+      "ref_start": "2024-12-30",
+      "adoption": 0.067,
+      "se": 0.0018,
+      "lo": 0.064039,
+      "hi": 0.069961,
+      "date": "2024-12-30",
+      "ref_end": "2025-01-12"
+    },
+    {
+      "period": 202503,
+      "ref_start": "2025-01-13",
+      "adoption": 0.068,
+      "se": 0.0019,
+      "lo": 0.0648745,
+      "hi": 0.0711255,
+      "date": "2025-01-13",
+      "ref_end": "2025-01-26"
+    },
+    {
+      "period": 202504,
+      "ref_start": "2025-01-27",
+      "adoption": 0.073,
+      "se": 0.0014,
+      "lo": 0.070697,
+      "hi": 0.075303,
+      "date": "2025-01-27",
+      "ref_end": "2025-02-09"
+    },
+    {
+      "period": 202505,
+      "ref_start": "2025-02-10",
+      "adoption": 0.074,
+      "se": 0.0018,
+      "lo": 0.071039,
+      "hi": 0.076961,
+      "date": "2025-02-10",
+      "ref_end": "2025-02-23"
+    },
+    {
+      "period": 202506,
+      "ref_start": "2025-02-24",
+      "adoption": 0.078,
+      "se": 0.0022,
+      "lo": 0.074381,
+      "hi": 0.081619,
+      "date": "2025-02-24",
+      "ref_end": "2025-03-09"
+    },
+    {
+      "period": 202507,
+      "ref_start": "2025-03-10",
+      "adoption": 0.08,
+      "se": 0.0012,
+      "lo": 0.078026,
+      "hi": 0.081974,
+      "date": "2025-03-10",
+      "ref_end": "2025-03-23"
+    },
+    {
+      "period": 202508,
+      "ref_start": "2025-03-24",
+      "adoption": 0.083,
+      "se": 0.0019,
+      "lo": 0.0798745,
+      "hi": 0.0861255,
+      "date": "2025-03-24",
+      "ref_end": "2025-04-06"
+    },
+    {
+      "period": 202509,
+      "ref_start": "2025-04-07",
+      "adoption": 0.087,
+      "se": 0.0016,
+      "lo": 0.084368,
+      "hi": 0.0896319999999999,
+      "date": "2025-04-07",
+      "ref_end": "2025-04-20"
+    },
+    {
+      "period": 202510,
+      "ref_start": "2025-04-21",
+      "adoption": 0.087,
+      "se": 0.0014,
+      "lo": 0.084697,
+      "hi": 0.089303,
+      "date": "2025-04-21",
+      "ref_end": "2025-05-04"
+    },
+    {
+      "period": 202511,
+      "ref_start": "2025-05-05",
+      "adoption": 0.092,
+      "se": 0.0019,
+      "lo": 0.0888745,
+      "hi": 0.0951255,
+      "date": "2025-05-05",
+      "ref_end": "2025-05-18"
+    },
+    {
+      "period": 202512,
+      "ref_start": "2025-05-19",
+      "adoption": 0.092,
+      "se": 0.0022,
+      "lo": 0.088381,
+      "hi": 0.095619,
+      "date": "2025-05-19",
+      "ref_end": "2025-06-01"
+    },
+    {
+      "period": 202513,
+      "ref_start": "2025-06-02",
+      "adoption": 0.093,
+      "se": 0.0015,
+      "lo": 0.0905325,
+      "hi": 0.0954675,
+      "date": "2025-06-02",
+      "ref_end": "2025-06-15"
+    },
+    {
+      "period": 202514,
+      "ref_start": "2025-06-16",
+      "adoption": 0.093,
+      "se": 0.0021,
+      "lo": 0.0895455,
+      "hi": 0.0964545,
+      "date": "2025-06-16",
+      "ref_end": "2025-06-29"
+    },
+    {
+      "period": 202515,
+      "ref_start": "2025-06-30",
+      "adoption": 0.094,
+      "se": 0.0015,
+      "lo": 0.0915325,
+      "hi": 0.0964675,
+      "date": "2025-06-30",
+      "ref_end": "2025-07-13"
+    },
+    {
+      "period": 202516,
+      "ref_start": "2025-07-14",
+      "adoption": 0.088,
+      "se": 0.0023,
+      "lo": 0.0842165,
+      "hi": 0.0917835,
+      "date": "2025-07-14",
+      "ref_end": "2025-07-27"
+    },
+    {
+      "period": 202517,
+      "ref_start": "2025-07-28",
+      "adoption": 0.0969999999999999,
+      "se": 0.0016,
+      "lo": 0.094368,
+      "hi": 0.0996319999999999,
+      "date": "2025-07-28",
+      "ref_end": "2025-08-10"
+    },
+    {
+      "period": 202518,
+      "ref_start": "2025-08-11",
+      "adoption": 0.091,
+      "se": 0.0015,
+      "lo": 0.0885325,
+      "hi": 0.0934675,
+      "date": "2025-08-11",
+      "ref_end": "2025-08-24"
+    },
+    {
+      "period": 202519,
+      "ref_start": "2025-08-25",
+      "adoption": 0.099,
+      "se": 0.0015,
+      "lo": 0.0965325,
+      "hi": 0.1014675,
+      "date": "2025-08-25",
+      "ref_end": "2025-09-07"
+    },
+    {
+      "period": 202520,
+      "ref_start": "2025-09-08",
+      "adoption": 0.1,
+      "se": 0.0022,
+      "lo": 0.096381,
+      "hi": 0.103619,
+      "date": "2025-09-08",
+      "ref_end": "2025-09-21"
+    }
+  ],
+  "events": [
+    {
+      "model": "GPT-4 Turbo (Nov 2023)",
+      "org": "OpenAI",
+      "date": "2023-11-06"
+    },
+    {
+      "model": "Gemini 1.5 Pro",
+      "org": "Google DeepMind",
+      "date": "2024-02-15"
+    },
+    {
+      "model": "Claude 3 Opus",
+      "org": "Anthropic",
+      "date": "2024-03-04"
+    },
+    {
+      "model": "GPT-4o",
+      "org": "OpenAI",
+      "date": "2024-05-13"
+    },
+    {
+      "model": "Claude 3.5 Sonnet",
+      "org": "Anthropic",
+      "date": "2024-06-20"
+    },
+    {
+      "model": "DeepSeek-V3",
+      "org": "DeepSeek",
+      "date": "2024-12-24"
+    }
+  ],
+  "built": "2026-10-25"
+}

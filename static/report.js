@@ -1,0 +1,57 @@
+const NS='http://www.w3.org/2000/svg';
+const C={open:'#5ca881',closed:'#d47964',teal:'#257f70',gold:'#e6ae55',unknown:'#b6c4b8',blue:'#678caa',purple:'#a68db2',dark:'#1c4540'};
+function svg(tag,attrs={},parent){const e=document.createElementNS(NS,tag);for(const [k,v] of Object.entries(attrs))e.setAttribute(k,v);if(parent)parent.appendChild(e);return e}
+function txt(parent,x,y,value,attrs={}){const e=svg('text',{x,y,...attrs},parent);e.textContent=value;return e}
+function title(parent,value){const e=svg('title',{},parent);e.textContent=value}
+function chart(id){const box=document.getElementById(id);box.innerHTML='';const s=svg('svg',{viewBox:`0 0 460 ${box.classList.contains('chart-with-legend')?280:250}`,role:'img','aria-label':box.previousElementSibling?.textContent||id},box);return s}
+function axes(s,{left=42,right=15,top=17,bottom=34,min=0,max=100,ticks=4,format=v=>Math.round(v)+'%',xLabels=[]}={}){const w=460-left-right,h=250-top-bottom;
+ for(let i=0;i<=ticks;i++){let v=min+(max-min)*i/ticks,y=top+h*(1-i/ticks);svg('line',{x1:left,x2:left+w,y1:y,y2:y,class:'gridline'},s);txt(s,left-7,y+3,format(v),{'text-anchor':'end'})}
+ svg('line',{x1:left,x2:left+w,y1:top+h,y2:top+h,class:'axis'},s);
+ for(const item of xLabels)txt(s,left+w*item.p,top+h+18,item.label,{'text-anchor':item.p===0?'start':item.p===1?'end':'middle'});
+ return{x:v=>left+w*v,y:v=>top+h*(1-(v-min)/(max-min)),w,h,left,top};}
+function line(s,points,color,area=false,dash=''){if(points.length<2)return;const d=points.map((p,i)=>(i?'L':'M')+p[0].toFixed(1)+','+p[1].toFixed(1)).join('');if(area){let a=d+`L${points.at(-1)[0].toFixed(1)},215L${points[0][0].toFixed(1)},215Z`;svg('path',{d:a,fill:color,opacity:.10},s)}svg('path',{d,stroke:color,'stroke-dasharray':dash,class:'series-line'},s)}
+function dot(s,x,y,color,label,r=3){let e=svg('circle',{cx:x,cy:y,r,fill:color,class:'point'},s);title(e,label)}
+function legend(s,items,y=258){let x=43;for(const [label,color] of items){const width=Math.max(58,label.length*5.4+27);if(x+width>444&&x>43){x=43;y+=14}svg('rect',{x,y:y-7,width:10,height:5,rx:2,fill:color},s);txt(s,x+15,y,label,{class:'legend'});x+=width}}
+function latest(series){return series.at(-1)}
+
+function drawCh1(data){
+ let complete=data.filter(d=>d.n50>=50),s=chart('chart-ch1-line');let a=axes(s,{min:0,max:100,xLabels:[{p:0,label:complete[0].month},{p:.5,label:'2025'},{p:1,label:latest(complete).month}]});
+ let pts=complete.map((d,i)=>[a.x(i/(complete.length-1)),a.y(100*d.open50/d.n50)]);line(s,pts,C.open,true);pts.forEach((p,i)=>dot(s,p[0],p[1],C.open,`${complete[i].month} · ${complete[i].open50}/${complete[i].n50} Open-weight`,i===0||i===pts.length-1?4:2));
+ txt(s,pts[0][0]+6,pts[0][1]-10,'80%',{class:'highlight'});txt(s,pts.at(-1)[0]-8,pts.at(-1)[1]-10,'18%',{'text-anchor':'end',class:'highlight'});legend(s,[['Open-weight',C.open]]);
+ s=chart('chart-ch1-gap');
+ const gapData=data.filter(d=>d.month>='2023-12'),valid=gapData.filter(d=>d.frontier_gap!==null);
+ const left=39,right=438,top=19,bottom=210,min=-3,max=18;
+ const gx=i=>left+(right-left)*i/(gapData.length-1),gy=v=>bottom-(v-min)/(max-min)*(bottom-top),zero=gy(0);
+ for(const tick of [-2,0,5,10,15]){const y=gy(tick);svg('line',{x1:left,x2:right,y1:y,y2:y,class:'gridline'},s);txt(s,left-8,y+3,tick>0?`+${tick}`:String(tick),{'text-anchor':'end'})}
+ const defs=svg('defs',{},s),pattern=svg('pattern',{id:'ch1-frontier-hatch',patternUnits:'userSpaceOnUse',width:6,height:6,patternTransform:'rotate(-45)'},defs);
+ svg('line',{x1:0,y1:0,x2:0,y2:6,stroke:'#a99ab5','stroke-width':1},pattern);
+ const runs=[];let run=[];
+ gapData.forEach((d,i)=>{if(d.frontier_gap===null){if(run.length)runs.push(run);run=[]}else run.push({x:gx(i),y:gy(d.frontier_gap),gap:d.frontier_gap,month:d.month})});if(run.length)runs.push(run);
+ for(const points of runs){if(points.length<2)continue;const d=points.map((p,i)=>`${i?'L':'M'}${p.x.toFixed(1)},${p.y.toFixed(1)}`).join('');const area=d+`L${points.at(-1).x.toFixed(1)},${zero.toFixed(1)}L${points[0].x.toFixed(1)},${zero.toFixed(1)}Z`;svg('path',{d:area,fill:'#c7b8cb',opacity:.24},s);svg('path',{d:area,fill:'url(#ch1-frontier-hatch)',opacity:.68},s);svg('path',{d,stroke:'#5867a3',class:'series-line'},s);points.forEach(p=>dot(s,p.x,p.y,'#5867a3',`${p.month} · frontier gap ${p.gap>0?'+':''}${p.gap} ranks`,2.5))}
+ svg('line',{x1:left,x2:right,y1:zero,y2:zero,stroke:'#70877c','stroke-width':1.4},s);
+ const negative=gapData.map((d,i)=>({i,gap:d.frontier_gap})).filter(d=>d.gap<0);
+ if(negative.length){const trough=negative.reduce((a,b)=>a.gap<b.gap?a:b);txt(s,gx(trough.i)+6,gy(trough.gap)+14,String(trough.gap),{class:'highlight'})}
+ for(const [month,label] of [['2023-12','2023.12'],['2024-06','2024'],['2025-06','2025'],['2026-09','2026.09']]){const i=gapData.findIndex(d=>d.month===month);if(i>=0)txt(s,gx(i),bottom+17,label,{'text-anchor':i===0?'start':i===gapData.length-1?'end':'middle'})}
+ if(valid.length){const first=valid[0],last=latest(valid),lastIndex=gapData.findIndex(d=>d.month===last.month);txt(s,gx(0)+5,gy(first.frontier_gap)-9,`+${first.frontier_gap}`,{class:'highlight'});txt(s,gx(lastIndex)-5,gy(last.frontier_gap)-9,`${last.frontier_gap>0?'+':''}${last.frontier_gap}`,{'text-anchor':'end',class:'highlight'})}
+ legend(s,[['Rank gap', '#5867a3'],['Zero = tied frontiers','#738a7d']])
+}
+function drawCh2(data){let names=[...new Set(data.map(d=>d.name))],colors=[C.teal,C.closed,C.blue,C.gold,C.purple],dates=[...new Set(data.map(d=>d.date))].sort(),max=Math.ceil(Math.max(...data.map(d=>d.value))/1000)*1000,s=chart('chart-ch2-line'),a=axes(s,{min:0,max,ticks:4,format:v=>v===0?'0':(v/1000).toFixed(1)+'T',xLabels:[{p:0,label:'2023'},{p:.33,label:'2024'},{p:.67,label:'2025'},{p:1,label:'2026*'}]});
+ names.forEach((n,j)=>{let values=data.filter(d=>d.name===n).sort((a,b)=>a.date.localeCompare(b.date));let pts=values.map(d=>[a.x(dates.indexOf(d.date)/(dates.length-1)),a.y(d.value)]);line(s,pts,colors[j]);dot(s,pts.at(-1)[0],pts.at(-1)[1],colors[j],`${n}: ${values.at(-1).value} bn USD`,4)});legend(s,names.map((n,j)=>[n.replace('Alphabet / Google','Google'),colors[j]]))}
+async function drawCh2Lab(){const box=document.getElementById('chart-ch2-labs');try{const res=await fetch('/static/data/ch2_lab_revenue.json');if(!res.ok)throw Error(`HTTP ${res.status}`);const data=(await res.json()).rows;const s=chart('chart-ch2-labs'),left=43,right=438,top=18,bottom=210,start=Date.parse('2023-01-01'),end=Date.parse('2026-04-01');const x=date=>left+(Date.parse(date)-start)/(end-start)*(right-left),y=v=>bottom-v/30*(bottom-top);for(const v of [0,10,20,30]){const yy=y(v);svg('line',{x1:left,x2:right,y1:yy,y2:yy,class:'gridline'},s);txt(s,left-7,yy+3,v===0?'0':`$${v}B`,{'text-anchor':'end'})}for(const year of [2023,2024,2025,2026]){const xx=x(`${year}-01-01`);txt(s,xx,bottom+19,String(year),{'text-anchor':year===2023?'start':'middle'})}const labs=[['OpenAI','#d47662'],['Anthropic','#a56f77'],['xAI','#665d6e'],['Mistral AI','#d29a68'],['Z.ai','#a07eaf']];for(const [name,color] of labs){const rows=data.filter(d=>d.name===name).sort((a,b)=>a.date.localeCompare(b.date)),points=rows.map(d=>[x(d.date),y(d.value)]);line(s,points,color);rows.forEach((d,i)=>dot(s,points[i][0],points[i][1],color,`${d.date} · ${name}: $${d.value}B annualized`,3.5))}legend(s,labs)}catch(e){box.innerHTML='<div class="chart-empty">Revenue run-rate figure could not be loaded</div>';console.error(e)}}
+async function drawCh3Cost(){
+ const box=document.getElementById('chart-ch3-scatter');
+ try{
+  const res=await fetch('/dashboard/ch3/api/cost-curve');
+  if(!res.ok)throw Error(`HTTP ${res.status}`);
+  const figure=await res.json();
+  const layout={...figure.layout,height:315,autosize:true,title:{text:''},margin:{l:59,r:9,t:12,b:82},legend:{...figure.layout.legend,y:-.20,font:{size:8,color:'#4d635b'}}};
+  await Plotly.newPlot(box,figure.data,layout,{responsive:true,displayModeBar:false});
+ }catch(e){box.innerHTML='<div class="chart-empty">Training-cost figure could not be loaded</div>';console.error(e)}
+}
+function drawCh3Academic(academic){let s=chart('chart-ch3-bars');let years=[2023,2024,2025],labels=[['Industry','#C66E61'],['Industry-academia collaboration','#7E9C96'],['Academia','#4A6B82'],['Other','#B8C4BF']];years.forEach((year,i)=>{let x=68+i*127,y=211;for(const [label,color] of labels){let row=academic.find(r=>r.year===year&&r.label===label);let h=(row?.value||0)*1.7;y-=h;let e=svg('rect',{x,y,width:72,height:h,fill:color},s);title(e,`${year} ${label}: ${row?.value||0}%`)}txt(s,x+36,232,String(year),{'text-anchor':'middle'});let ac=academic.find(r=>r.year===year&&r.label==='Academia');txt(s,x+36,201-((academic.find(r=>r.year===year&&r.label==='Industry')?.value||0)+(academic.find(r=>r.year===year&&r.label==='Industry-academia collaboration')?.value||0))*1.7,`${ac.value.toFixed(1)}%`,{'text-anchor':'middle',class:'highlight'})});legend(s,[['Industry','#C66E61'],['Collaboration','#7E9C96'],['Academia','#4A6B82'],['Other','#B8C4BF']])}
+function miniLine(s,data,box,color,{min,max,format,label}={}){const [top,bottom]=box,w=365,left=56,he=bottom-top;for(let i=0;i<3;i++){let y=bottom-he*i/2;svg('line',{x1:left,x2:421,y1:y,y2:y,class:'gridline'},s);txt(s,left-7,y+3,format(min+(max-min)*i/2),{'text-anchor':'end'})}txt(s,56,top-7,label,{class:'axis-label'});let p=data.map((d,i)=>[left+w*i/(data.length-1),bottom-he*(d.value-min)/(max-min)]);line(s,p,color);p.forEach((q,i)=>dot(s,q[0],q[1],color,`${data[i].name}: ${data[i].value}`,i===0||i===p.length-1?3.8:2));return p}
+function drawCh4(quarter,adoption){let s=chart('chart-ch4-dual'),common=quarter.filter(d=>d.supply!=null);let p=miniLine(s,common.map(d=>({name:d.quarter,value:d.share})),[34,101],C.closed,{min:45,max:65,format:v=>v+'%',label:'Proprietary recorded-evaluation share · %'});txt(s,p[0][0]+7,p[0][1]-7,'50.28%',{class:'highlight'});txt(s,p.at(-1)[0]-4,p.at(-1)[1]-7,'56.17%',{'text-anchor':'end',class:'highlight'});let q=miniLine(s,common.map(d=>({name:d.quarter,value:d.supply/1000})),[143,211],C.open,{min:0,max:400,format:v=>v+'k',label:'New HF repositories per quarter · thousands'});txt(s,56,230,'2024Q1');txt(s,421,230,'2025Q4',{'text-anchor':'end'});
+ s=chart('chart-ch4-adoption');let a=axes(s,{min:0,max:12,ticks:3,format:v=>v+'%',xLabels:[{p:0,label:'2023'},{p:.5,label:'2024'},{p:1,label:'2025'}]}),pts=adoption.map((d,i)=>[a.x(i/(adoption.length-1)),a.y(d.value)]);line(s,pts,C.teal,true);pts.forEach((p,i)=>dot(s,p[0],p[1],C.teal,`${adoption[i].date}: ${adoption[i].value}%`,i===0||i===pts.length-1?4:2));txt(s,pts[0][0]+5,pts[0][1]-10,'3.7%',{class:'highlight'});txt(s,pts.at(-1)[0]-4,pts.at(-1)[1]-10,'10.0%',{'text-anchor':'end',class:'highlight'});legend(s,[['Broad AI adoption among U.S. businesses',C.teal]])}
+async function boot(){try{let res=await fetch('/api/report-data');if(!res.ok)throw Error(`HTTP ${res.status}`);let d=await res.json();drawCh1(d.ch1);drawCh2(d.ch2);drawCh2Lab();drawCh3Academic(d.ch3_academic);drawCh3Cost();drawCh4(d.ch4_share_supply,d.ch4_adoption)}catch(e){document.querySelectorAll('.chart').forEach(x=>x.innerHTML='<div class="chart-empty">Chart data could not be loaded</div>');console.error(e)}}
+boot();
+const links=[...document.querySelectorAll('.rail>a')];const observer=new IntersectionObserver(entries=>{for(const e of entries){if(e.isIntersecting){links.forEach(a=>a.classList.toggle('active',a.hash==='#'+e.target.id))}}},{rootMargin:'-18% 0px -65% 0px'});document.querySelectorAll('.chapter').forEach(x=>observer.observe(x));

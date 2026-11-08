@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 3: The Cost Cliff & Academic Exit</title>
+    <!-- Local Plotly.js -->
+    <script src="/static/vendor/plotly.min.js"></script>
+    <style>
+        /* Shared report palette */
+        :root {
+            --topbar-bg: #132524;
+            --page-bg: #f4f6f5;
+            --card-bg: #ffffff;
+            --border-color: #e3e8e5;
+            --text-primary: #182825;
+            --text-muted: #677a76;
+            --accent-teal: #245851;
+            --badge-bg: #eaf3f1;
+            --badge-text: #245851;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--page-bg);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 0;
+        }
+
+        .top-navbar {
+            background-color: var(--topbar-bg);
+            color: #e2e8e5;
+            padding: 10px 32px;
+            font-size: 0.78rem;
+            letter-spacing: 0.05em;
+            font-weight: 500;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .content-container {
+            max-width: 1720px;
+            margin: 0 auto;
+            padding: 24px 32px 48px 32px;
+        }
+
+        .chapter-tag {
+            font-size: 0.78rem;
+            color: var(--accent-teal);
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            margin-bottom: 6px;
+        }
+
+        .main-title {
+            font-size: 1.85rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin: 0 0 6px 0;
+        }
+
+        .subtitle {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        .chapter-intro { display:flex; align-items:flex-end; justify-content:space-between; gap:20px; margin-bottom:20px; }
+        .chapter-intro-copy { min-width:0; }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 18px 20px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+            min-height: 420px;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .insight-badge {
+            background-color: var(--badge-bg);
+            color: var(--badge-text);
+            border: 1px solid #d2e4e1;
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        select {
+            padding: 6px 12px;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+            background: #ffffff;
+            color: var(--text-primary);
+            font-size: 0.82rem;
+            font-weight: 500;
+            cursor: pointer;
+            outline: none;
+        }
+        select:focus { border-color: var(--accent-teal); }
+
+        .reset-button {
+            padding: 7px 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            background: #fff;
+            color: var(--badge-text);
+            font-size: .82rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .reset-button:hover, .reset-button:focus-visible { border-color: var(--accent-teal); background: var(--badge-bg); }
+        .chart-controls { display: flex; align-items: center; gap: 8px; }
+        @media(max-width:700px){ .chapter-intro { align-items:flex-start; flex-direction:column; gap:12px; } }
+
+        .grid-top {
+            display: grid;
+            grid-template-columns: 1.35fr 1fr;
+            gap: 18px;
+            margin-bottom: 18px;
+        }
+
+        .grid-bottom {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 18px;
+        }
+
+        @media (max-width: 1200px) {
+            .grid-top, .grid-bottom { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <div class="top-navbar">
+        <span>COMP7507 &nbsp;/&nbsp; GROUP 3 &nbsp;/&nbsp; CHAPTER 3</span>
+        <span>COSTS &nbsp;·&nbsp; FUNDING &nbsp;·&nbsp; MODEL ORIGINS</span>
+    </div>
+
+    <div class="content-container">
+        <div class="chapter-intro">
+            <div class="chapter-intro-copy">
+                <div class="chapter-tag">CHAPTER 03 / COMPUTE ECONOMICS</div>
+                <h1 class="main-title">The Cost Cliff & Academic Exit</h1>
+                <p class="subtitle">Training costs, funding, compute, and model origins · 2023–2026</p>
+            </div>
+            <button class="reset-button" type="button" onclick="fetchData()" title="Clear box selections and restore the original ranges in every chart">Reset all chart views</button>
+        </div>
+
+        <!-- Top Row (Charts 3.1 & 3.2) -->
+        <div class="grid-top">
+            <div class="card">
+                <div class="card-header">
+                    <span class="insight-badge">Estimated costs span orders of magnitude</span>
+                    <div class="chart-controls">
+                        <select id="filter-type" onchange="fetchData()">
+                            <option value="All">All Models</option>
+                            <option value="Open">Open Weights Only</option>
+                            <option value="Closed">Closed Weights Only</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="chart1" style="width: 100%; min-height: 480px;"></div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <span class="insight-badge">Funding against a $366M run</span>
+                </div>
+                <div id="chart2" style="width: 100%; min-height: 480px;"></div>
+            </div>
+        </div>
+
+        <!-- Bottom Row (Charts 3.3a, 3.3b, 3.3c) -->
+        <div class="grid-bottom">
+            <div class="card">
+                <div class="card-header">
+                    <span class="insight-badge">Academia: 1.1% in 2025</span>
+                </div>
+                <div id="chart3a" style="width: 100%; min-height: 380px;"></div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <span class="insight-badge">Compute gap by sector</span>
+                </div>
+                <div id="chart3b" style="width: 100%; min-height: 380px;"></div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <span class="insight-badge">Frontier lab spending</span>
+                </div>
+                <div id="chart3c" style="width: 100%; min-height: 380px;"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Frontend Data Fetching & Plotting -->
+    <script>
+        function renderSafe(elementId, chartJson) {
+            if (!chartJson) return;
+            try {
+                const parsed = JSON.parse(chartJson);
+                Plotly.newPlot(elementId, parsed.data, parsed.layout, { responsive: true, displayModeBar: false });
+            } catch (err) {
+                console.error("Failed to render " + elementId + ":", err);
+            }
+        }
+
+        function fetchData() {
+            const filterVal = document.getElementById('filter-type').value;
+            // Add a timestamp and no-store so each request fetches the latest chart data.
+            const url = `api/charts?filter=${filterVal}&_t=${new Date().getTime()}`;
+            
+            fetch(url, { cache: 'no-store' })
+                .then(res => res.json())
+                .then(data => {
+                    renderSafe('chart1', data.chart1);
+                    renderSafe('chart2', data.chart2);
+                    renderSafe('chart3a', data.chart3a);
+                    renderSafe('chart3b', data.chart3b);
+                    renderSafe('chart3c', data.chart3c);
+                })
+                .catch(err => console.error("API error:", err));
+        }
+        window.onload = fetchData;
+    </script>
+<script src="/static/bridge.js"></script></body>
+</html>

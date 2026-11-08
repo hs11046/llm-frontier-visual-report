@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research Synthesis · From Open Labs to Closed Empires</title>
+<link rel="stylesheet" href="/dashboard/ch5/static/css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <div class="brand-title">From Open Labs to Closed Empires</div>
+    <div class="brand-sub">Research synthesis · LLM frontier, 2023–2026</div>
+  </div>
+
+  <div class="pager">
+    <button id="prevBtn" class="pager-btn" title="Previous page (←)">◀</button>
+    <div class="pager-title">
+      <span id="pageIndex">1 / 3</span>
+      <span id="pageTitle">The shift</span>
+    </div>
+    <button id="nextBtn" class="pager-btn" title="Next page (→)">▶</button>
+  </div>
+
+  <div class="topbar-right">
+    <span id="selBadge" class="sel-badge" title="Selected organization">No organization selected</span>
+    <a class="ghost-btn" href="/">Report home ↗</a>
+  </div>
+</header>
+
+<div class="dots" id="dots"></div>
+
+<main id="main">
+
+  <!-- ============================ PAGE 1 · The shift ============================ -->
+  <section class="page" data-page="overview">
+    <div class="page-head">
+      <h1>The shift</h1>
+      <p class="lead">The leaderboard moved from a mixed early frontier to a top ten held by three proprietary-model organizations in September 2026. Recorded votes also tilted toward proprietary models, while open model production continued.</p>
+    </div>
+
+    <div class="kpi-row" id="kpis"></div>
+
+    <div class="insight-strip"><b>What the evidence shows</b><span>Leadership concentrated at the top of the ranking.</span><span>Open-weight activity remained visible outside that top tier.</span><span>Cost, adoption, and capital moved on different measures.</span></div>
+
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-head"><h2>Top-10 composition: first vs latest snapshot</h2><span class="hint">Arena overall</span></div>
+        <div class="flip-row">
+          <div id="flipA" class="chart chart-flip"></div>
+          <div id="flipB" class="chart chart-flip"></div>
+        </div>
+        <p class="footnote">The rating axis is truncated to show differences, so bars do not start at zero; color denotes weight access. The first pool contained only 10 models, so it has no Top 50. The last pool contained 401; its Top 50 was 16% permissively licensed and 18% open-weight including restricted licenses.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><h2>Votes and open-model supply</h2><span class="hint">Two separate measures</span></div>
+        <div id="miniVote" class="chart"></div>
+        <p class="footnote">Top: proprietary share of recorded Arena votes. Bottom: new Hugging Face repositories per quarter. The 2026 dashed vote segment has no matching repository data; repository count measures supply, not quality.</p>
+      </div>
+    </div>
+
+    <p class="section-note">Reading guide: the vote series uses recorded snapshot totals, not unique users. The charts use different units and coverage windows; aligned timing does not establish causation.</p>
+  </section>
+
+  <!-- ============================ PAGE 2 · Organizations ============================ -->
+  <section class="page hidden" data-page="institutions">
+    <div class="page-head">
+      <h1>The organizations</h1>
+      <p class="lead">The top tier became more concentrated, but open-weight challengers still reached high ranks. Compare organizations by their monthly best position; rank 1 is highest.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <h2>Best rank by organization</h2>
+        <div class="ctl">
+          <div class="seg" id="groupSeg">
+            <button data-g="all">All</button>
+            <button data-g="big7" class="active">Big-7</button>
+            <button data-g="small">Smaller labs</button>
+          </div>
+          <button id="logToggle" class="ghost-btn">Log scale: on</button>
+        </div>
+      </div>
+      <div id="rankChart" class="chart chart-tall"></div>
+      <p class="footnote">Monthly best rank; lower rank numbers appear higher. Click a line or legend item to carry an organization into the comparison view.</p>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-head"><h2>Open-weight challengers</h2><span class="hint">Monthly best open-weight rank</span></div>
+        <div id="exceptions" class="chart"></div>
+        <p class="footnote">DeepSeek, Alibaba (Qwen), and Meta appear in the open-weight ranking. A high rank shows competitive performance in this benchmark, not its cause.</p>
+      </div>
+      <div class="card">
+        <div class="card-head"><h2>How to read the split</h2></div>
+        <div class="takeaway-list">
+          <div><b>Frontier leadership</b><p>A small set of organizations repeatedly reached the best overall ranks.</p></div>
+          <div><b>Open-weight competition</b><p>Open models remained present and sometimes ranked highly, even as the latest top ten was fully proprietary.</p></div>
+          <div><b>Next step</b><p>Select an organization to compare its rank with cost and vote share, alongside listed-company market context.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ PAGE 3 · Compare evidence ============================ -->
+  <section class="page hidden" data-page="linked">
+    <div class="page-head">
+      <h1>Compare the evidence</h1>
+      <p class="lead">Choose one organization to follow its rank, model training cost, and recorded-vote share alongside listed-company market context. The charts reveal where evidence aligns and where coverage ends.</p>
+    </div>
+
+    <div class="org-picker"><label for="orgSelect">Organization</label><select id="orgSelect" aria-label="Select an organization"><option value="">Choose an organization</option></select><div class="chips" id="orgChips"></div></div>
+
+    <div class="card summary-card"><div class="card-head"><h2>Selected organization</h2><span class="hint" id="selHint">Choose an organization above</span></div><div id="orgCard" class="org-card"></div></div>
+
+    <div class="grid-2">
+      <div class="card"><div class="card-head"><h2>① Rank trajectory</h2><span class="hint">best rank / month</span></div>
+        <div id="L_rank" class="chart"></div></div>
+      <div class="card"><div class="card-head"><h2>② Training cost</h2><span class="hint">Epoch · US$ million (log)</span></div>
+        <div id="L_cost" class="chart"></div>
+        <p id="costCoverage" class="footnote"></p>
+        <p class="footnote">Only models with an Epoch training-cost estimate of at least US$0.01M in 2023 dollars are included. Green marks open-weight, red API/hosted-only, and gray unreleased or unknown models. The log-axis minimum is this cutoff.</p></div>
+      <div class="card"><div class="card-head"><h2>③ Recorded-vote share</h2><span class="hint">% of recorded votes</span></div>
+        <div id="L_vote" class="chart"></div></div>
+      <div class="card"><div class="card-head"><h2>④ Listed-company market context</h2><span class="hint">Share-price index · January 2023 = 100</span></div>
+        <div id="L_market" class="chart"></div>
+        <p id="marketCoverage" class="footnote"></p></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h2>Interpretation</h2></div>
+      <p class="footnote" style="margin:0">
+        These measures have different units and coverage. Rank follows model releases; cost belongs to a model; recorded votes depend on the Arena pool; and share-price indices cover only listed firms. Compare direction and timing without combining them into a single score.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footbar">
+  <span id="footMeta">COMP7507 · Group 3</span>
+  <span class="dot">·</span>
+  <a href="/">Back to the visual report</a>
+</footer>
+
+<script src="/dashboard/ch5/static/vendor/echarts.min.js"></script>
+<script src="/dashboard/ch5/static/js/app.js"></script>
+<script src="/static/bridge.js"></script></body>
+</html>

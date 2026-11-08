@@ -1,0 +1,61 @@
+{
+  "built": "2026-11-07",
+  "entrypoint": "index.html",
+  "files": [
+    {
+      "path": "data/business_adoption.csv",
+      "bytes": 4113,
+      "sha256": "1aa24db16c79ec781ff2038b003f82092db7e99be25e107e41815255dc8b3524"
+    },
+    {
+      "path": "data/dashboard_data.json",
+      "bytes": 119609,
+      "sha256": "7728b2f2f9e6590d1bcb3bf193cd1fd9ff6546fe6894d6a1dc69b05e5338ddc8"
+    },
+    {
+      "path": "data/hf_quarterly_source.csv",
+      "bytes": 345,
+      "sha256": "c585b2a0c0d4e28ccff8949bc5c31b830ecd0fc088dfcf71e32db929302d2991"
+    },
+    {
+      "path": "data/model_events.csv",
+      "bytes": 239,
+      "sha256": "6d06570ac17797b8298afb5ab188f0bdeaa3ccd3cc164855db3cf40ed9e30b4d"
+    },
+    {
+      "path": "data/models.csv",
+      "bytes": 1473,
+      "sha256": "4ec447d2befab96c04c50b7c98dd5d20d99e1fac629d2b1512883d58070e926a"
+    },
+    {
+      "path": "data/quarterly_share_supply.csv",
+      "bytes": 744,
+      "sha256": "5695e59ff03632775b40c721908ef07570fff48f5bfb46146a15beb15e1af32b"
+    },
+    {
+      "path": "data/talent_monthly.csv",
+      "bytes": 21719,
+      "sha256": "dcb55a844bc54d5e717b0e15a8684bbe02da0120bcac466b3910b7a1361c62e8"
+    },
+    {
+      "path": "data/weekly_battle_totals.csv",
+      "bytes": 1362,
+      "sha256": "5aca2f50f41df5441183436673477f3f7b817023b8039226f07c3552ebbbf983"
+    },
+    {
+      "path": "data/weekly_model_exposure.csv",
+      "bytes": 55312,
+      "sha256": "bec12455ad5224fb3fc57c0c02e8354bbe711857d7b4382393d1cdabe1772b2a"
+    },
+    {
+      "path": "index.html",
+      "bytes": 105230,
+      "sha256": "6ce535aa39f68d8990026911c2f9a0deee80025469b43bfd77ef526475c40e0b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 11070,
+      "sha256": "50d75a7d765d2021219bf2a0d2071b8e74e643aacec85b7662733f1bad95dfda"
+    }
+  ]
+}

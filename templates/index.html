@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173d3a">
+  <meta name="description" content="COMP7507 Group 3 · A five-chapter visual report on the changing AI frontier, 2023–2026">
+  <title>From Open Labs to Closed Empires · Visual Report</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Return to report home"><span class="brand-mark">F</span><span>FRONTIER <i>/</i> FIELD NOTES</span></a>
+    <nav class="topnav" aria-label="Main navigation">
+      <a href="#story">Read the report</a><a href="#method">Methods & limits</a>
+    </nav>
+    <span class="course">COMP7507 · GROUP 3</span>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="live-dot"></span> AN EVIDENCE-LED VISUAL REPORT <span class="slash">/</span> 2023—2026</p>
+        <h1 id="hero-title">From Open Labs<br>to <span>Closed Empires?</span></h1>
+        <p class="hero-en">How the LLM frontier changed, 2023–2026</p>
+        <p class="hero-intro">How did the top of the LLM leaderboard change? What can training costs, organizational scale, and evaluation attention explain? Follow five chapters of evidence, then explore each interactive dashboard.</p>
+        <div class="hero-actions"><a class="primary-btn" href="#story">Start reading <span>↓</span></a></div>
+      </div>
+      <div class="hero-visual" aria-label="Five-chapter research map">
+        <div class="visual-top"><span>RESEARCH MAP</span><span>01 — 05</span></div>
+        <div class="visual-title">One shift, four layers of evidence</div>
+        <div class="orbit">
+          <div class="orbit-core">AI<br><small>FRONTIER</small></div>
+          <div class="orbit-line orbit-line-a"></div><div class="orbit-line orbit-line-b"></div>
+          <span class="orbit-label orbit-a">Rankings <b>01</b></span><span class="orbit-label orbit-b">Scale <b>02</b></span><span class="orbit-label orbit-c">Cost <b>03</b></span><span class="orbit-label orbit-d">Ecosystem <b>04</b></span>
+        </div>
+        <div class="visual-bottom"><span>OBSERVE</span><span>COMPARE</span><span>INTERPRET</span></div>
+      </div>
+    </section>
+
+    <section class="thesis wrap" aria-label="Report overview">
+      <div class="thesis-label">Project objective <span>00 / PREFACE</span></div>
+      <p>Our starting point is the shift in Arena’s LLM leaderboard between 2023 and 2026, from early open-weight leaders to a proprietary Top 10 in the final snapshot. This report traces that change, then examines the surrounding evidence on organizational scale, training cost and compute, talent, evaluation attention, open-model supply, and business adoption. <strong>Across five chapters, we connect these views while keeping each dataset’s limits and the distinction between association and causation clear.</strong></p>
+      <div class="thesis-facts"><div><strong>41</strong><span>monthly leaderboard observations</span></div><div><strong>05</strong><span>interactive chapters of evidence</span></div><div><strong>2023–26</strong><span>study period</span></div></div>
+    </section>
+
+    <div class="report-shell wrap" id="story">
+      <aside class="rail" aria-label="Chapter directory">
+        <div class="rail-head">Contents</div>
+        <a href="#ch1"><em>01</em><span>The Flip<small>LEADERBOARD SHIFT</small></span></a>
+        <a href="#ch2"><em>02</em><span>Divergence<small>ORGANIZATIONAL SCALE</small></span></a>
+        <a href="#ch3"><em>03</em><span>The Cost Cliff<small>TRAINING THRESHOLD</small></span></a>
+        <a href="#ch4"><em>04</em><span>Parallel Trends<small>ECOSYSTEM CONTEXT</small></span></a>
+        <a href="#ch5"><em>05</em><span>Synthesis<small>LINKED EVIDENCE</small></span></a>
+        <div class="rail-foot">Use each chapter card to open the full dashboard created by its team member.</div>
+      </aside>
+
+      <div class="story-content">
+        <div class="chapter" id="ch1">
+          <div class="chapter-heading"><div><p class="chapter-kicker">CHAPTER 01 <span>· OBSERVATION</span></p><h2>The Flip: Who holds the frontier positions?</h2></div></div>
+          <p class="chapter-lead">Begin with the observed shift. In the last available Arena overall snapshot of February 2024, 40 of the Top 50 models had open weights. By September 2026, only nine did. Every model in the final Top 10 was closed-weight. Open weights do not necessarily mean fully open-source AI.</p>
+          <div class="finding"><span>KEY FINDING</span><strong>Open-weight share of the Top 50: 80% → 18%</strong><small>February 2024 to September 2026; both snapshots contain 50 models. The path was not monotonic.</small></div>
+          <div class="chart-grid"><figure class="figure"><div class="figure-head"><span>FIG 1.1</span><h3>Open-weight share of the Top 50</h3></div><div class="chart chart-with-legend" id="chart-ch1-line"></div><figcaption>Last observed snapshot of each month; the line begins once a full Top 50 is available. Source: Arena overall.</figcaption></figure><figure class="figure"><div class="figure-head"><span>FIG 1.2</span><h3>Frontier rank gap</h3></div><div class="chart chart-with-legend" id="chart-ch1-gap"></div><figcaption>Best open-weight rank minus best closed-weight rank. Positive values mean closed-weight leads; negative values mean open-weight leads. Monthly Arena overall snapshots from December 2023; rank difference does not measure capability.</figcaption></figure></div>
+          <a class="chapter-door" href="/dashboard/ch1/?view=dashboard"><span class="door-index">EXPLORE 01</span><span><strong>Explore the monthly leaderboard dashboard</strong><small>Change the month, Top N, and license categories</small></span><b>↗</b></a>
+        </div>
+
+        <div class="chapter" id="ch2">
+          <div class="chapter-heading"><div><p class="chapter-kicker">CHAPTER 02 <span>· DIVERGENCE</span></p><h2>Divergence: Where do organizations stand?</h2></div></div>
+          <p class="chapter-lead">The ranking shift leads us from models to the organizations behind them. One chart traces market capitalization for five listed companies; the other traces reported revenue run rates for five independent AI labs. Together they show two paths of organizational growth, measured in different ways and observed at different intervals.</p>
+          <div class="finding"><span>KEY FINDINGS</span><strong>Upward in the economy, downward in academic contributions</strong><small>1. Both the companies and the labs are experiencing an upward trend in terms of economics (market value and revenue).<br>2. However, the companies have seen a significant decline in academic contributions.</small></div>
+          <div class="chart-grid"><figure class="figure"><div class="figure-head"><span>FIG 2.1</span><h3>Listed-company market-cap trajectories</h3></div><div class="chart chart-with-legend" id="chart-ch2-line"></div><figcaption>Month-end closing price × historical shares outstanding, in USD billions. 2026 is partial.</figcaption></figure><figure class="figure"><div class="figure-head"><span>FIG 2.2</span><h3>AI-lab revenue run rates</h3></div><div class="chart chart-with-legend" id="chart-ch2-labs"></div><figcaption>Reported annualized revenue run rates, USD billions, 2023–2026. Lines connect sparse, unaudited snapshots; this is not realized annual revenue. Source: Stanford AI Index, Figure 4.2.18 via the Chapter 2 dashboard.</figcaption></figure></div>
+          <a class="chapter-door" href="/dashboard/ch2/"><span class="door-index">EXPLORE 02</span><span><strong>Open the scale and output dashboard</strong><small>Filter organizations, years, and comparison groups</small></span><b>↗</b></a>
+        </div>
+
+        <div class="chapter" id="ch3">
+          <div class="chapter-heading"><div><p class="chapter-kicker">CHAPTER 03 <span>· THRESHOLD</span></p><h2>The Cost Cliff: How expensive is frontier competition?</h2></div></div>
+          <p class="chapter-lead">A single GPT-4.5 training run is estimated at $366M. Against that benchmark, the dashboard’s illustrative academic budgets cover just 0.005–0.04 of a run, and some startup funding falls short. Academia’s share of notable models fell from 15.1% to 1.1% between 2023 and 2025.</p>
+          <div class="finding"><span>KEY FINDING</span><strong>Priced out of frontier pre-training, academia’s share of notable models collapsed</strong><small>15.1% in 2023 → 1.1% in 2025. The charts do not establish that cost caused the decline.</small></div>
+          <div class="chart-grid"><figure class="figure"><div class="figure-head"><span>FIG 3.1</span><h3>Training cost growth and distribution</h3></div><div class="chart plotly-chart" id="chart-ch3-scatter"></div><figcaption>Estimated costs or FLOP-based proxies, in 2023 USD on a log scale. Color marks sector; shape marks weight access. The dashed line is a fitted trend, not audited spending.</figcaption></figure><figure class="figure"><div class="figure-head"><span>FIG 3.2</span><h3>Origins of notable models</h3></div><div class="chart chart-with-legend" id="chart-ch3-bars"></div><figcaption>Share of AI Index notable models by origin, 2023–2025. Categories are mutually exclusive.</figcaption></figure></div>
+          <a class="chapter-door" href="/dashboard/ch3/"><span class="door-index">EXPLORE 03</span><span><strong>Explore training-cost evidence</strong><small>Inspect funding thresholds, compute, and organization types</small></span><b>↗</b></a>
+        </div>
+
+        <div class="chapter" id="ch4">
+          <div class="chapter-heading"><div><p class="chapter-kicker">CHAPTER 04 <span>· PARALLEL TRENDS</span></p><h2>Parallel Trends: Can attention and supply grow together?</h2></div></div>
+          <p class="chapter-lead">Chapter 4 looks beyond the leaderboard. From 2024 to 2025, proprietary models gained a larger share of recorded Arena evaluations while new Hugging Face repositories also grew. The dashboard adds shifting model exposure, slowing but positive U.S. talent netflow, and rising business AI adoption. These parallel measures provide ecosystem context, not evidence of user migration or causation.</p>
+          <div class="finding"><span>KEY FINDING</span><strong>Proprietary evaluation share and HF additions rose together</strong><small>Across 2024Q1–2025Q4, the share moved from 50.28% to 56.17%, while quarterly new repositories moved from 118,252 to 332,098. Both series fluctuated.</small></div>
+          <div class="chart-grid"><figure class="figure"><div class="figure-head"><span>FIG 4.1</span><h3>Recorded-evaluation share and new supply</h3></div><div class="chart" id="chart-ch4-dual"></div><figcaption>The panels use different units and denominators, so no difference is calculated. Repository counts are not a measure of open-weight models or quality.</figcaption></figure><figure class="figure"><div class="figure-head"><span>FIG 4.2</span><h3>U.S. business AI adoption</h3></div><div class="chart chart-with-legend" id="chart-ch4-adoption"></div><figcaption>National BTOS Q7, 2023–2025. It covers broad AI use among U.S. employer businesses and does not identify the models they use.</figcaption></figure></div>
+          <a class="chapter-door" href="/dashboard/ch4/"><span class="door-index">EXPLORE 04</span><span><strong>Open the four-panel dashboard</strong><small>Compare share &amp; supply, model exposure, talent, and adoption</small></span><b>↗</b></a>
+        </div>
+
+        <div class="chapter chapter-last" id="ch5">
+          <div class="chapter-heading"><div><p class="chapter-kicker">CHAPTER 05 <span>· SYNTHESIS</span></p><h2>Synthesis: Closed Frontier, Open Commons</h2></div></div>
+          <p class="chapter-lead">The synthesis follows three questions: what changed in the ranking, which organizations lead, and how rank relates to cost, recorded votes, and listed-company market context. Choose an organization in the linked view to compare these measures directly.</p>
+          <div class="synthesis-points"><div><b>01 · Frontier concentration</b><span>The latest top ten is proprietary and comes from three organizations.</span></div><div><b>02 · Open-weight competition</b><span>Open-weight challengers still reach high ranks beyond the latest top ten.</span></div><div><b>03 · Different measures</b><span>Ranks, costs, votes, and market figures provide related but distinct evidence.</span></div></div>
+          <a class="chapter-door" href="/dashboard/ch5/"><span class="door-index">EXPLORE 05</span><span><strong>Open the synthesis dashboard</strong><small>Follow the shift, explore organizations, and compare four measures</small></span><b>↗</b></a>
+        </div>
+      </div>
+    </div>
+
+    <section class="method wrap" id="method">
+      <div><p class="chapter-kicker">READING NOTES</p><h2>Methods & limits</h2><p>These figures summarize data supplied with the team dashboards. Open each chapter to inspect the original interactions, filters, and more detailed annotations.</p></div>
+      <div class="method-grid"><div><b>01</b><strong>Compare metrics on their own terms</strong><span>Market value, revenue run rate, evaluation share, and repository additions have different definitions and denominators.</span></div><div><b>02</b><strong>Keep missing values missing</strong><span>Unobserved months, organizations, and metrics remain blank. Several series have incomplete coverage in 2026.</span></div><div><b>03</b><strong>Parallel trends are not causation</strong><span>Cost growth, ranking changes, and business adoption can coincide. The available data do not establish movement of resources or users.</span></div></div>
+    </section>
+    <section class="credits wrap" aria-label="Team members"><span>GROUP 3 / CONTRIBUTORS</span><div><b>Ruan Lixin</b> <small>Ch1</small></div><div><b>Qi Yingying</b> <small>Ch2</small></div><div><b>Wong Yan Yuet</b> <small>Ch3</small></div><div><b>Wang Ling</b> <small>Ch4</small></div><div><b>Huang Shan</b> <small>Ch5 · Report</small></div></section>
+  </main>
+
+  <footer><div class="wrap footer-inner"><span>FRONTIER / FIELD NOTES</span><span>COMP7507 · GROUP 3 · 2026</span><a href="#top">Back to top ↑</a></div></footer>
+  <script src="{{ url_for('static', filename='vendor/plotly.min.js') }}" defer></script>
+  <script src="{{ url_for('static', filename='report.js') }}" defer></script>
+</body>
+</html>
