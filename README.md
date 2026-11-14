@@ -26,7 +26,7 @@ After editing the main report's HTML, CSS, or JavaScript, teammates can refresh 
 
 | Page | Route | Contributor | Focus |
 | --- | --- | --- | --- |
-| Narrative report | `/` | Huang Shan | Storyline, summary figures, and measurement limits |
+| Narrative report | `/` | All | Storyline, summary figures, and measurement limits |
 | Ch1 | `/dashboard/ch1/` | Ruan Lixin | Interactive Arena ranks and licenses |
 | Ch2 | `/dashboard/ch2/` | Qi Yingying | Market capitalization, revenue, and academic output |
 | Ch3 | `/dashboard/ch3/` | Wong Yan Yuet | Training costs, funding threshold, and model origins |
