@@ -41,12 +41,6 @@ GROUPS = {
         "xAI",
         "Mistral AI",
         "Z.ai",
-        "DeepSeek",
-        "EleutherAI",
-        "AllenAI",
-        "NousResearch",
-        "01.AI",
-        "MosaicML",
     ],
 }
 ALL_ENTITIES = GROUPS["Big companies"] + GROUPS["AI labs"]
@@ -65,12 +59,6 @@ COLORS = {
     "xAI": "#665d6e",
     "Mistral AI": "#d29a68",
     "Z.ai": "#a07eaf",
-    "DeepSeek": "#5989a7",
-    "EleutherAI": "#7a9f76",
-    "AllenAI": "#568e86",
-    "NousResearch": "#9f7a9e",
-    "01.AI": "#ad8b69",
-    "MosaicML": "#5e9c9b",
 }
 
 PUBLICATION_TO_ENTITY = {

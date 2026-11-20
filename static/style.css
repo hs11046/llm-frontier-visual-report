@@ -15,3 +15,7 @@ body.dashboard-open::before{content:'';position:fixed;inset:0;background:var(--p
 .is-fullscreen .dashboard-panel-header{margin-inline:13px;border-radius:8px;min-height:77px}
 .is-fullscreen .dashboard-panel-body{border-radius:0;background:var(--paper)}
 @media(max-width:759px){.is-fullscreen .dashboard-panel-header{margin-inline:5px;min-height:77px}}
+#ch3 .chart-grid{align-items:stretch}
+#ch3 .chart-grid .figure{display:flex;flex-direction:column}
+#ch3 .chart-grid .chart{height:500px}
+@media(max-width:759px){#ch3 .chart-grid .chart{height:440px}}

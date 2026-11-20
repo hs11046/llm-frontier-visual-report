@@ -13,6 +13,19 @@ const $ = (id) => document.getElementById(id),
 const C = RC?.colors,
   charts = {},
   selections = {};
+const organizationColors = {
+  Amazon: "#758F73",
+  "Alphabet / Google": "#70869A",
+  Meta: "#A37462",
+  Microsoft: "#867895",
+  NVIDIA: "#9B8C51",
+  "Alibaba / Qwen": "#568A8E",
+  OpenAI: "#E63946",
+  Anthropic: "#FB8C00",
+  "xAI": "#1E88E5",
+  "Mistral AI": "#43A047",
+  "Z.ai": "#8E24AA",
+};
 let data,
   state,
   views,
@@ -32,7 +45,7 @@ const num = (v, d = 1) =>
   });
 const compact = (v) =>
   Math.abs(v) >= 1000 ? `${num(v / 1000, 1)}k` : num(v, 0);
-const color = (name) => RC.orgColor(name),
+const color = (name) => organizationColors[name] || RC.orgColor(name),
   opacity = (name) => (state.organizations.includes(name) ? 1 : 0.2);
 const names = (rows) =>
   data.entities.filter((name) => rows.some((r) => r.org === name));
@@ -68,6 +81,7 @@ const labelTitle = (text, left, top) => ({
   text,
   left,
   top,
+  textAlign: "center",
   textStyle: {
     fontFamily: RC.font,
     fontSize: 11,
@@ -196,10 +210,10 @@ function renderScale() {
     return;
   }
   o.title = [
-    labelTitle("a. Market cap · USD bn", "2%", 4),
-    labelTitle("b. Revenue · USD bn", "55%", 4),
-    labelTitle("c. Market cap share", "2%", "53%"),
-    labelTitle("d. Revenue share", "55%", "53%"),
+    labelTitle("a. Market cap · USD bn", "25.5%", 4),
+    labelTitle("b. Revenue · USD bn", "79%", 4),
+    labelTitle("c. Market cap share", "25.5%", "53%"),
+    labelTitle("d. Revenue share", "79%", "53%"),
   ];
   o.grid = [
     { left: 46, right: "54%", top: 32, height: "40%", containLabel: false },
@@ -229,7 +243,7 @@ function renderScale() {
     ...[2, 3].map((index) => ({
       ...yAxis(index),
       min: 0,
-      ...(state.retain ? { max: 100 } : {}),
+      max: 100,
       axisLabel: { fontSize: 11, formatter: (v) => `${v}%` },
     })),
   ];
@@ -337,11 +351,14 @@ function renderLabs() {
     legend("lab-revenue-legend", []);
     return;
   }
-  o.grid = { left: 43, right: 9, top: 25, bottom: 29 };
+  o.grid = { left: 58, right: 9, top: 25, bottom: 29 };
   o.xAxis = xAxis();
   o.yAxis = {
     ...yAxis(),
     name: "Run rate · USD bn",
+    nameLocation: "middle",
+    nameRotate: 90,
+    nameGap: 38,
     nameTextStyle: { fontSize: 11 },
     type: state.labScale === "log" ? "log" : "value",
     ...(state.labScale === "log" ? { logBase: 10 } : { min: 0 }),
@@ -370,7 +387,10 @@ function renderRevenueScale() {
   );
   o.title = [
     {
-      ...labelTitle(`Year = Max Year = ${state.years[1]}`, 3, 3),
+      text: `Max year: ${state.years[1]}`,
+      left: 8,
+      top: 3,
+      textAlign: "left",
       textStyle: { fontSize: 11, color: C.muted, fontFamily: RC.font },
     },
   ];
@@ -528,7 +548,7 @@ function renderPublications() {
   const start = Math.min(state.years[0], 2025),
     end = Math.max(start, Math.min(state.years[1], 2025)),
     xs = Array.from({ length: end - start + 1 }, (_, i) => String(start + i));
-  o.grid = { left: 47, right: 12, top: 25, bottom: 27 };
+  o.grid = { left: 68, right: 12, top: 25, bottom: 27 };
   o.xAxis = {
     type: "category",
     data: xs,
@@ -538,6 +558,9 @@ function renderPublications() {
   o.yAxis = {
     ...yAxis(),
     name: "Publications",
+    nameLocation: "middle",
+    nameRotate: 90,
+    nameGap: 38,
     nameTextStyle: { fontSize: 11 },
   };
   orgs.forEach((org) => {
@@ -589,7 +612,11 @@ function renderPublications() {
       emphasis: { focus: "series" },
     });
     rows.forEach((r) =>
-      points.push({ org, axis: 0, point: [String(r.year), r.value] }),
+      points.push({
+        org,
+        axis: 0,
+        point: [String(r.year), r.value],
+      }),
     );
   });
   apply(id, o, points);
@@ -605,8 +632,6 @@ function syncControls() {
         `<option value="${esc(name)}"${state.organizations.includes(name) ? " selected" : ""}>${esc(name)}</option>`,
     )
     .join("");
-  $("year-min").value = state.years[0];
-  $("year-max").value = state.years[1];
   $("retain-unselected").checked = state.retain;
   document
     .querySelectorAll('[name="lab-axis"]')
@@ -756,10 +781,10 @@ async function boot() {
       render();
     });
     for (const [id, key] of [
-      ["year-min", "min"],
-      ["year-max", "max"],
+      ["year-min-range", "min"],
+      ["year-max-range", "max"],
     ])
-      $(id).addEventListener("change", (e) => {
+      $(id).addEventListener("input", (e) => {
         manualFilter(data, state, key, e.target.value);
         render();
       });

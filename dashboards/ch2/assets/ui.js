@@ -6,10 +6,6 @@
   toggle.addEventListener('click', () => { const open = menu.hidden; menu.hidden = !open; toggle.setAttribute('aria-expanded', String(open)); });
   document.addEventListener('click', (event) => { if (!event.target.closest('.organization-picker')) close(); });
   document.addEventListener('keydown', (event) => { if (event.key === 'Escape') { if (!menu.hidden) {event.preventDefault(); close(); toggle.focus();} document.querySelectorAll('.chart-info button').forEach(b => b.setAttribute('aria-expanded', 'false')); } });
-  for (const bound of ['min', 'max']) $('year-' + bound + '-range').addEventListener('input', (event) => {
-    $('year-' + bound).value = event.target.value;
-    $('year-' + bound).dispatchEvent(new Event('change', { bubbles: true }));
-  });
   document.querySelectorAll('.chart-info>button').forEach(button => {
     const info = button.parentElement;
     button.addEventListener('focus', () => delete info.dataset.dismissed);
@@ -31,6 +27,7 @@
     $('organization-current').textContent = [...native.options].every(option => option.selected) ? 'All organizations' : state.organizations.length === 1 ? state.organizations[0] : state.organizations.length + ' organizations';
     for (const [button, graph] of [['clear-scale','scale-graph'],['clear-lab-revenue','lab-revenue-graph'],['clear-revenue-comparison','revenue-comparison-graph'],['clear-eto','eto-graph']]) $(button).hidden = !state.snapshots[graph];
     for (const [bound, index] of [['min',0],['max',1]]) { const slider = $('year-' + bound + '-range'); slider.min = data.startYear; slider.max = data.endYear; slider.value = state.years[index]; }
+    $('year-range-value').textContent = `${state.years[0]}–${state.years[1]}`;
     const span = data.endYear - data.startYear || 1;
     document.querySelector('.year-track').style.setProperty('--year-low', ((state.years[0]-data.startYear)/span*100)+'%');
     document.querySelector('.year-track').style.setProperty('--year-high', ((state.years[1]-data.startYear)/span*100)+'%');

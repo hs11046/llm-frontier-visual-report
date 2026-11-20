@@ -3,6 +3,9 @@ import {readFileSync} from 'node:fs';
 import {initialState,clone,manualFilter,selectOrganizations,clearChart,viewData} from '../assets/model.mjs';
 
 const data=JSON.parse(readFileSync(process.argv[2]||'/tmp/ch2-echarts-payload.json','utf8'));
+for(const org of data.groups['AI labs']){
+ assert.ok(data.labRevenue.some(r=>r.org===org)||data.publications.some(r=>r.org===org),`${org} must appear in an AI-lab chart`);
+}
 const state=initialState(data),original=clone(state);
 manualFilter(data,state,'min',2024);
 selectOrganizations(data,state,'scale-graph',['Amazon','Meta']);
