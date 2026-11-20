@@ -74,7 +74,7 @@
       window.scrollTo({left:snapshot.x,top:snapshot.y,behavior:'instant'});
     }));
   }
-  window.ReportEmbed = Object.freeze({ ready, notify, setView, requestFullscreen: () => send('report:fullscreen'), onAction, help, error, prepareMode });
+  window.ReportEmbed = Object.freeze({ ready, notify, setView, requestFullscreen: () => send('report:fullscreen'), requestMinimize: () => send('report:minimize'), onAction, help, error, prepareMode });
   if (embedded) {
     const reportedFailures = new Set();
     const aborted = reason => reason?.name === 'AbortError';

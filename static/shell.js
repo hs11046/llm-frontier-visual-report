@@ -16,12 +16,13 @@
     panel.iframe.style.height = (panel === active ? Math.max(100, panel.body.clientHeight - (panel.body.querySelector('.embed-status')?.offsetHeight || 0)) : panel.height) + 'px';
   }
   function urlAction() {
-    const id = location.pathname.match(/^\/explore\/(ch[1-5])\/?$/)?.[1];
-    const params = new URLSearchParams(location.search), action = {};
+    const params = new URLSearchParams(location.search);
+    const id = location.pathname.match(/^\/explore\/(ch[1-5])\/?$/)?.[1] || (params.get('panel') === 'ch5' ? 'ch5' : null);
+    const action = {};
     if (id === 'ch1' && params.has('category')) return {type:'category',category:params.get('category')};
     if (id === 'ch5') {
       if (params.has('sel')) action.selection = params.get('sel') || null;
-      const view = params.get('view') || decodeURIComponent(location.hash.slice(1));
+      const view = params.get('view') || (location.pathname.startsWith('/explore/') ? decodeURIComponent(location.hash.slice(1)) : '');
       if (view) action.view = view;
     }
     return Object.keys(action).length ? action : null;
@@ -144,15 +145,26 @@
     if (history.state?.shellEntry) history.go(-(history.state.shellDepth || 1));
     else { const id = active.el.dataset.chapter; history.replaceState({}, '', `/#${id}`); showStory(); document.getElementById(id)?.scrollIntoView(); }
   }
+  function minimize(panel) {
+    if (panel !== active) return;
+    expand(panel, true);
+    close();
+  }
   function route() {
     const match = location.pathname.match(/^\/explore\/(ch[1-5])\/?$/);
     if (match) { storyUrl = history.state?.reportStoryUrl || `/#${match[1]}`; showFullscreen(match[1]); }
-    else showStory();
+    else {
+      showStory();
+      if (new URLSearchParams(location.search).get('panel') === 'ch5') {
+        expand(panels.get('ch5'), true);
+        document.getElementById('ch5')?.scrollIntoView({ behavior: 'instant' });
+      }
+    }
   }
   panels.forEach(panel => {
     panel.toggle.addEventListener('click', () => expand(panel, !panel.expanded));
     panel.el.querySelector('.panel-fullscreen').addEventListener('click', () => open(panel.el.dataset.chapter));
-    panel.el.querySelector('.panel-exit').addEventListener('click', close);
+    panel.el.querySelector('.panel-exit').addEventListener('click', () => panel.el.dataset.chapter === 'ch5' ? minimize(panel) : close());
     panel.el.querySelector('.panel-help').addEventListener('click', () => {
       help.querySelector('p').textContent = panel.metadata?.help || panel.el.querySelector('.panel-description p').textContent + '. Use the chapter filters and chart controls to inspect the evidence. Data definitions and source notes are provided beside the charts; associations do not establish causation.';
       help.showModal();
@@ -180,6 +192,7 @@
 
       }
     } else if (msg.type === 'report:fullscreen') open(msg.chapterId);
+    else if (msg.type === 'report:minimize') minimize(panel);
     else if (msg.type === 'report:escape' && panel === active) close();
     else if (msg.type === 'report:view') { panel.el.dataset.view = msg.view || ''; syncUrl(panel, {view:msg.view,selection:msg.selection,category:msg.category}); }
     else if (msg.type === 'report:error') failPanel(panel, msg.message);

@@ -77,10 +77,27 @@
     window.DSH_CH5?.setSelection(null);
     if (el('logToggle').textContent.includes('off')) el('logToggle').click();
   };
-  el('synthesisFullscreen').onclick = () => {
-    if (window.parent === window) location.assign('/explore/ch5/');
-    else window.ReportEmbed?.requestFullscreen();
+  const fullscreenButton = el('synthesisFullscreen');
+  const embedded = document.documentElement.dataset.reportEmbed === 'true';
+  const syncFullscreenButton = () => {
+    const canExpand = embedded && document.documentElement.dataset.embedMode !== 'fullscreen';
+    fullscreenButton.textContent = canExpand ? 'Full screen ↗' : 'Back to panel ↙';
+    fullscreenButton.setAttribute('aria-label', canExpand ? 'Open full screen dashboard' : 'Minimize to the expanded Chapter 5 panel');
   };
+  fullscreenButton.onclick = () => {
+    if (!embedded) {
+      const params = new URLSearchParams({ panel: 'ch5', view: current });
+      const selection = window.DSH_CH5?.getSelection();
+      if (selection) params.set('sel', selection);
+      location.assign(`/?${params}#ch5`);
+    } else if (document.documentElement.dataset.embedMode === 'fullscreen') {
+      window.ReportEmbed?.requestMinimize();
+    } else {
+      window.ReportEmbed?.requestFullscreen();
+    }
+  };
+  document.addEventListener('report:mode', syncFullscreenButton);
+  syncFullscreenButton();
   window.Ch5Layout = {
     sync(value) {
       current = pages.includes(value.view) ? value.view : 'overview';
