@@ -9,7 +9,7 @@
   const sidebar = document.createElement('aside');
   sidebar.className = 'synthesis-sidebar';
   sidebar.setAttribute('aria-label', 'Insights and filters');
-  sidebar.innerHTML = `<section class="insight-panel"><h2>Insight</h2><p>${insight}</p></section><section class="filter-panel"><label for="viewSelect">View</label><select id="viewSelect"><option value="overview">The shift</option><option value="linked">Compare the evidence</option></select><div class="scale-control"><span class="filter-label">Rank scale</span></div><div class="organization-control"></div><button type="button" id="clearFilters" class="ghost-btn">Clear all filters</button><div class="view-pager"></div><div class="filter-tools"><span>Tools</span><button type="button" id="synthesisFullscreen" class="ghost-btn">Fullscreen ↗</button></div></section>`;
+  sidebar.innerHTML = `<section class="insight-panel"><h2>Insight</h2><p>${insight}</p></section><section class="filter-panel"><div class="scale-control"><span class="filter-label">Rank scale</span></div><div class="organization-control"></div><button type="button" id="clearFilters" class="ghost-btn">Clear all filters</button><div class="view-pager"></div><div class="filter-tools"><span>Tools</span><button type="button" id="synthesisFullscreen" class="ghost-btn">Fullscreen ↗</button></div></section>`;
   main.before(shell);
   shell.append(sidebar, main);
   const pager = document.querySelector('.pager');
@@ -17,7 +17,6 @@
   sidebar.querySelector('.scale-control').append(el('logToggle'));
   const picker = document.querySelector('.org-picker');
   sidebar.querySelector('.organization-control').append(picker);
-  sidebar.querySelector('.filter-panel').append(el('selBadge'));
   const summary = document.createElement('section');
   summary.className = 'data-summary';
   summary.innerHTML = '<h2>Data summary</h2>';
@@ -74,7 +73,6 @@
     column.append(chart);
   });
   let current = 'overview';
-  el('viewSelect').onchange = () => window.DSH_CH5?.goToPage(el('viewSelect').value);
   el('clearFilters').onclick = () => {
     window.DSH_CH5?.setSelection(null);
     if (el('logToggle').textContent.includes('off')) el('logToggle').click();
@@ -86,7 +84,6 @@
   window.Ch5Layout = {
     sync(value) {
       current = pages.includes(value.view) ? value.view : 'overview';
-      el('viewSelect').value = current;
       sidebar.querySelector('.scale-control').hidden = current === 'overview';
       sidebar.querySelector('.organization-control').hidden = current === 'overview';
       el('clearFilters').hidden = current === 'overview';

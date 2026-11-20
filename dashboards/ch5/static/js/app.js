@@ -116,8 +116,6 @@ function go(i) {
 function selectOrg(id, source = 'shell') {
   if (id != null && !state.orgById[id]) return;
   state.selected = id;
-  const o = id ? state.orgById[id] : null;
-  el('selBadge').textContent = o ? `${o.name}${o.group === 'big7' ? ' · Big-7' : ' · Smaller labs'}` : 'No organization selected';
   fetch(API.selection, {
     method: 'POST', headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ orgId: id, source }),
@@ -380,8 +378,7 @@ function renderLinked() {
   if (chips && !chips.dataset.built) {
     chips.dataset.built = '1';
     const featured = ['openai', 'anthropic', 'google', 'deepseek'];
-    chips.innerHTML = featured.map((id) => `<button class="chip" data-org="${id}">${state.orgById[id].name}</button>`).join('') +
-      `<button class="chip" data-org="" style="border-style:dashed">Clear</button>`;
+    chips.innerHTML = featured.map((id) => `<button class="chip" data-org="${id}">${state.orgById[id].name}</button>`).join('');
     chips.querySelectorAll('.chip').forEach((b) => (b.onclick = () => selectOrg(b.dataset.org || null)));
   }
   if (picker) picker.value = sel || '';
