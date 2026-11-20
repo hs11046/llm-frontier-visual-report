@@ -10,12 +10,35 @@
 <body>
 <div class="top-navbar"><span>COMP7507 &nbsp;/&nbsp; GROUP 3 &nbsp;/&nbsp; CHAPTER 3</span><span>THE COST CLIFF &nbsp;·&nbsp; INTERACTIVE DATA STORY</span></div>
 <div class="content-container">
-<header class="chapter-intro"><div class="chapter-intro-copy"><div class="chapter-tag">COMPUTE ECONOMICS & SECTOR SHIFT</div><h1 class="main-title">Section 3: The Cost Cliff & Academic Exit</h1><p class="subtitle">How estimated training costs and model origins changed (2023–2026)</p></div><button class="dashboard-help" type="button" aria-label="How to use this dashboard" aria-controls="dashboard-help" aria-expanded="false">?</button></header>
+<header class="chapter-intro"><div class="chapter-intro-copy"><div class="chapter-tag">COMPUTE ECONOMICS & SECTOR SHIFT</div><h1 class="main-title">The Cost Cliff & Academic Exit</h1><p class="subtitle">How estimated training costs and model origins changed (2023–2026)</p></div><button class="dashboard-help" type="button" aria-label="How to use this dashboard" aria-controls="dashboard-help" aria-expanded="false">?</button></header>
 <div id="dashboard-help" class="usage-card" hidden><h2>How to use this dashboard</h2><p>Choose model weight access to filter training costs. Drag a box to zoom into a chart. Hold Ctrl while scrolling to zoom, use its toolbar to restore a view, or double-click the chart. Reset all chart views restores all five charts and keeps the model access filter.</p></div>
-<div class="dashboard-shell"><aside class="filter-sidebar"><div class="insight-card"><h2>Insight</h2><p>Estimated model costs span several orders of magnitude. Compare reported funding with estimated training costs. Academia down to 1.1%. Frontier compute out of academic reach. OpenAI spending 4x in 1 year.</p></div><img class="insight-pagination" src="/static/chapter3-ui/pagination.svg" alt="Insight 1 of 2"><div class="filter-panel"><label class="filter-title" for="filter-type">Models</label><select id="filter-type" aria-label="Model weight access"><option value="All">All Models</option><option value="Open">Open Weights Only</option><option value="Closed">Closed Weights Only</option></select><button class="reset-button" type="button" id="reset-views" title="Clear box selections and restore the original ranges in every chart">Reset all chart views</button></div></aside>
+<div class="dashboard-shell"><aside class="filter-sidebar"><div class="insight-card"><h2>Insight</h2><p>Frontier training costs have escalated dramatically, pricing university labs and independent startups out of foundation model competition. Capped by compute, academia's share of notable models has collapsed to just 1.1%.</p></div><div class="filter-panel"><button class="reset-button" type="button" id="reset-views" title="Clear box selections and restore the original ranges in every chart">Reset all chart views</button></div></aside>
 <main class="chart-region">
 <div class="grid-top">
-<section class="card"><div class="card-header"><h2>3.1 · Training cost growth and distribution (2023–2026)</h2><div class="chart-info"><button type="button" aria-label="Information about training costs" aria-describedby="cost-note" aria-expanded="false"><img src="/static/chapter3-ui/info.svg" alt=""></button><p id="cost-note" role="tooltip" class="chart-note">Estimated model costs span several orders of magnitude. Training cost is in 2023 USD. Use the chart toolbar to box zoom or restore the original ranges.</p></div></div><div id="chart1" class="chart-graph" role="img" aria-label="Training cost growth and distribution, 2023–2026"></div></section>
+
+<!-- 改為 -->
+<section class="card">
+  <div class="card-header" style="display: flex; align-items: center; justify-content: space-between;">
+    <h2>3.1 · Training cost growth and distribution (2023–2026)</h2>
+    
+    <!-- 移動至此：右上角篩選器 -->
+    <div style="display: inline-flex; align-items: center; gap: 6px; margin-left: auto; margin-right: 12px;">
+      <label for="filter-type" style="font-size: 11px; color: #677a76; font-weight: 500;">Models:</label>
+      <select id="filter-type" aria-label="Model weight access" style="font-size: 11px; padding: 2px 8px; border: 1px solid #d1d5db; border-radius: 4px; background: #ffffff; color: #182825; cursor: pointer;">
+        <option value="All">All Models</option>
+        <option value="Open">Open</option>
+        <option value="Closed">Closed</option>
+      </select>
+    </div>
+
+    <div class="chart-info">
+      <button type="button" aria-label="Information about training costs" aria-describedby="cost-note" aria-expanded="false"><img src="/static/chapter3-ui/info.svg" alt=""></button>
+      <p id="cost-note" role="tooltip" class="chart-note">Estimated model costs span several orders of magnitude. Training cost is in 2023 USD. Use the chart toolbar to box zoom or restore the original ranges.</p>
+    </div>
+  </div>
+  <div id="chart1" class="chart-graph" role="img" aria-label="Training cost growth and distribution, 2023–2026"></div>
+</section>
+
 <section class="card"><div class="card-header"><h2>3.2 · Small-lab funding vs. cost barrier</h2><div class="chart-info"><button type="button" aria-label="Information about funding and costs" aria-describedby="funding-note" aria-expanded="false"><img src="/static/chapter3-ui/info.svg" alt=""></button><p id="funding-note" role="tooltip" class="chart-note">Compare reported funding with estimated training costs. The reference is the estimated cost of one GPT-4.5 training run in 2025.</p></div></div><div id="chart2" class="chart-graph" role="img" aria-label="Small-lab funding versus the training cost barrier"></div></section>
 </div>
 <section class="card sector-card"><div class="card-header"><h2>3.3 · Sector, compute and spending</h2><div class="chart-info"><button type="button" aria-label="Information about sector, compute and spending" aria-describedby="sector-note" aria-expanded="false"><img src="/static/chapter3-ui/info.svg" alt=""></button><p id="sector-note" role="tooltip" class="chart-note">Academia down to 1.1%. Frontier compute out of academic reach. OpenAI spending 4x in 1 year. Each subplot keeps its own zoom and restore controls.</p></div></div><div class="grid-bottom">

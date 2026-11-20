@@ -11,5 +11,5 @@
   const help = document.querySelector('.dashboard-help'), panel = document.getElementById('dashboard-help');
   help.addEventListener('click', () => { panel.hidden = !panel.hidden; help.setAttribute('aria-expanded', String(!panel.hidden)); window.ReportEmbed?.notify(); });
   document.getElementById('filter-type').addEventListener('change', event => window.ReportEmbed?.setView({category:event.target.value}));
-  window.ReportEmbed?.ready({title:'Section 3: The Cost Cliff & Academic Exit',help:panel.textContent});
+  window.ReportEmbed?.ready({title:'The Cost Cliff & Academic Exit',help:panel.textContent});
 })();

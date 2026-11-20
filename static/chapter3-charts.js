@@ -83,17 +83,11 @@
       .map((r) => [[0.002, r.entity], [r.val, r.entity], null])
       .flat();
     return {
-      grid: { left: 5, right: 46, top: 47, bottom: 44, containLabel: true },
-      title: {
-        left: "center",
-        top: 0,
-        text: "One frontier run ≈ $366M",
-        subtext: "GPT-4.5 estimated training cost, 2025",
-        itemGap: 3,
-      },
+      // Left margin 215 prevents truncation of "Top University Allocation" & "Typical Academic Lab"
+      grid: { left: 215, right: 46, top: 58, bottom: 44, containLabel: false },
       tooltip: {},
       xAxis: {
-        ...namedAxis("log", "Frontier runs affordable (log scale)", 30),
+        ...namedAxis("log", "Number of Frontier Models Affordable (log scale)", 30),
         min: 0.002,
         max: 60,
         axisLabel: { formatter: (v) => v + "×" },
@@ -101,7 +95,7 @@
       yAxis: {
         type: "category",
         data: ordered.map((r) => r.entity),
-        axisLabel: { width: 111, overflow: "truncate", interval: 0 },
+        axisLabel: { interval: 0, color: colors.ink },
       },
       series: [
         {
@@ -120,8 +114,19 @@
           markLine: {
             silent: true,
             symbol: "none",
-            label: { show: false },
-            lineStyle: { color: colors.closed, type: "dashed" },
+            lineStyle: { color: "#c2410c", type: "dashed", width: 1.5 },
+            label: {
+              show: true,
+              position: "end",
+              distance: 8,
+              align: "center",
+              verticalAlign: "bottom",
+              color: "#c2410c",
+              fontSize: 10,
+              fontWeight: "bold",
+              lineHeight: 14,
+              formatter: "Survival Threshold: 1 Frontier Model (~$366M)\nGPT-4.5 estimated training cost, 2025",
+            },
             data: [{ xAxis: 1 }],
           },
         },
@@ -158,6 +163,7 @@
       ],
     };
   }
+
   function sector({ years, shares }) {
     return {
       tooltip: { trigger: "axis", valueFormatter: (v) => v.toFixed(1) + "%" },
@@ -179,6 +185,7 @@
       })),
     };
   }
+
   function compute(groups) {
     const series = [];
     for (const [name, source] of Object.entries(groups)) {
@@ -209,23 +216,31 @@
         itemStyle: { color },
         lineStyle: { color, type: name === "Industry" ? "dashed" : "dotted" },
         silent: true,
+        legendHoverLink: false,
       });
+    } // <-- This closing bracket was missing
+
+    if (series.length > 0) {
+      series[0].markLine = {
+        silent: true,
+        symbol: "none",
+        lineStyle: { color: colors.unknown, type: "dotted" },
+        label: {
+          position: "insideStartTop",
+          formatter: "Academic ceiling ≈ 10²⁴",
+        },
+        data: [{ yAxis: 1e24 }],
+      };
     }
-    series[0].markLine = {
-      silent: true,
-      symbol: "none",
-      lineStyle: { color: colors.unknown, type: "dotted" },
-      label: {
-        position: "insideStartTop",
-        formatter: "Academic ceiling ≈ 10²⁴",
-      },
-      data: [{ yAxis: 1e24 }],
-    };
+
     return {
       useUTC: true,
       series,
       tooltip: {},
-      legend,
+      legend: {
+        ...legend,
+        data: ["Academia", "Industry"], // Hides the trend lines from the legend
+      },
       grid: { top: 18, left: 45, right: 16, bottom: 43, containLabel: true },
       xAxis: { type: "time" },
       yAxis: {
@@ -236,6 +251,7 @@
       },
     };
   }
+
   function spending({ years, labs }) {
     const format = (v) => "$" + Number(v).toFixed(1) + "B";
     return {

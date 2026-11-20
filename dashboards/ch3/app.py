@@ -214,14 +214,14 @@ def build_funding_vs_barrier() -> go.Figure:
         xref="x",
         yref="paper",
         text=(
-            "<b>Survival Threshold: 1 Frontier Model ($366M)</b><br>"
-            "<span style='font-size:8.5px;color:#7c2d12;font-weight:normal;'>"
-            "Anchored to single 2025 frontier run (OpenAI GPT-4.5)"
+            "<b>Survival Threshold: 1 Frontier Model (~$366M)</b><br>"
+            "<span style='font-size:8.5px;color:#c2410c;font-weight:normal;'>"
+            "GPT-4.5 estimated training cost, 2025"
             "</span>"
         ),
         showarrow=False,
         xanchor="center",
-        font=dict(color="#c2410c", size=10)
+        font=dict(color="#c2410c", size=10)  # 改為與紅線一致的顏色
     )
 
     fig.update_xaxes(
@@ -240,8 +240,8 @@ def build_funding_vs_barrier() -> go.Figure:
         paper_bgcolor="#ffffff",
         plot_bgcolor="#ffffff",
         height=480,
-        title=dict(text="3.2 Small-Lab Funding vs. Cost Barrier", font=dict(color="#182825", size=14)),
-        margin=dict(l=175, r=45, t=68, b=50)  # 調大 t 留白，防止標籤切字
+        title=dict(text="3.2 · Small-lab funding vs. cost barrier", font=dict(color="#182825", size=14)),
+        margin=dict(l=220, r=45, t=68, b=50)  # 由原先的 175 調大為 220，防止左側文字被截斷
     )
     return fig
 

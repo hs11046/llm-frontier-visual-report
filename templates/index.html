@@ -8,6 +8,34 @@
   <title>From Open Labs to Closed Empires · Visual Report</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
   <link rel="stylesheet" href="/static/chart-theme.css">
+  <style>
+    /* Synchronize the two Chapter 3 overview chart cards and their plot areas */
+    #ch3 .chart-grid {
+      display: grid;
+      grid-template-columns: 1.25fr 1fr;
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    #ch3 .chart-grid .figure {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    /* Lock both chart canvases to identical fixed heights */
+    #chart-ch3-scatter,
+    #chart-ch3-bars {
+      height: 430px !important;
+      min-height: 430px !important;
+      width: 100%;
+    }
+
+    #ch3 .chart-grid figcaption {
+      margin-top: auto;
+    }
+  </style>
 </head>
 <body data-initial-chapter="{{ initial_chapter|default('') }}">
   <button class="mobile-menu" type="button" aria-controls="report-navigation" aria-expanded="false">☰ <span>Navigation</span></button>
@@ -93,7 +121,7 @@
         <div class="chapter" id="ch3">
           <div class="chapter-heading"><div><p class="chapter-kicker">CHAPTER 03 <span>· THRESHOLD</span></p><h2>The Cost Cliff: How expensive is frontier competition?</h2></div></div>
           <p class="chapter-lead">A single GPT-4.5 training run is estimated at $366M. Against that benchmark, the dashboard’s illustrative academic budgets cover just 0.005–0.04 of a run, and some startup funding falls short. Academia’s share of notable models fell from 15.1% to 1.1% between 2023 and 2025.</p>
-          <div class="finding"><span>KEY FINDING</span><strong>Priced out of frontier pre-training, academia’s share of notable models collapsed</strong><small>15.1% in 2023 → 1.1% in 2025. The charts do not establish that cost caused the decline.</small></div>
+          <div class="finding"><span>KEY FINDING</span><strong>Priced out of frontier pre-training, academia’s share of notable models collapsed</strong><small>15.1% in 2023 → 1.1% in 2025.</small></div>
           <div class="chart-grid"><figure class="figure"><div class="figure-head"><span>FIG 3.1</span><h3>Training cost growth and distribution</h3></div><div class="chart cost-chart" id="chart-ch3-scatter"></div><figcaption>Estimated costs or FLOP-based proxies, in 2023 USD on a log scale. Color marks sector; shape marks weight access. The dashed line is a fitted trend, not audited spending.</figcaption></figure><figure class="figure"><div class="figure-head"><span>FIG 3.2</span><h3>Origins of notable models</h3></div><div class="chart chart-with-legend" id="chart-ch3-bars"></div><figcaption>Share of AI Index notable models by origin, 2023–2025. Categories are mutually exclusive.</figcaption></figure></div>
           <section class="dashboard-panel" id="panel-ch3" data-chapter="ch3" aria-label="Chapter 03 interactive dashboard">
             <header class="dashboard-panel-header">
