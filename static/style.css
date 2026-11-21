@@ -19,3 +19,7 @@ body.dashboard-open::before{content:'';position:fixed;inset:0;background:var(--p
 #ch3 .chart-grid .figure{display:flex;flex-direction:column}
 #ch3 .chart-grid .chart{height:500px}
 @media(max-width:759px){#ch3 .chart-grid .chart{height:440px}}
+
+#ch1 .finding { margin-top: 8px; }
+.finding-list { flex-basis: 100%; margin: 0; padding-inline-start: 18px; }
+.finding-list li + li { margin-top: 4px; }

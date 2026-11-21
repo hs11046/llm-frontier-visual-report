@@ -96,8 +96,13 @@
       <div class="story-content">
         <div class="chapter" id="ch1">
           <div class="chapter-heading"><div><p class="chapter-kicker">CHAPTER 01 <span>· OBSERVATION</span></p><h2>The Flip: Who holds the frontier positions?</h2></div></div>
-          <p class="chapter-lead">Begin with the observed shift. In the last available Arena overall snapshot of February 2024, 40 of the Top 50 models had open weights. By September 2026, only nine did. Every model in the final Top 10 was closed-weight. Open weights do not necessarily mean fully open-source AI.</p>
-          <div class="finding"><span>KEY FINDING</span><strong>Open-weight share of the Top 50: 80% → 18%</strong><small>February 2024 to September 2026; both snapshots contain 50 models. The path was not monotonic.</small></div>
+          <div class="finding">
+            <span>KEY FINDINGS</span>
+            <ul class="finding-list">
+              <li><b>Top 50 composition.</b> Open-weight models fell from 40 of 50 (80%) in February 2024 to 9 of 50 (18%) in September 2026. All nine ranked 17th or lower.</li>
+              <li><b>Frontier gap.</b> The closed-weight lead grew from 2 ranks in December 2023 to 10 in October 2024. Open-weight DeepSeek R1 took first place in January and February 2025. Closed-weight models regained the lead, reaching a 16-rank gap in September 2026.</li>
+            </ul>
+          </div>
           <div class="chart-grid"><figure class="figure"><div class="figure-head"><span>FIG 1.1</span><h3>Open-weight share of the Top 50</h3></div><div class="chart chart-with-legend" id="chart-ch1-line"></div><figcaption>Last observed snapshot of each month; the line begins once a full Top 50 is available. Source: Arena overall.</figcaption></figure><figure class="figure"><div class="figure-head"><span>FIG 1.2</span><h3>Frontier rank gap</h3></div><div class="chart chart-with-legend" id="chart-ch1-gap"></div><figcaption>Best open-weight rank minus best closed-weight rank. Positive values mean closed-weight leads; negative values mean open-weight leads. Monthly Arena overall snapshots from December 2023; rank difference does not measure capability.</figcaption></figure></div>
           <section class="dashboard-panel" id="panel-ch1" data-chapter="ch1" aria-label="Chapter 01 interactive dashboard">
             <header class="dashboard-panel-header">

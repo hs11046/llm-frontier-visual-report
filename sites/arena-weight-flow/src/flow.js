@@ -58,6 +58,26 @@ export function layout(periods, top, width, height, stacking = 'all') {
   });
   return { blocks, bands, populations, tieGroups, frontier, slots, left, y, h, col, row, width, height, monthScale, positionScale };
 }
+export function rankZoomGeometry(wide, narrow) {
+  const blockKey = block => `${block.monthIndex}:${block.model}`;
+  const tieKey = tie => `${tie.monthIndex}:${tie.rank}`;
+  const narrowBlocks = new Map(narrow.blocks.map(block => [blockKey(block), block.start]));
+  const narrowTies = new Map(narrow.tieGroups.map(tie => [tieKey(tie), tie]));
+  const exit = rect => ({
+    x: rect.x,
+    y: Math.max(rect.y, narrow.y + narrow.h) + 24 + (rect.y - wide.y) * .25,
+    w: rect.w,
+    h: rect.h,
+  });
+  return {
+    wide,
+    narrow,
+    height: interpolateObject({ plot: wide.h, row: wide.row }, { plot: narrow.h, row: narrow.row }),
+    blocks: wide.blocks.map(block => interpolateObject(block.start, narrowBlocks.get(blockKey(block)) ?? exit(block.start))),
+    ties: wide.tieGroups.map(tie => interpolateObject(tie, narrowTies.get(tieKey(tie)) ?? exit(tie))),
+  };
+}
+
 export function blockAt(b, progress, h) {
   const t = Math.max(0, Math.min(1, (progress - b.delay) / (1 - b.delay)));
   const e = t * t * (3 - 2 * t);

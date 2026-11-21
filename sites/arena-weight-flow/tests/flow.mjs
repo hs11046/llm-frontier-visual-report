@@ -120,3 +120,56 @@ for(const cat of catalog.categories){
  }
 }
 console.log('Peak checks passed: signed extrema, plateaus, missing intervals, provisional endpoint, preserved full model names.');
+
+const { rankZoomGeometry } = await import('../src/flow.js');
+const { chartViewReducer, initialChartView } = await import('../src/chartView.js');
+const overall = calendarPeriods(read('../public/data/arena/overall.json').periods);
+const wide = layout(selectPeriods(overall, 50), 50, 760, 640);
+const narrow = layout(selectPeriods(overall, 10), 10, 760, 490);
+const zoom = rankZoomGeometry(wide, narrow);
+const retained = new Map(narrow.blocks.map(block => [`${block.monthIndex}:${block.model}`, block.start]));
+assert.deepEqual(zoom.height(0), { plot: wide.h, row: wide.row });
+assert.deepEqual(zoom.height(1), { plot: narrow.h, row: narrow.row });
+for (const [i, block] of wide.blocks.entries()) {
+  const geometry = zoom.blocks[i];
+  const target = retained.get(`${block.monthIndex}:${block.model}`);
+  assert.deepEqual(geometry(0), block.start);
+  assert.equal(Boolean(target), block.rank <= 10);
+  if (target) assert.deepEqual(geometry(1), target);
+  else {
+    const last = geometry(1);
+    assert.ok(last.y > block.start.y && last.y >= narrow.y + narrow.h + 8);
+  }
+}
+for (const [i, tie] of wide.tieGroups.entries()) {
+  const target = narrow.tieGroups.find(group => group.monthIndex === tie.monthIndex && group.rank === tie.rank);
+  const end = zoom.ties[i](1);
+  if (target) assert.deepEqual(end, target);
+  else assert.ok(end.y >= narrow.y + narrow.h + 8);
+}
+const selectView = (state, top, mode, animate = true) => chartViewReducer(state, { type: 'select', view: { top, mode }, animate });
+const advance = state => chartViewReducer(state, { type: 'settled', transition: state.transition });
+let view = selectView(initialChartView, 50, 'area');
+view = selectView(view, 10, 'gap');
+assert.deepEqual(view.view, { top: 50, mode: 'rank' });
+assert.equal(view.transition.stage, 'rank');
+view = advance(view);
+assert.deepEqual(view.transition, { stage: 'zoom', toTop: 10 });
+view = advance(view);
+assert.deepEqual(view.view, { top: 10, mode: 'rank' });
+assert.equal(view.transition.stage, 'landed');
+view = advance(view);
+assert.deepEqual(view.view, { top: 10, mode: 'gap' });
+view = selectView(view, 50, 'area');
+assert.deepEqual(view.view, { top: 10, mode: 'rank' });
+view = advance(view);
+assert.equal(view.transition.toTop, 50);
+const reversed = selectView(view, 10, 'gap');
+view = advance(reversed);
+assert.deepEqual(view.view, { top: 50, mode: 'rank' });
+assert.equal(view.transition.toTop, 10);
+assert.deepEqual(advance(advance(view)).view, { top: 10, mode: 'gap' });
+const reduced = selectView(initialChartView, 10, 'gap', false);
+assert.deepEqual(reduced.view, { top: 10, mode: 'gap' });
+assert.equal(reduced.transition, null);
+console.log('Range zoom checks passed: original-rank stages, queued reversal, both layouts, and retained ties.');
