@@ -9,3 +9,4 @@ preview*
 *.log
 .pytest_cache/
 .cache/
+report_submission/rendered_pdfs/
