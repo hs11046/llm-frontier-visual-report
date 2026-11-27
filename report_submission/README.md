@@ -46,7 +46,7 @@ report_submission/
 | --- | --- | --- | --- |
 | **Ruan Lixin** | 3036838453 | 第 14 页（Ch1 + 全站重构 & QA） | Ch1 与全站重构使用的 AI 工具、模型及代表性提示词 |
 | **Qi Yingying** | 3036791019 | 第 15 页（Ch2 Scale & Output） | Ch2 数据处理与网页搭建使用的 AI 工具、模型及提示词 |
-| **Wong Yan Yuet** | 3036656878 | 第 16 页（Ch3 Cost Cliff） | Ch3 数据分析与网页搭建使用的 AI 工具、模型及提示词 |
+| **Wong Yan Yuet** | 3036656879 | 第 16 页（Ch3 Cost Cliff） | Ch3 数据分析与网页搭建使用的 AI 工具、模型及提示词 |
 | **Wang Ling** | 3036839055 | 第 17 页（Ch4 Parallel Trends） | Ch4 数据整理与网页搭建使用的 AI 工具、模型及提示词 |
 | **Huang Shan** | 3036807507 | 第 18 页（Proposal Lead + Ch5 + 统筹） | **Early Proposal Stage**（Huang Shan 主导、全员讨论完善）的 AI 工具、模型与提示词；汇总全组修改并打最终提交包 |
 
