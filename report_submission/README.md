@@ -15,19 +15,19 @@
 ```text
 report_submission/
 ├── README.md                              # 本说明文档
-├── COMP7507_Group3_submission_DRAFT.zip   # 当前完整提交包初稿（14.8 MB，207 个文件）
+├── COMP7507_Group3_submission_DRAFT.zip   # 当前完整提交包初稿（15.3 MB，207 个文件）
 └── editable_sources/
     ├── ai_usage_report.html               # AI 使用报告源码（可直接编辑第 5 页预留栏位）
-    ├── final_report.html                  # 最终报告源码（可直接微调 Part I / Part II 文案）
+    ├── final_report.html                  # 最终报告源码（简洁正式学术风格，含 Ch1–Ch4 互动说明预留框及 Part II）
     └── rebuild_pdfs.sh                    # 修改 HTML 后一键重新渲染两份 PDF 的脚本
 ```
 
 ### `COMP7507_Group3_submission_DRAFT.zip` 解压后内容
 - `index.html`：统一提交入口页（直连两份 PDF、`work_package/index.html`、`README.md` 与 `VERIFICATION.md`）
-- `final_report_draft.pdf`（19 页）：
-  - 封面（1 页，含项目题目、Group 3、全员姓名与学号）
-  - **Part I Overall Work（正文 12 页 + 参考文献 1 页）**：项目目标、3 条 Highlights、8 大冻结数据源与分析准则、Ch1–Ch5 实机截图与矢量数据图、假设验证修订总表、方法架构与取舍、困难与未实现计划（*Anything we wanted to do but haven't*）、数据/可视化/工具局限、13 条学术与数据引用
-  - **Part II Individual Contributions（5 页，每人 1 页）**：按成员依次为 Ruan Lixin（p.14）、Qi Yingying（p.15）、Wong Yan Yuet（p.16）、Wang Ling（p.17）、Huang Shan（p.18）
+- `final_report_draft.pdf`（23 页，简洁正式学术排版，正文自然分页流式衔接）：
+  - 封面（第 1 页，含 HKU 抬头、项目题目、Abstract、关键词及全员姓名与学号）
+  - **Part I Overall Work（正文第 2–17 页，共 16 页 ≤ 20 页上限 + 参考文献第 18 页）**：项目目标与 3 条核心贡献、8 大冻结数据源与分析准则、**融入式故事线主干（Section 3.1–3.5，将故事线推进、图表编码说明、交互操作与推导结论过程有机融合）**、Ch1–Ch4 交互说明与截图预留框、Ch5 实机运行交互操作与截图对比（Overview + Google vs. DeepSeek）、假设验证修订总表、架构与设计取舍、困难与未实现计划（*Anything we wanted to do but haven't*）、局限与未来工作、13 条学术与数据引用
+  - **Part II Individual Contributions（第 19–23 页，每人 1 页）**：按成员依次为 Ruan Lixin（p.19）、Qi Yingying（p.20）、Wong Yan Yuet（p.21）、Wang Ling（p.22）、Huang Shan（p.23）
 - `ai_usage_report_draft.pdf`（11 页）：
   - 工具/模型说明（OpenAI Codex 整合与初稿 + Google Antigravity 排版重构与核查）
   - 第 2–4 页：23 条统筹与整合阶段中英双语提示词记录
@@ -44,13 +44,13 @@ report_submission/
 
 请各位组员下载并解压 `COMP7507_Group3_submission_DRAFT.zip`，重点核对以下两项内容：
 
-| 成员 | 学号 | 核对 Final Report（Part II 页码） | 需在 AI Usage Report（第 5 页）补充的留空项 |
+| 成员 | 学号 | 核对 Final Report（Part I 交互预留框 & Part II 页码） | 需在 AI Usage Report（第 5 页）补充的留空项 |
 | --- | --- | --- | --- |
-| **Ruan Lixin** | 3036838453 | 第 14 页（Ch1 + 全站重构 & QA） | Ch1 与全站重构使用的 AI 工具、模型及代表性提示词 |
-| **Qi Yingying** | 3036791019 | 第 15 页（Ch2 Scale & Output） | Ch2 数据处理与网页搭建使用的 AI 工具、模型及提示词 |
-| **Wong Yan Yuet** | 3036656879 | 第 16 页（Ch3 Cost Cliff） | Ch3 数据分析与网页搭建使用的 AI 工具、模型及提示词 |
-| **Wang Ling** | 3036839055 | 第 17 页（Ch4 Parallel Trends，✅ 已通过 PR #11 确认） | ✅ 已通过 PR #11 补充完成（见第 5、7–8 页） |
-| **Huang Shan** | 3036807507 | 第 18 页（Proposal Lead + Ch5 + 统筹） | ✅ Early Proposal Stage（见第 5、9–11 页）与统筹整合阶段（见第 1–4 页）均已补充完成；汇总全组修改并打最终提交包 |
+| **Ruan Lixin** | 3036838453 | **Part I §3.1 交互操作与截图预留框（p.6）** + Part II 第 19 页 | Ch1 与全站重构使用的 AI 工具、模型及代表性提示词 |
+| **Qi Yingying** | 3036791019 | **Part I §3.2 交互操作与截图预留框（p.7）** + Part II 第 20 页 | Ch2 数据处理与网页搭建使用的 AI 工具、模型及提示词 |
+| **Wong Yan Yuet** | 3036656879 | **Part I §3.3 交互操作与截图预留框（p.9）** + Part II 第 21 页 | Ch3 数据分析与网页搭建使用的 AI 工具、模型及提示词 |
+| **Wang Ling** | 3036839055 | **Part I §3.4 交互操作与截图预留框（p.10）** + Part II 第 22 页（✅ Part II 已确认） | ✅ 已通过 PR #11 补充完成（见第 5、7–8 页） |
+| **Huang Shan** | 3036807507 | ✅ **Part I §3.5 Ch5 实机交互截图已完成（p.11–13）** + Part II 第 23 页 | ✅ Early Proposal Stage（见第 5、9–11 页）与统筹整合阶段（见第 1–4 页）均已补充完成；汇总全组修改并打最终提交包 |
 
 ### 核对要点
 1. **Part II 个人贡献陈述**：确认个人任务描述、PR 贡献、核心数据结论与方法反思准确无误（如有新增细节可补充，每人上限 5 页，当前每人 1 页排版已完整对齐）。
