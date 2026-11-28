@@ -15,7 +15,7 @@
 ```text
 report_submission/
 ├── README.md                              # 本说明文档
-├── COMP7507_Group3_submission_DRAFT.zip   # 当前完整提交包初稿（14.5 MB，207 个文件）
+├── COMP7507_Group3_submission_DRAFT.zip   # 当前完整提交包初稿（14.8 MB，207 个文件）
 └── editable_sources/
     ├── ai_usage_report.html               # AI 使用报告源码（可直接编辑第 5 页预留栏位）
     ├── final_report.html                  # 最终报告源码（可直接微调 Part I / Part II 文案）
@@ -28,12 +28,13 @@ report_submission/
   - 封面（1 页，含项目题目、Group 3、全员姓名与学号）
   - **Part I Overall Work（正文 12 页 + 参考文献 1 页）**：项目目标、3 条 Highlights、8 大冻结数据源与分析准则、Ch1–Ch5 实机截图与矢量数据图、假设验证修订总表、方法架构与取舍、困难与未实现计划（*Anything we wanted to do but haven't*）、数据/可视化/工具局限、13 条学术与数据引用
   - **Part II Individual Contributions（5 页，每人 1 页）**：按成员依次为 Ruan Lixin（p.14）、Qi Yingying（p.15）、Wong Yan Yuet（p.16）、Wang Ling（p.17）、Huang Shan（p.18）
-- `ai_usage_report_draft.pdf`（8 页）：
+- `ai_usage_report_draft.pdf`（11 页）：
   - 工具/模型说明（OpenAI Codex 整合与初稿 + Google Antigravity 排版重构与核查）
   - 第 2–4 页：23 条统筹与整合阶段中英双语提示词记录
-  - 第 5 页：**已预留 5 张组员卡片**（Ch4 Wang Ling 已完成；待补充 Early Proposal Stage 及 Ch1–Ch3）
+  - 第 5 页：**已预留 5 张组员卡片**（Early Proposal Stage 与 Ch4 Wang Ling 已完成；待补充 Ch1–Ch3）
   - 第 6 页：核验记录与提交前检查清单
   - 第 7–8 页：Ch4 Wang Ling 的 5 条代表性中英双语提示词及核验说明
+  - 第 9–11 页：Early Proposal Stage 的 19 条原始中英双语提示词（P1–P19）及全员核验归属说明
 - `work_package/`：203 个 Git 追踪文件（不含 `.venv`、`__pycache__`、`.DS_Store`），已内置全部冻结数据与字体，可离线运行 `bash start.sh`。
 - `REVIEW_BEFORE_SUBMITTING.md`：提交前核查清单（打最终包 `--final` 时会自动剔除）。
 
@@ -49,7 +50,7 @@ report_submission/
 | **Qi Yingying** | 3036791019 | 第 15 页（Ch2 Scale & Output） | Ch2 数据处理与网页搭建使用的 AI 工具、模型及提示词 |
 | **Wong Yan Yuet** | 3036656879 | 第 16 页（Ch3 Cost Cliff） | Ch3 数据分析与网页搭建使用的 AI 工具、模型及提示词 |
 | **Wang Ling** | 3036839055 | 第 17 页（Ch4 Parallel Trends，✅ 已通过 PR #11 确认） | ✅ 已通过 PR #11 补充完成（见第 5、7–8 页） |
-| **Huang Shan** | 3036807507 | 第 18 页（Proposal Lead + Ch5 + 统筹） | **Early Proposal Stage**（Huang Shan 主导、全员讨论完善）的 AI 工具、模型与提示词；汇总全组修改并打最终提交包 |
+| **Huang Shan** | 3036807507 | 第 18 页（Proposal Lead + Ch5 + 统筹） | ✅ Early Proposal Stage（见第 5、9–11 页）与统筹整合阶段（见第 1–4 页）均已补充完成；汇总全组修改并打最终提交包 |
 
 ### 核对要点
 1. **Part II 个人贡献陈述**：确认个人任务描述、PR 贡献、核心数据结论与方法反思准确无误（如有新增细节可补充，每人上限 5 页，当前每人 1 页排版已完整对齐）。

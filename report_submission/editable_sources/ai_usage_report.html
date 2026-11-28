@@ -483,7 +483,7 @@ code {
 </ul>
 
 <div class="callout warn">
-  <strong>Pending Group Completion Notice:</strong> Entries 01–23 on Pages 2–4 document the coordinator's integration, refinement, and report-editing sessions only. Before final Moodle submission, the group will populate the five reserved member disclosure cards on Page 5 (Early Proposal Stage and Chapters 1–4) and update the pre-submission checklist on Page 6.
+  <strong>Pending Group Completion Notice:</strong> Entries 01–23 on Pages 2–4 document the coordinator's integration, refinement, and report-editing sessions; Chapter 4 (Pages 7–8) and the Early Proposal Stage (Pages 9–11) have now been completed. Before final Moodle submission, the group will populate the remaining three reserved member disclosure cards on Page 5 (Chapters 1–3) and update the pre-submission checklist on Page 6.
 </div>
 
   <div class="footer">
@@ -658,11 +658,11 @@ code {
   <p class="deck">Intentionally left open for direct completion by each contributor (Proposal Stage and Chapters 1–4) prior to final submission.</p>
   
 <div class="slot-card">
-  <div class="s-title"><span>Early Proposal Stage — Huang Shan (Lead) &amp; All Five Members (Discussed &amp; Revised)</span><span class="s-tag">Pending Member Input</span></div>
-  <div class="slot-row"><b>Scope</b><span>Dataset exploration, feasibility reports, storyline &amp; proposal drafting</span></div>
-  <div class="slot-row"><b>AI Tool(s) &amp; Model(s)</b><span>[To be filled: e.g., ChatGPT (GPT-4o / o3), Claude, Cursor, Codex, or “None used”]</span></div>
-  <div class="slot-row"><b>Parts of Work Assisted</b><span>[To be filled: e.g., data-cleaning script, ECharts styling, debugging, prose editing]</span></div>
-  <div class="slot-row"><b>Prompts Used</b><span>[To be filled: verbatim prompts or representative prompt excerpts; attach continuation page if needed]</span></div>
+  <div class="s-title"><span>Early Proposal Stage — Huang Shan (Lead) &amp; All Five Members (Discussed &amp; Revised)</span><span class="s-tag" style="background:#e8f3ed;color:#257f70;">Completed</span></div>
+  <div class="slot-row"><b>Scope</b><span>Proposal drafting (v1–v3), dataset discovery &amp; batch downloading, storyline/field specs, workspace backup &amp; team TODO list</span></div>
+  <div class="slot-row"><b>AI Tool(s) &amp; Model(s)</b><span>Local AI coding assistant with workspace file access (exact model/version ID not preserved in exported prompt log)</span></div>
+  <div class="slot-row"><b>Parts of Work Assisted</b><span>Dataset search &amp; download, storyline-to-data mapping, field-level chart specs, workspace archiving, proposal QA &amp; TODO breakdown</span></div>
+  <div class="slot-row"><b>Prompts Used</b><span>All 19 verbatim proposal-stage prompts (P1–P19) with English translations appear on pages 9–11.</span></div>
 </div>
 <div class="slot-card">
   <div class="s-title"><span>Chapter 1 — The Flip &amp; Shared-Website Refactor — Ruan Lixin (3036838453)</span><span class="s-tag">Pending Member Input</span></div>
@@ -723,7 +723,7 @@ code {
     <tr><th style="width:8%">Done</th><th style="width:28%">Checklist Item</th><th style="width:64%">Action Required Before Final Moodle Upload</th></tr>
   </thead>
   <tbody>
-    <tr><td>☐</td><td><strong>Populate Page 5 AI slots</strong></td><td>Huang Shan &amp; all members add Proposal Stage prompts; Ruan Lixin, Qi Yingying, Wong Yan Yuet, and Wang Ling add their Ch1–Ch4 tools, models, and prompts.</td></tr>
+    <tr><td>☐</td><td><strong>Populate Page 5 AI slots</strong></td><td>Early Proposal Stage &amp; Ch4 completed; Ruan Lixin (Ch1), Qi Yingying (Ch2), and Wong Yan Yuet (Ch3) add their tools, models, and prompts.</td></tr>
     <tr><td>☐</td><td><strong>Confirm Part II statements</strong></td><td>All five members review their dedicated Part II individual contribution page (Pages 14–18 of the Final Report) and confirm task wording and accuracy.</td></tr>
     <tr><td>☐</td><td><strong>Verify live work package</strong></td><td>Unzip the final submission archive in a clean folder, open root <code>index.html</code>, inspect both PDFs, and run <code>bash start.sh</code> inside <code>work_package/</code> to verify all 5 dashboards load at <code>http://127.0.0.1:8764/</code>.</td></tr>
     <tr><td>☐</td><td><strong>Finalize filenames</strong></td><td>Run <code>bash rebuild_pdfs.sh --final</code> to drop <code>_draft</code> suffixes and generate the clean final submission ZIP for Moodle upload before 30 November 2026.</td></tr>
@@ -749,5 +749,153 @@ code {
 5. The interface looks clean and tidy, with clear operation.</div></div>
 <div class="prompt-item"><div class="p-head">Ch4-4 Documentation and handoff</div><div class="p-zh">输出一个介绍这个版面的markdown文件，1.包含界面介绍 2.操作功能 3.每一部分的数据变化趋势和趋势</div><div class="p-en">English translation: Output a markdown file introducing this layout. It should include: 1. Interface introduction; 2. Operating functions; 3. Data trend changes and trends for each section.</div></div>
 <div class="prompt-item"><div class="p-head">Ch4-5 Demo preparation</div><div class="p-zh">给我一个演讲稿子，总共四个panel 完善上面 且能够在90s左右讲完 包含版面的交互联动说明</div><div class="p-en">English translation: Please provide me with a speech draft. There are four panels in total. Please complete the above content and ensure it can be delivered within approximately 90 seconds. Also, include the interactive instructions for the layout.</div></div><div class="small-note"><strong>Assistance and validation.</strong> Codex assisted with reading local CSV/Parquet/XLSX files, Python aggregation, HTML/JavaScript coding, offline packaging. Recorded checks included all seven battle shards, removal of 10 self-pairs, 271,248 appearances, missing talent months, quarter-end shares, model/country selector scope and responsive layouts. This describes the initial Ch4 work; later ECharts migration and shared-site integration should remain attributed to their contributors.</div><div class="small-note" style="margin-top:3mm;"><strong>Model identification.</strong> The retained chat identifies a GPT-6-based Codex coding agent in relevant turns, but does not provide a reliable complete history of exact model/version IDs.</div><div class="footer"><span>From Open Labs to Closed Empires? · COMP7507 · Chapter 4 disclosure</span><span class="pg-num">8</span></div></section>
+
+<section class="page">
+  <div class="topbar">
+    <span class="tb-left">COMP7507  ·  GROUP 3  ·  AI USAGE REPORT</span>
+    <span class="tb-right">PROPOSAL STAGE  /  PROMPT LOG (1 OF 3)</span>
+  </div>
+  <h1 class="page-title">Proposal Stage Verbatim Prompts (1 / 3)</h1>
+  <p class="deck">Early proposal phase (Sep–Oct 2026) — led by Huang Shan (3036807507) with all five members participating in topic selection, chapter feasibility audits, and proposal revisions. Verbatim Chinese prompts with English translations (P1–P7).</p>
+
+  <div class="prompt-item">
+    <div class="p-head">P1 · Initial Project Scoping &amp; Proposal v1 Draft</div>
+    <div class="p-zh">“当前路径下proj文件夹中有一个我们小组作业的项目要求html文件，项目构思和一些对应的数据集，还有proposal的模板。请你先总结这个项目的内容（无需输出），随后根据现有的资料按照proposal模板的要求和项目的走向撰写一下proposal。”</div>
+    <div class="p-en">English translation: The proj folder contains our group project requirements HTML, initial project ideas, datasets, and the proposal template. First summarize the project internally (no need to output), then draft the proposal following the template requirements and project direction.</div>
+  </div>
+
+  <div class="prompt-item">
+    <div class="p-head">P2 · Expanding the AI × Economics Dataset Scope</div>
+    <div class="p-zh">“我们认为AI x Economics这个话题可以适当扩展/加深一下，请你帮我再找一些和这个相关的数据集。”</div>
+    <div class="p-en">English translation: We believe the AI × Economics topic can be expanded and deepened; please help find additional relevant datasets.</div>
+  </div>
+
+  <div class="prompt-item">
+    <div class="p-head">P3 · Locking Final Topic, Filling Data Gaps &amp; Building the Storyline</div>
+    <div class="p-zh">“From Open Labs to Closed Empires: How the LLM Frontier Changed (2023–2026) —— 我们组经过讨论认为，我们最终想做这个题目。我们想要从排行榜上三年变化出发，将视角放在大AI公司和小的实验室近三年的发展对比上，最终解释为什么出现了这样的现象。基于目前已有的数据这个故事线并不完整，我们还想找一些有关发展的，以市场价值、投资数额、论文发布量、用户广度、项目落地等角度为主的其他数据，尽量能够包含二者的对比，如果没有，能够找到一方的趋势也是可接受的。请你帮我寻找相关的数据集。找到数据集之后，请你尝试构建一个完整的故事线，并将找到的数据（加上现有的数据）填充到故事线中，并按照proposal模板的要求进行展现方式的拟定”</div>
+    <div class="p-en">English translation: After group discussion, we finalized the title "From Open Labs to Closed Empires: How the LLM Frontier Changed (2023–2026)". Starting from the three-year leaderboard shift, we want to compare large AI companies and smaller labs over the past three years to examine why this occurred. Because current data are incomplete for this storyline, please search for additional datasets covering market value, investment, publications, user reach, and real-world adoption (comparing both sides if possible, or single-side trends if unavailable). Then build a complete storyline, populate it with both new and existing datasets, and draft presentation plans per the proposal template.</div>
+  </div>
+
+  <div class="prompt-item">
+    <div class="p-head">P4–P6 · Prioritized Dataset Download List &amp; Batch Acquisition</div>
+    <div class="p-zh">“P4：请你整理一下需要下载的数据链接” / “P5：请你帮我直接下载P0部分的数据” / “P6：请你继续下载P1数据”</div>
+    <div class="p-en">English translation: P4: Organize the download links for all required datasets. / P5: Download the P0 priority datasets directly. / P6: Proceed to download the P1 priority datasets.</div>
+  </div>
+
+  <div class="prompt-item">
+    <div class="p-head">P7 · Mapping Datasets One-to-One into the Proposal Storyline Table</div>
+    <div class="p-zh">“很好，请你根据现有的故事线，整理现有的数据集，将其一一对应到每一个故事线上的环节中，最终整理到proposal模板的表格中（更新一版proposal）。”</div>
+    <div class="p-en">English translation: Organize the existing datasets according to our storyline, map each dataset one-to-one to every storyline stage, and insert the mapping into the proposal template table (producing an updated proposal draft).</div>
+  </div>
+
+  <div class="footer">
+    <span>From Open Labs to Closed Empires? · COMP7507 · Early Proposal Stage disclosure</span>
+    <span class="pg-num">9</span>
+  </div>
+</section>
+
+<section class="page">
+  <div class="topbar">
+    <span class="tb-left">COMP7507  ·  GROUP 3  ·  AI USAGE REPORT</span>
+    <span class="tb-right">PROPOSAL STAGE  /  PROMPT LOG (2 OF 3)</span>
+  </div>
+  <h1 class="page-title">Proposal Stage Verbatim Prompts (2 / 3)</h1>
+  <p class="deck">Continuation of Early Proposal Stage verbatim prompts covering dataset cataloging, field-level chart specification, workspace backup, and startup funding acquisition (P8–P14).</p>
+
+  <div class="prompt-item">
+    <div class="p-head">P8 · Listing All Dataset URLs in Chat</div>
+    <div class="p-zh">“把现有所有的数据集以及对应的下载网址全都整理给我，不需要输出文档，直接在对话框输出即可。”</div>
+    <div class="p-en">English translation: Compile all current datasets and their corresponding download URLs directly in the chat without creating a file.</div>
+  </div>
+
+  <div class="prompt-item">
+    <div class="p-head">P9 · Exporting Dataset Descriptions &amp; Storyline Roles</div>
+    <div class="p-zh">“重新整理一次，这一次每一个加上数据集对应的内容和在故事线中扮演的角色，输出到一个txt或者md中”</div>
+    <div class="p-en">English translation: Reorganize the inventory by adding each dataset's contents and its role in the storyline, and export it to a .txt or .md file.</div>
+  </div>
+
+  <div class="prompt-item">
+    <div class="p-head">P10 · Condensing to a Compact Table</div>
+    <div class="p-zh">“整理一个简约的表格即可”</div>
+    <div class="p-en">English translation: Condense the output into a concise summary table.</div>
+  </div>
+
+  <div class="prompt-item">
+    <div class="p-head">P11 · Converting Export Format to Excel</div>
+    <div class="p-zh">“删除这个文件，输出一个excel吧”</div>
+    <div class="p-en">English translation: Delete the previous Markdown/text file and output an Excel workbook instead.</div>
+  </div>
+
+  <div class="prompt-item">
+    <div class="p-head">P12 · Field-Level &amp; Chart-Level Storyline Specification</div>
+    <div class="p-zh">“请你就现有的proposal和故事线文档，细化故事线中每一个部分使用的内容，具体描述每一个环节用到哪个数据集的哪一个字段，绘制一张什么图/表。”</div>
+    <div class="p-en">English translation: Based on the current proposal and storyline documents, refine every section down to the exact dataset fields used and specify the exact chart or table to build for each stage.</div>
+  </div>
+
+  <div class="prompt-item">
+    <div class="p-head">P13 · Full Data Backup &amp; Chapter-Wise Directory Reorganization</div>
+    <div class="p-zh">“请你将现有的所有数据按照故事线的每一个章节进行重新整理，备份现有数据的情况下，新建一个文件夹存放以故事线环节分类的所有用到的数据”</div>
+    <div class="p-en">English translation: Reorganize all collected datasets by storyline chapter; after creating a complete backup of existing data, create a new directory grouping all needed files by storyline stage.</div>
+  </div>
+
+  <div class="prompt-item">
+    <div class="p-head">P14 · Locating &amp; Downloading Small-Lab Funding Records</div>
+    <div class="p-zh">“目前存在一个待建的crunchbase融资表，请你帮我找到这个融资表的具体来源，可以的话直接帮我下载需要的内容”</div>
+    <div class="p-en">English translation: There is a pending startup funding table (originally planned from Crunchbase); please help locate an accessible public source for these funding records and download the required data if possible.</div>
+  </div>
+
+  <div class="footer">
+    <span>From Open Labs to Closed Empires? · COMP7507 · Early Proposal Stage disclosure</span>
+    <span class="pg-num">10</span>
+  </div>
+</section>
+
+<section class="page">
+  <div class="topbar">
+    <span class="tb-left">COMP7507  ·  GROUP 3  ·  AI USAGE REPORT</span>
+    <span class="tb-right">PROPOSAL STAGE  /  PROMPT LOG (3 OF 3)</span>
+  </div>
+  <h1 class="page-title">Proposal Stage Verbatim Prompts (3 / 3)</h1>
+  <p class="deck">Final Early Proposal Stage prompts covering workspace archiving, rubric- and feasibility-driven proposal revision, placeholder QA, and team execution planning (P15–P19).</p>
+
+  <div class="prompt-item">
+    <div class="p-head">P15 · Archiving Earlier Drafts &amp; Organizing the Workspace</div>
+    <div class="p-zh">“很好，请你就目前的进展整理一下这个文件夹，保留当前这个故事线以及相关的内容，其他报告版本、企划版本等请你新建一个文件夹进行归档。数据不需要动，整理过程性文件和产出的之前版本报告即可。”</div>
+    <div class="p-en">English translation: Organize the project folder based on our current progress—keep the active storyline and related files, move older report and planning drafts into a new archive folder, and leave the data directories untouched.</div>
+  </div>
+
+  <div class="prompt-item">
+    <div class="p-head">P16 · Revising Storyline &amp; Proposal Using Teammates' Feasibility Reports &amp; Official Rubric</div>
+    <div class="p-zh">“很好，我让我的组员分别检查了一下项目的可行性，目前每一个chapter对应的可行性报告都存储在每个章节存有数据的文件夹中了。并且我在当前的路径下添加了COMP7507-rubrics-proposal的评分标准。请你根据组员给出的报告优化storyline，并根据组员给出的可能的可视化实现路径和课程的proposal评分标准重新生成一份proposal。”</div>
+    <div class="p-en">English translation: My teammates checked feasibility for each chapter and saved their feasibility reports in each chapter's data folder; I also added the official COMP7507 proposal rubric file. Please revise the storyline using the teammates' empirical feasibility reports and regenerate the proposal aligned with their proposed visualization paths and the course rubric.</div>
+  </div>
+
+  <div class="prompt-item">
+    <div class="p-head">P17 · Final Proposal Quality &amp; Placeholder Verification</div>
+    <div class="p-zh">“请你最后检查一下这个文件中的proposal是否合理，是否带有没有修改的占位符等”</div>
+    <div class="p-en">English translation: Perform a final check on the proposal document to verify whether its claims are reasonable and whether any unedited template placeholders remain.</div>
+  </div>
+
+  <div class="prompt-item">
+    <div class="p-head">P18 · Completing Missing Chapter 5 Task Entry</div>
+    <div class="p-zh">“请你补一下ch5任务行”</div>
+    <div class="p-en">English translation: Add the missing Chapter 5 task row in the division-of-labour table.</div>
+  </div>
+
+  <div class="prompt-item">
+    <div class="p-head">P19 · Generating Step-by-Step Per-Member Execution Plan</div>
+    <div class="p-zh">“请你根据这个proposal生成一个非常详细的TODO list，详细描述每一个组员接下来应该进行什么工作。详细到每一个具体的步骤。结果放在一个md文档给我”</div>
+    <div class="p-en">English translation: Generate a detailed Markdown TODO list from this proposal specifying every concrete step each group member should execute next.</div>
+  </div>
+
+  <div class="callout" style="margin-top:3mm;">
+    <strong>Human Review &amp; Group Ownership Note:</strong> During the Proposal Stage, Huang Shan coordinated prompt execution and repository organization while all five group members discussed topic framing, independently audited data feasibility for Chapters 1–5, prototyped early Chapter 1 views, and reviewed/revised the submitted proposal. As shown in P16 and P17, teammates' empirical feasibility findings directly overrode initial AI-drafted assumptions (e.g., dropping unmeasurable cross-firm migration and revising H1's open-weight share bounds). Exact AI model/version identifiers from this early session were not logged in the exported prompt summary.
+  </div>
+
+  <div class="footer">
+    <span>From Open Labs to Closed Empires? · COMP7507 · Early Proposal Stage disclosure</span>
+    <span class="pg-num">11</span>
+  </div>
+</section>
 </body>
 </html>
