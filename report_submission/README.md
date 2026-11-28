@@ -28,11 +28,12 @@ report_submission/
   - 封面（1 页，含项目题目、Group 3、全员姓名与学号）
   - **Part I Overall Work（正文 12 页 + 参考文献 1 页）**：项目目标、3 条 Highlights、8 大冻结数据源与分析准则、Ch1–Ch5 实机截图与矢量数据图、假设验证修订总表、方法架构与取舍、困难与未实现计划（*Anything we wanted to do but haven't*）、数据/可视化/工具局限、13 条学术与数据引用
   - **Part II Individual Contributions（5 页，每人 1 页）**：按成员依次为 Ruan Lixin（p.14）、Qi Yingying（p.15）、Wong Yan Yuet（p.16）、Wang Ling（p.17）、Huang Shan（p.18）
-- `ai_usage_report_draft.pdf`（6 页）：
+- `ai_usage_report_draft.pdf`（8 页）：
   - 工具/模型说明（OpenAI Codex 整合与初稿 + Google Antigravity 排版重构与核查）
   - 第 2–4 页：23 条统筹与整合阶段中英双语提示词记录
-  - 第 5 页：**已预留 5 张待补充卡片**（Early Proposal Stage 及 Ch1–Ch4 各组员）
+  - 第 5 页：**已预留 5 张组员卡片**（Ch4 Wang Ling 已完成；待补充 Early Proposal Stage 及 Ch1–Ch3）
   - 第 6 页：核验记录与提交前检查清单
+  - 第 7–8 页：Ch4 Wang Ling 的 5 条代表性中英双语提示词及核验说明
 - `work_package/`：203 个 Git 追踪文件（不含 `.venv`、`__pycache__`、`.DS_Store`），已内置全部冻结数据与字体，可离线运行 `bash start.sh`。
 - `REVIEW_BEFORE_SUBMITTING.md`：提交前核查清单（打最终包 `--final` 时会自动剔除）。
 
@@ -47,7 +48,7 @@ report_submission/
 | **Ruan Lixin** | 3036838453 | 第 14 页（Ch1 + 全站重构 & QA） | Ch1 与全站重构使用的 AI 工具、模型及代表性提示词 |
 | **Qi Yingying** | 3036791019 | 第 15 页（Ch2 Scale & Output） | Ch2 数据处理与网页搭建使用的 AI 工具、模型及提示词 |
 | **Wong Yan Yuet** | 3036656879 | 第 16 页（Ch3 Cost Cliff） | Ch3 数据分析与网页搭建使用的 AI 工具、模型及提示词 |
-| **Wang Ling** | 3036839055 | 第 17 页（Ch4 Parallel Trends） | Ch4 数据整理与网页搭建使用的 AI 工具、模型及提示词 |
+| **Wang Ling** | 3036839055 | 第 17 页（Ch4 Parallel Trends，✅ 已通过 PR #11 确认） | ✅ 已通过 PR #11 补充完成（见第 5、7–8 页） |
 | **Huang Shan** | 3036807507 | 第 18 页（Proposal Lead + Ch5 + 统筹） | **Early Proposal Stage**（Huang Shan 主导、全员讨论完善）的 AI 工具、模型与提示词；汇总全组修改并打最终提交包 |
 
 ### 核对要点
